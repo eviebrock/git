@@ -1,0 +1,8 @@
+
+State Machine - |lab_4|Y
+Name Y.s5 Y.s4 Y.s3 Y.s2 Y.s1 
+Y.s1 0 0 0 0 0 
+Y.s2 0 0 0 1 1 
+Y.s3 0 0 1 0 1 
+Y.s4 0 1 0 0 1 
+Y.s5 1 0 0 0 1 

@@ -1,0 +1,68 @@
+***.include "C:\Users\eviebroc\Desktop\ECPE173\JSIM\Library_Files\nominal.jsim"
+.include "C:\Users\Erich Viebrock\Google Drive\Classes\Spring 13\Computer Organization and Architecture\Labs\Lab #3\Library Files\nominal.jsim"
+***.include "C:\Users\eviebroc\Desktop\ECPE173\JSIM\Library_Files\stdcell.jsim"
+.include "C:\Users\Erich Viebrock\Google Drive\Classes\Spring 13\Computer Organization and Architecture\Labs\Lab #3\Library Files\stdcell.jsim"
+***.include "C:\Users\eviebroc\Desktop\ECPE173\Lab_3\lab3_test_adder.jsim"
+.include "C:\Users\Erich Viebrock\Google Drive\Classes\Spring 13\Computer Organization and Architecture\Labs\Lab #3\lab3_test_adder.jsim"
+
+.subckt BOOL alufn[3:0] A[31:0] B[31:0] OUT[31:0]
+***xdummy OUT[31:0] constant0
+***Xand A[31:0] B[31:0] andOUT[31:0] and32
+***Xor A[31:0] B[31:0] orOUT[31:0] or32
+***Xxor A[31:0] B[31:0] xorOUT[31:0] xor32
+***Xa A[31:0] B[31:0] aOUT[31:0] buffer_32
+***Xmux1 alufn[1] alufn[0] 0 0 0 0 z_a mux4
+***Xmux2 alufn[1] alufn[0] 0 0 xorOUT 0 z_b mux4
+***Xmux3 alufn[1] alufn[0] andOUT 0 aOUT 0 z_c mux4
+***Xmux4 alufn[1] alufn[0] 0 0 orOUT 0 z_d mux4
+***Xmux5 alufn[3] alufn[2] z_a z_b z_c z_d z_e mux4
+Xmux4 A[31:0] B[31:0] alufn[0]#32 alufn[1]#32 alufn[2]#32 alufn[3]#32 OUT[31:0] mux4
+.ends
+
+********************************************************
+.subckt ARITH alufn[1:0] A[31:0] B[31:0] OUT[31:0] Z V N
+xdummy Z V N constant0
+Xxor_a B[31:0] alufn[0]#32 xorOUT_a[31:0] xor2
+Xxor_b A[31:0] xorOUT_a[31:0] xorOUT_b[31:0] xor2
+*** USE FOR ADDER ONLY ***
+***Xxor_b A[31:0] B[31:0] xorOUT_b[31:0] xor2
+Xxor_c xorOUT_b[31:0] Cout[30:0] alufn[0] OUT[31:0] xor2
+Xand_a xorOUT_b[31:0] Cout[30:0] alufn[0] andOUT_a[31:0] and2
+Xand_b A[31:0] xorOUT_a[31:0] andOUT_b[31:0] and2
+Xor andOUT_a[31:0] andOUT_b[31:0] Cout[31:0] or2
+
+*** Z = true when output, S, is zero ***
+Xz OUT[31:0] 0#32 Z[31:0] nor2
+
+*** V = true when there is an overflow ***
+***Xv OUT[0] OUT[1] V xor2
+
+*** true when S is negative ***
+***Xn OUT[31] 0 N or2
+
+.ends
+********************************************************
+
+.subckt SHIFT alufn[1:0] A[31:0] B[31:0] OUT[31:0]
+xdummy OUT[31:0] constant0
+.ends
+
+********************************************************
+.subckt CMP alufn3 alufn1 Z V N OUT[31:0]
+xdummy OUT[31:0] constant0
+.ends
+********************************************************
+
+.subckt alu alufn[4:0] a[31:0] b[31:0] out[31:0] z v n
+
+*** Generate outputs from each of BOOL, SHIFT, ARITH, CMP subcircuits:
+xbool alufn[3:0] a[31:0] b[31:0] boolout[31:0] BOOL
+xshift alufn[1:0] a[31:0] b[31:0] shiftout[31:0] SHIFT
+xarith alufn[1:0] a[31:0] b[31:0] arithout[31:0] z v n ARITH
+xcmp alufn[3] alufn[1] z v n cmpout[31:0] CMP
+
+*** Combine them, using three multiplexors:
+xmux1 alufn[4]#32 nonbool[31:0] boolout[31:0] out[31:0] mux2
+xmux2 alufn[2]#32 arithshift[31:0] cmpout[31:0] nonbool[31:0] mux2
+xmux3 alufn[3]#32 arithout[31:0] shiftout[31:0] arithshift[31:0] mux2
+.ends

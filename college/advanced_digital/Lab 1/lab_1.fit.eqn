@@ -1,0 +1,573 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--B1L1 is clk:clkassignstage|Add0~0 at LCCOMB_X3_Y11_N8
+B1L1 = B1_Count[0] $ (VCC);
+
+--B1L2 is clk:clkassignstage|Add0~1 at LCCOMB_X3_Y11_N8
+B1L2 = CARRY(B1_Count[0]);
+
+
+--B1L3 is clk:clkassignstage|Add0~2 at LCCOMB_X3_Y11_N10
+B1L3 = (B1_Count[1] & (!B1L2)) # (!B1_Count[1] & ((B1L2) # (GND)));
+
+--B1L4 is clk:clkassignstage|Add0~3 at LCCOMB_X3_Y11_N10
+B1L4 = CARRY((!B1L2) # (!B1_Count[1]));
+
+
+--B1L5 is clk:clkassignstage|Add0~4 at LCCOMB_X3_Y11_N12
+B1L5 = (B1_Count[2] & (B1L4 $ (GND))) # (!B1_Count[2] & (!B1L4 & VCC));
+
+--B1L6 is clk:clkassignstage|Add0~5 at LCCOMB_X3_Y11_N12
+B1L6 = CARRY((B1_Count[2] & !B1L4));
+
+
+--B1L7 is clk:clkassignstage|Add0~6 at LCCOMB_X3_Y11_N14
+B1L7 = (B1_Count[3] & (!B1L6)) # (!B1_Count[3] & ((B1L6) # (GND)));
+
+--B1L8 is clk:clkassignstage|Add0~7 at LCCOMB_X3_Y11_N14
+B1L8 = CARRY((!B1L6) # (!B1_Count[3]));
+
+
+--B1L9 is clk:clkassignstage|Add0~8 at LCCOMB_X3_Y11_N16
+B1L9 = (B1_Count[4] & (B1L8 $ (GND))) # (!B1_Count[4] & (!B1L8 & VCC));
+
+--B1L10 is clk:clkassignstage|Add0~9 at LCCOMB_X3_Y11_N16
+B1L10 = CARRY((B1_Count[4] & !B1L8));
+
+
+--B1L11 is clk:clkassignstage|Add0~10 at LCCOMB_X3_Y11_N18
+B1L11 = (B1_Count[5] & (!B1L10)) # (!B1_Count[5] & ((B1L10) # (GND)));
+
+--B1L12 is clk:clkassignstage|Add0~11 at LCCOMB_X3_Y11_N18
+B1L12 = CARRY((!B1L10) # (!B1_Count[5]));
+
+
+--B1L13 is clk:clkassignstage|Add0~12 at LCCOMB_X3_Y11_N20
+B1L13 = (B1_Count[6] & (B1L12 $ (GND))) # (!B1_Count[6] & (!B1L12 & VCC));
+
+--B1L14 is clk:clkassignstage|Add0~13 at LCCOMB_X3_Y11_N20
+B1L14 = CARRY((B1_Count[6] & !B1L12));
+
+
+--B1L15 is clk:clkassignstage|Add0~14 at LCCOMB_X3_Y11_N22
+B1L15 = (B1_Count[7] & (!B1L14)) # (!B1_Count[7] & ((B1L14) # (GND)));
+
+--B1L16 is clk:clkassignstage|Add0~15 at LCCOMB_X3_Y11_N22
+B1L16 = CARRY((!B1L14) # (!B1_Count[7]));
+
+
+--B1L17 is clk:clkassignstage|Add0~16 at LCCOMB_X3_Y11_N24
+B1L17 = (B1_Count[8] & (B1L16 $ (GND))) # (!B1_Count[8] & (!B1L16 & VCC));
+
+--B1L18 is clk:clkassignstage|Add0~17 at LCCOMB_X3_Y11_N24
+B1L18 = CARRY((B1_Count[8] & !B1L16));
+
+
+--B1L19 is clk:clkassignstage|Add0~18 at LCCOMB_X3_Y11_N26
+B1L19 = (B1_Count[9] & (!B1L18)) # (!B1_Count[9] & ((B1L18) # (GND)));
+
+--B1L20 is clk:clkassignstage|Add0~19 at LCCOMB_X3_Y11_N26
+B1L20 = CARRY((!B1L18) # (!B1_Count[9]));
+
+
+--B1L21 is clk:clkassignstage|Add0~20 at LCCOMB_X3_Y11_N28
+B1L21 = (B1_Count[10] & (B1L20 $ (GND))) # (!B1_Count[10] & (!B1L20 & VCC));
+
+--B1L22 is clk:clkassignstage|Add0~21 at LCCOMB_X3_Y11_N28
+B1L22 = CARRY((B1_Count[10] & !B1L20));
+
+
+--B1L23 is clk:clkassignstage|Add0~22 at LCCOMB_X3_Y11_N30
+B1L23 = (B1_Count[11] & (!B1L22)) # (!B1_Count[11] & ((B1L22) # (GND)));
+
+--B1L24 is clk:clkassignstage|Add0~23 at LCCOMB_X3_Y11_N30
+B1L24 = CARRY((!B1L22) # (!B1_Count[11]));
+
+
+--B1L25 is clk:clkassignstage|Add0~24 at LCCOMB_X3_Y10_N0
+B1L25 = (B1_Count[12] & (B1L24 $ (GND))) # (!B1_Count[12] & (!B1L24 & VCC));
+
+--B1L26 is clk:clkassignstage|Add0~25 at LCCOMB_X3_Y10_N0
+B1L26 = CARRY((B1_Count[12] & !B1L24));
+
+
+--B1L27 is clk:clkassignstage|Add0~26 at LCCOMB_X3_Y10_N2
+B1L27 = (B1_Count[13] & (!B1L26)) # (!B1_Count[13] & ((B1L26) # (GND)));
+
+--B1L28 is clk:clkassignstage|Add0~27 at LCCOMB_X3_Y10_N2
+B1L28 = CARRY((!B1L26) # (!B1_Count[13]));
+
+
+--B1L29 is clk:clkassignstage|Add0~28 at LCCOMB_X3_Y10_N4
+B1L29 = (B1_Count[14] & (B1L28 $ (GND))) # (!B1_Count[14] & (!B1L28 & VCC));
+
+--B1L30 is clk:clkassignstage|Add0~29 at LCCOMB_X3_Y10_N4
+B1L30 = CARRY((B1_Count[14] & !B1L28));
+
+
+--B1L31 is clk:clkassignstage|Add0~30 at LCCOMB_X3_Y10_N6
+B1L31 = (B1_Count[15] & (!B1L30)) # (!B1_Count[15] & ((B1L30) # (GND)));
+
+--B1L32 is clk:clkassignstage|Add0~31 at LCCOMB_X3_Y10_N6
+B1L32 = CARRY((!B1L30) # (!B1_Count[15]));
+
+
+--B1L33 is clk:clkassignstage|Add0~32 at LCCOMB_X3_Y10_N8
+B1L33 = (B1_Count[16] & (B1L32 $ (GND))) # (!B1_Count[16] & (!B1L32 & VCC));
+
+--B1L34 is clk:clkassignstage|Add0~33 at LCCOMB_X3_Y10_N8
+B1L34 = CARRY((B1_Count[16] & !B1L32));
+
+
+--B1L35 is clk:clkassignstage|Add0~34 at LCCOMB_X3_Y10_N10
+B1L35 = (B1_Count[17] & (!B1L34)) # (!B1_Count[17] & ((B1L34) # (GND)));
+
+--B1L36 is clk:clkassignstage|Add0~35 at LCCOMB_X3_Y10_N10
+B1L36 = CARRY((!B1L34) # (!B1_Count[17]));
+
+
+--B1L37 is clk:clkassignstage|Add0~36 at LCCOMB_X3_Y10_N12
+B1L37 = (B1_Count[18] & (B1L36 $ (GND))) # (!B1_Count[18] & (!B1L36 & VCC));
+
+--B1L38 is clk:clkassignstage|Add0~37 at LCCOMB_X3_Y10_N12
+B1L38 = CARRY((B1_Count[18] & !B1L36));
+
+
+--B1L39 is clk:clkassignstage|Add0~38 at LCCOMB_X3_Y10_N14
+B1L39 = (B1_Count[19] & (!B1L38)) # (!B1_Count[19] & ((B1L38) # (GND)));
+
+--B1L40 is clk:clkassignstage|Add0~39 at LCCOMB_X3_Y10_N14
+B1L40 = CARRY((!B1L38) # (!B1_Count[19]));
+
+
+--B1L41 is clk:clkassignstage|Add0~40 at LCCOMB_X3_Y10_N16
+B1L41 = (B1_Count[20] & (B1L40 $ (GND))) # (!B1_Count[20] & (!B1L40 & VCC));
+
+--B1L42 is clk:clkassignstage|Add0~41 at LCCOMB_X3_Y10_N16
+B1L42 = CARRY((B1_Count[20] & !B1L40));
+
+
+--B1L43 is clk:clkassignstage|Add0~42 at LCCOMB_X3_Y10_N18
+B1L43 = (B1_Count[21] & (!B1L42)) # (!B1_Count[21] & ((B1L42) # (GND)));
+
+--B1L44 is clk:clkassignstage|Add0~43 at LCCOMB_X3_Y10_N18
+B1L44 = CARRY((!B1L42) # (!B1_Count[21]));
+
+
+--B1L45 is clk:clkassignstage|Add0~44 at LCCOMB_X3_Y10_N20
+B1L45 = (B1_Count[22] & (B1L44 $ (GND))) # (!B1_Count[22] & (!B1L44 & VCC));
+
+--B1L46 is clk:clkassignstage|Add0~45 at LCCOMB_X3_Y10_N20
+B1L46 = CARRY((B1_Count[22] & !B1L44));
+
+
+--B1L47 is clk:clkassignstage|Add0~46 at LCCOMB_X3_Y10_N22
+B1L47 = B1L46 $ (B1_Count[23]);
+
+
+--y.IDLE is y.IDLE at LCFF_X4_Y20_N9
+y.IDLE = DFFEAS(A1L25, GLOBAL(B1L51),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.LA is y.LA at LCFF_X4_Y20_N11
+y.LA = DFFEAS(A1L28, GLOBAL(B1L51),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.LB is y.LB at LCFF_X4_Y20_N5
+y.LB = DFFEAS(A1L30, GLOBAL(B1L51),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.LC is y.LC at LCFF_X4_Y20_N7
+y.LC = DFFEAS(A1L31, GLOBAL(B1L51),  ,  ,  ,  ,  ,  ,  );
+
+
+--A1L12 is Lights~0 at LCCOMB_X4_Y20_N0
+A1L12 = (!y.LA & (y.IDLE & (!y.LB & !y.LC)));
+
+
+--y.RC is y.RC at LCFF_X4_Y20_N27
+y.RC = DFFEAS(A1L36, GLOBAL(B1L51),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.RA is y.RA at LCFF_X4_Y20_N13
+y.RA = DFFEAS(A1L33, GLOBAL(B1L51),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.LR is y.LR at LCFF_X3_Y20_N17
+y.LR = DFFEAS(A1L46, GLOBAL(B1L51),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.RB is y.RB at LCFF_X4_Y20_N23
+y.RB = DFFEAS(A1L35, GLOBAL(B1L51),  ,  ,  ,  ,  ,  ,  );
+
+
+--A1L13 is Lights~1 at LCCOMB_X3_Y20_N26
+A1L13 = (!y.RB & (!y.RA & (!y.LR & y.RC)));
+
+
+--A1L14 is Lights~2 at LCCOMB_X3_Y20_N28
+A1L14 = (!y.RA & ((y.LR) # (y.RB)));
+
+
+--A1L15 is Lights~3 at LCCOMB_X3_Y20_N6
+A1L15 = (A1L12 & ((A1L13) # (A1L14)));
+
+
+--A1L16 is Lights~4 at LCCOMB_X3_Y20_N24
+A1L16 = (y.IDLE & ((y.LR) # (y.RA)));
+
+
+--A1L17 is Lights~5 at LCCOMB_X3_Y20_N2
+A1L17 = (A1L16) # ((A1L13 & A1L12));
+
+
+--A1L18 is Lights~6 at LCCOMB_X3_Y20_N12
+A1L18 = (!y.LB & (!y.LR & !y.LC));
+
+
+--A1L19 is Lights~7 at LCCOMB_X3_Y20_N22
+A1L19 = (y.IDLE & (!y.LA & !A1L18));
+
+
+--A1L20 is Lights~8 at LCCOMB_X3_Y20_N8
+A1L20 = (y.LA) # ((y.LR) # ((y.LC & !y.LB)));
+
+
+--A1L21 is Lights~9 at LCCOMB_X3_Y20_N10
+A1L21 = (A1L20 & y.IDLE);
+
+
+--A1L23 is Selector0~0 at LCCOMB_X4_Y20_N24
+A1L23 = (!H & (!L & (!y.IDLE & !R)));
+
+
+--A1L24 is Selector0~1 at LCCOMB_X4_Y20_N18
+A1L24 = (y.LC & ((L) # ((R & y.RC)))) # (!y.LC & (((R & y.RC))));
+
+
+--A1L25 is Selector0~2 at LCCOMB_X4_Y20_N8
+A1L25 = (!y.LR & (!A1L23 & ((H) # (!A1L24))));
+
+
+--B1_clkstate is clk:clkassignstage|clkstate at LCFF_X4_Y10_N17
+B1_clkstate = DFFEAS(B1L50, clockdiv,  ,  ,  ,  ,  ,  ,  );
+
+
+--A1L26 is Selector1~0 at LCCOMB_X4_Y20_N28
+A1L26 = (!H & (!L & (!R & y.LA)));
+
+
+--A1L29 is Selector2~0 at LCCOMB_X4_Y20_N30
+A1L29 = (L & !H);
+
+
+--A1L27 is Selector1~1 at LCCOMB_X4_Y20_N16
+A1L27 = (!R & ((y.RA) # ((y.RB) # (y.RC))));
+
+
+--A1L28 is Selector1~2 at LCCOMB_X4_Y20_N10
+A1L28 = (A1L26) # ((A1L29 & ((A1L27) # (!y.IDLE))));
+
+
+--A1L45 is y~10 at LCCOMB_X4_Y20_N2
+A1L45 = (H) # ((L) # (R));
+
+
+--A1L30 is Selector2~1 at LCCOMB_X4_Y20_N4
+A1L30 = (y.LA & ((A1L29) # ((y.LB & !A1L45)))) # (!y.LA & (((y.LB & !A1L45))));
+
+
+--A1L31 is Selector3~0 at LCCOMB_X4_Y20_N6
+A1L31 = (A1L29 & ((y.LB) # ((y.LC & !A1L45)))) # (!A1L29 & (((y.LC & !A1L45))));
+
+
+--A1L34 is Selector5~0 at LCCOMB_X4_Y20_N20
+A1L34 = (!H & R);
+
+
+--A1L36 is Selector6~0 at LCCOMB_X4_Y20_N26
+A1L36 = (y.RB & ((A1L34) # ((y.RC & !A1L45)))) # (!y.RB & (((y.RC & !A1L45))));
+
+
+--A1L32 is Selector4~0 at LCCOMB_X4_Y20_N14
+A1L32 = (!H & (!L & (!R & y.RA)));
+
+
+--A1L33 is Selector4~1 at LCCOMB_X4_Y20_N12
+A1L33 = (A1L32) # ((!L & (A1L34 & !A1L12)));
+
+
+--A1L46 is y~11 at LCCOMB_X3_Y20_N16
+A1L46 = (!y.LR & H);
+
+
+--A1L35 is Selector5~1 at LCCOMB_X4_Y20_N22
+A1L35 = (y.RA & ((A1L34) # ((y.RB & !A1L45)))) # (!y.RA & (((y.RB & !A1L45))));
+
+
+--B1_Count[13] is clk:clkassignstage|Count[13] at LCFF_X4_Y10_N23
+B1_Count[13] = DFFEAS(B1L77, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[12] is clk:clkassignstage|Count[12] at LCFF_X4_Y10_N15
+B1_Count[12] = DFFEAS(B1L78, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[11] is clk:clkassignstage|Count[11] at LCFF_X4_Y10_N1
+B1_Count[11] = DFFEAS(B1L79, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[10] is clk:clkassignstage|Count[10] at LCFF_X4_Y10_N25
+B1_Count[10] = DFFEAS(B1L80, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L91 is clk:clkassignstage|Equal0~0 at LCCOMB_X4_Y10_N8
+B1L91 = (B1_Count[10] & (B1_Count[11] & (B1_Count[12] & B1_Count[13])));
+
+
+--B1_Count[9] is clk:clkassignstage|Count[9] at LCFF_X4_Y10_N31
+B1_Count[9] = DFFEAS(B1L81, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[6] is clk:clkassignstage|Count[6] at LCFF_X3_Y11_N1
+B1_Count[6] = DFFEAS(B1L82, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[8] is clk:clkassignstage|Count[8] at LCFF_X3_Y11_N25
+B1_Count[8] = DFFEAS(B1L17, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[7] is clk:clkassignstage|Count[7] at LCFF_X3_Y11_N23
+B1_Count[7] = DFFEAS(B1L15, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L92 is clk:clkassignstage|Equal0~1 at LCCOMB_X4_Y10_N12
+B1L92 = (B1_Count[9] & (B1_Count[6] & (!B1_Count[8] & !B1_Count[7])));
+
+
+--B1_Count[4] is clk:clkassignstage|Count[4] at LCFF_X3_Y11_N17
+B1_Count[4] = DFFEAS(B1L9, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[3] is clk:clkassignstage|Count[3] at LCFF_X3_Y11_N15
+B1_Count[3] = DFFEAS(B1L7, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[2] is clk:clkassignstage|Count[2] at LCFF_X3_Y11_N13
+B1_Count[2] = DFFEAS(B1L5, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[5] is clk:clkassignstage|Count[5] at LCFF_X3_Y11_N3
+B1_Count[5] = DFFEAS(B1L83, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L93 is clk:clkassignstage|Equal0~2 at LCCOMB_X3_Y11_N4
+B1L93 = (B1_Count[2] & (B1_Count[3] & (B1_Count[4] & !B1_Count[5])));
+
+
+--B1_Count[1] is clk:clkassignstage|Count[1] at LCFF_X3_Y11_N11
+B1_Count[1] = DFFEAS(B1L3, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[0] is clk:clkassignstage|Count[0] at LCFF_X3_Y11_N9
+B1_Count[0] = DFFEAS(B1L1, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[14] is clk:clkassignstage|Count[14] at LCFF_X4_Y10_N19
+B1_Count[14] = DFFEAS(B1L84, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[15] is clk:clkassignstage|Count[15] at LCFF_X4_Y10_N21
+B1_Count[15] = DFFEAS(B1L85, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L94 is clk:clkassignstage|Equal0~3 at LCCOMB_X4_Y10_N4
+B1L94 = (B1_Count[15] & (B1_Count[14] & (B1_Count[0] & B1_Count[1])));
+
+
+--B1L95 is clk:clkassignstage|Equal0~4 at LCCOMB_X3_Y11_N6
+B1L95 = (B1L91 & (B1L93 & (B1L94 & B1L92)));
+
+
+--B1_Count[16] is clk:clkassignstage|Count[16] at LCFF_X4_Y10_N11
+B1_Count[16] = DFFEAS(B1L86, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[18] is clk:clkassignstage|Count[18] at LCFF_X3_Y10_N25
+B1_Count[18] = DFFEAS(B1L87, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[19] is clk:clkassignstage|Count[19] at LCFF_X3_Y10_N27
+B1_Count[19] = DFFEAS(B1L88, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[17] is clk:clkassignstage|Count[17] at LCFF_X3_Y10_N11
+B1_Count[17] = DFFEAS(B1L35, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L96 is clk:clkassignstage|Equal0~5 at LCCOMB_X4_Y10_N28
+B1L96 = (B1_Count[16] & (B1_Count[19] & (B1_Count[18] & !B1_Count[17])));
+
+
+--B1_Count[22] is clk:clkassignstage|Count[22] at LCFF_X3_Y10_N29
+B1_Count[22] = DFFEAS(B1L89, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[23] is clk:clkassignstage|Count[23] at LCFF_X3_Y10_N31
+B1_Count[23] = DFFEAS(B1L90, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[20] is clk:clkassignstage|Count[20] at LCFF_X3_Y10_N17
+B1_Count[20] = DFFEAS(B1L41, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_Count[21] is clk:clkassignstage|Count[21] at LCFF_X3_Y10_N19
+B1_Count[21] = DFFEAS(B1L43, GLOBAL(A1L2),  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L97 is clk:clkassignstage|Equal0~6 at LCCOMB_X4_Y10_N6
+B1L97 = (!B1_Count[21] & (B1_Count[22] & (B1_Count[23] & !B1_Count[20])));
+
+
+--B1L50 is clk:clkassignstage|clkstate~0 at LCCOMB_X4_Y10_N16
+B1L50 = B1_clkstate $ (((B1L97 & (B1L96 & B1L95))));
+
+
+--B1L77 is clk:clkassignstage|Count~0 at LCCOMB_X4_Y10_N22
+B1L77 = (B1L27 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L78 is clk:clkassignstage|Count~1 at LCCOMB_X4_Y10_N14
+B1L78 = (B1L25 & (((!B1L95) # (!B1L97)) # (!B1L96)));
+
+
+--B1L79 is clk:clkassignstage|Count~2 at LCCOMB_X4_Y10_N0
+B1L79 = (B1L23 & (((!B1L95) # (!B1L97)) # (!B1L96)));
+
+
+--B1L80 is clk:clkassignstage|Count~3 at LCCOMB_X4_Y10_N24
+B1L80 = (B1L21 & (((!B1L95) # (!B1L97)) # (!B1L96)));
+
+
+--B1L81 is clk:clkassignstage|Count~4 at LCCOMB_X4_Y10_N30
+B1L81 = (B1L19 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L82 is clk:clkassignstage|Count~5 at LCCOMB_X3_Y11_N0
+B1L82 = (B1L13 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L83 is clk:clkassignstage|Count~6 at LCCOMB_X3_Y11_N2
+B1L83 = (B1L11 & (((!B1L96) # (!B1L97)) # (!B1L95)));
+
+
+--B1L84 is clk:clkassignstage|Count~7 at LCCOMB_X4_Y10_N18
+B1L84 = (B1L29 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L85 is clk:clkassignstage|Count~8 at LCCOMB_X4_Y10_N20
+B1L85 = (B1L31 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L86 is clk:clkassignstage|Count~9 at LCCOMB_X4_Y10_N10
+B1L86 = (B1L33 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L87 is clk:clkassignstage|Count~10 at LCCOMB_X3_Y10_N24
+B1L87 = (B1L37 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L88 is clk:clkassignstage|Count~11 at LCCOMB_X3_Y10_N26
+B1L88 = (B1L39 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L89 is clk:clkassignstage|Count~12 at LCCOMB_X3_Y10_N28
+B1L89 = (B1L45 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--B1L90 is clk:clkassignstage|Count~13 at LCCOMB_X3_Y10_N30
+B1L90 = (B1L47 & (((!B1L95) # (!B1L96)) # (!B1L97)));
+
+
+--Lights[6] is Lights[6] at PIN_C1
+--operation mode is output
+
+Lights[6] = OUTPUT(A1L15);
+
+
+--Lights[5] is Lights[5] at PIN_G20
+--operation mode is output
+
+Lights[5] = OUTPUT(A1L17);
+
+
+--Lights[4] is Lights[4] at PIN_G6
+--operation mode is output
+
+Lights[4] = OUTPUT(A1L15);
+
+
+--Lights[3] is Lights[3] at PIN_E3
+--operation mode is output
+
+Lights[3] = OUTPUT(A1L19);
+
+
+--Lights[2] is Lights[2] at PIN_U8
+--operation mode is output
+
+Lights[2] = OUTPUT(A1L21);
+
+
+--Lights[1] is Lights[1] at PIN_F2
+--operation mode is output
+
+Lights[1] = OUTPUT(A1L19);
+
+
+--H is H at PIN_H6
+--operation mode is input
+
+H = INPUT();
+
+
+--L is L at PIN_T8
+--operation mode is input
+
+L = INPUT();
+
+
+--R is R at PIN_Y5
+--operation mode is input
+
+R = INPUT();
+
+
+--clockdiv is clockdiv at PIN_M1
+--operation mode is input
+
+clockdiv = INPUT();
+
+
+
+
+
+--A1L2 is clockdiv~clkctrl at CLKCTRL_G3
+A1L2 = cycloneii_clkctrl(.INCLK[0] = clockdiv) WITH (clock_type = "Global Clock", ena_register_mode = "none");
+
+
+--B1L51 is clk:clkassignstage|clkstate~clkctrl at CLKCTRL_G10
+B1L51 = cycloneii_clkctrl(.INCLK[0] = B1_clkstate) WITH (clock_type = "Global Clock", ena_register_mode = "none");
+
+

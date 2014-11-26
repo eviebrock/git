@@ -1,0 +1,238 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--A1L33 is LessThan1~0 at LCCOMB_X49_Y3_N0
+A1L33 = (Alogic[2] & (((Blogic[1] & !Alogic[1])) # (!Blogic[2]))) # (!Alogic[2] & (!Blogic[2] & (Blogic[1] & !Alogic[1])));
+
+
+--A1L14 is Equal0~0 at LCCOMB_X49_Y3_N18
+A1L14 = (Alogic[2] & (Blogic[2] & (Blogic[1] $ (!Alogic[1])))) # (!Alogic[2] & (!Blogic[2] & (Blogic[1] $ (!Alogic[1]))));
+
+
+--A1L34 is LessThan1~1 at LCCOMB_X49_Y3_N28
+A1L34 = (A1L33) # ((A1L14 & (!Alogic[0] & Blogic[0])));
+
+
+--A1L32 is LessThan0~0 at LCCOMB_X49_Y3_N22
+A1L32 = (Alogic[2] & (Blogic[2] & (!Blogic[1] & Alogic[1]))) # (!Alogic[2] & ((Blogic[2]) # ((!Blogic[1] & Alogic[1]))));
+
+
+--A1L15 is Equal1~0 at LCCOMB_X49_Y3_N24
+A1L15 = (!Alogic[2] & (!Alogic[0] & !Alogic[1]));
+
+
+--A1L35 is Mux4~0 at LCCOMB_X49_Y3_N2
+A1L35 = (A1L38 & ((A1L15) # ((!Operation[1])))) # (!A1L38 & (((A1L34 & Operation[1]))));
+
+
+--A1L36 is Mux4~1 at LCCOMB_X49_Y3_N4
+A1L36 = (Operation[2] & A1L35);
+
+
+--A1L37 is Mux4~2 at LCCOMB_X49_Y3_N6
+A1L37 = (A1L14 & ((Alogic[0] & (Operation[0] $ (Blogic[0]))) # (!Alogic[0] & (!Operation[0] & !Blogic[0]))));
+
+
+--A1L38 is Mux4~3 at LCCOMB_X49_Y3_N16
+A1L38 = (Operation[1] & (((Operation[0])))) # (!Operation[1] & ((A1L37) # ((A1L32 & Operation[0]))));
+
+
+--bcd[0] is bcd[0] at PIN_AB14
+--operation mode is output
+
+bcd[0] = OUTPUT(GND);
+
+
+--bcd[1] is bcd[1] at PIN_E1
+--operation mode is output
+
+bcd[1] = OUTPUT(GND);
+
+
+--bcd[2] is bcd[2] at PIN_D7
+--operation mode is output
+
+bcd[2] = OUTPUT(GND);
+
+
+--bcd[3] is bcd[3] at PIN_V11
+--operation mode is output
+
+bcd[3] = OUTPUT(GND);
+
+
+--leds1[7] is leds1[7] at PIN_L8
+--operation mode is output
+
+leds1[7] = OUTPUT(GND);
+
+
+--leds1[6] is leds1[6] at PIN_N2
+--operation mode is output
+
+leds1[6] = OUTPUT(A1L36);
+
+
+--leds1[5] is leds1[5] at PIN_D2
+--operation mode is output
+
+leds1[5] = OUTPUT(A1L36);
+
+
+--leds1[4] is leds1[4] at PIN_E2
+--operation mode is output
+
+leds1[4] = OUTPUT(A1L36);
+
+
+--leds1[3] is leds1[3] at PIN_F22
+--operation mode is output
+
+leds1[3] = OUTPUT(VCC);
+
+
+--leds1[2] is leds1[2] at PIN_H1
+--operation mode is output
+
+leds1[2] = OUTPUT(VCC);
+
+
+--leds1[1] is leds1[1] at PIN_N6
+--operation mode is output
+
+leds1[1] = OUTPUT(A1L36);
+
+
+--leds2[7] is leds2[7] at PIN_Y5
+--operation mode is output
+
+leds2[7] = OUTPUT(GND);
+
+
+--leds2[6] is leds2[6] at PIN_C1
+--operation mode is output
+
+leds2[6] = OUTPUT(GND);
+
+
+--leds2[5] is leds2[5] at PIN_A11
+--operation mode is output
+
+leds2[5] = OUTPUT(GND);
+
+
+--leds2[4] is leds2[4] at PIN_R10
+--operation mode is output
+
+leds2[4] = OUTPUT(GND);
+
+
+--leds2[3] is leds2[3] at PIN_J4
+--operation mode is output
+
+leds2[3] = OUTPUT(GND);
+
+
+--leds2[2] is leds2[2] at PIN_G6
+--operation mode is output
+
+leds2[2] = OUTPUT(GND);
+
+
+--leds2[1] is leds2[1] at PIN_B13
+--operation mode is output
+
+leds2[1] = OUTPUT(GND);
+
+
+--trueFalse[0] is trueFalse[0] at PIN_J1
+--operation mode is output
+
+trueFalse[0] = OUTPUT(A1L36);
+
+
+--trueFalse[1] is trueFalse[1] at PIN_Y2
+--operation mode is output
+
+trueFalse[1] = OUTPUT(GND);
+
+
+--trueFalse[2] is trueFalse[2] at PIN_AA4
+--operation mode is output
+
+trueFalse[2] = OUTPUT(GND);
+
+
+--trueFalse[3] is trueFalse[3] at PIN_J22
+--operation mode is output
+
+trueFalse[3] = OUTPUT(GND);
+
+
+--Operation[2] is Operation[2] at PIN_Y18
+--operation mode is input
+
+Operation[2] = INPUT();
+
+
+--Alogic[2] is Alogic[2] at PIN_T18
+--operation mode is input
+
+Alogic[2] = INPUT();
+
+
+--Blogic[1] is Blogic[1] at PIN_V19
+--operation mode is input
+
+Blogic[1] = INPUT();
+
+
+--Alogic[1] is Alogic[1] at PIN_V20
+--operation mode is input
+
+Alogic[1] = INPUT();
+
+
+--Blogic[2] is Blogic[2] at PIN_Y20
+--operation mode is input
+
+Blogic[2] = INPUT();
+
+
+--Blogic[0] is Blogic[0] at PIN_U19
+--operation mode is input
+
+Blogic[0] = INPUT();
+
+
+--Alogic[0] is Alogic[0] at PIN_Y19
+--operation mode is input
+
+Alogic[0] = INPUT();
+
+
+--Operation[1] is Operation[1] at PIN_W21
+--operation mode is input
+
+Operation[1] = INPUT();
+
+
+--Operation[0] is Operation[0] at PIN_U18
+--operation mode is input
+
+Operation[0] = INPUT();
+
+
+
+
+

@@ -1,0 +1,149 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--Lights[6] is Lights[6]
+Lights[6] = OUTPUT(WideOr2);
+
+
+--Lights[5] is Lights[5]
+Lights[5] = OUTPUT(WideOr3);
+
+
+--Lights[4] is Lights[4]
+Lights[4] = OUTPUT(WideOr2);
+
+
+--Lights[3] is Lights[3]
+Lights[3] = OUTPUT(WideOr0);
+
+
+--Lights[2] is Lights[2]
+Lights[2] = OUTPUT(WideOr1);
+
+
+--Lights[1] is Lights[1]
+Lights[1] = OUTPUT(WideOr0);
+
+
+--y.RB is y.RB
+y.RB = DFFEAS(A1L30, clock,  ,  ,  ,  ,  ,  ,  );
+
+
+--y.RC is y.RC
+y.RC = DFFEAS(A1L31, clock,  ,  ,  ,  ,  ,  ,  );
+
+
+--y.LR is y.LR
+y.LR = DFFEAS(A1L16, clock,  ,  ,  ,  ,  ,  ,  );
+
+
+--WideOr2 is WideOr2
+WideOr2 = (y.RB) # ((y.RC) # (y.LR));
+
+
+--y.RA is y.RA
+y.RA = DFFEAS(A1L32, clock,  ,  ,  ,  ,  ,  ,  );
+
+
+--WideOr3 is WideOr3
+WideOr3 = (y.RC) # ((y.LR) # (y.RA));
+
+
+--y.LB is y.LB
+y.LB = DFFEAS(A1L33, clock,  ,  ,  ,  ,  ,  ,  );
+
+
+--y.LC is y.LC
+y.LC = DFFEAS(A1L34, clock,  ,  ,  ,  ,  ,  ,  );
+
+
+--WideOr0 is WideOr0
+WideOr0 = (y.LR) # ((y.LB) # (y.LC));
+
+
+--y.LA is y.LA
+y.LA = DFFEAS(A1L35, clock,  ,  ,  ,  ,  ,  ,  );
+
+
+--WideOr1 is WideOr1
+WideOr1 = (y.LR) # ((y.LC) # (y.LA));
+
+
+--R is R
+R = INPUT();
+
+
+--L is L
+L = INPUT();
+
+
+--H is H
+H = INPUT();
+
+
+--A1L30 is y~13
+A1L30 = (y.RA & (R & (!L & !H)));
+
+
+--clock is clock
+clock = INPUT();
+
+
+--A1L31 is y~14
+A1L31 = (y.RB & (R & (!L & !H)));
+
+
+--A1L16 is Selector1~0
+A1L16 = (H & !y.LR);
+
+
+--y.IDLE is y.IDLE
+y.IDLE = DFFEAS(A1L15, clock,  ,  ,  ,  ,  ,  ,  );
+
+
+--A1L32 is y~15
+A1L32 = (R & (!L & (!H & !y.IDLE)));
+
+
+--A1L33 is y~16
+A1L33 = (y.LA & (L & (!R & !H)));
+
+
+--A1L34 is y~17
+A1L34 = (y.LB & (L & (!R & !H)));
+
+
+--A1L35 is y~18
+A1L35 = (L & (!R & (!H & !y.IDLE)));
+
+
+--A1L11 is Selector0~0
+A1L11 = (y.IDLE & (!y.RB & (!y.RA & !L)));
+
+
+--A1L12 is Selector0~1
+A1L12 = (y.IDLE & (!y.LB & !y.LA));
+
+
+--A1L13 is Selector0~2
+A1L13 = (!y.RB & (!y.RC & (!y.RA & !y.LC)));
+
+
+--A1L14 is Selector0~3
+A1L14 = (A1L11) # ((R & ((L))) # (!R & ((A1L12) # (!L))));
+
+
+--A1L15 is Selector0~4
+A1L15 = (A1L12 & (!A1L13 & ((H) # (!A1L14)))) # (!A1L12 & (((H)) # (!A1L14)));
+
+

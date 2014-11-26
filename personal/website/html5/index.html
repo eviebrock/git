@@ -1,0 +1,388 @@
+<!doctype html>
+
+<html lang="en">
+
+<!--
+
+Thanks for taking the time to view the code! This website was created with the help of 
+
+	1. gedit
+	2. W3Schools
+	3. Stack Overflow
+
+- Erich Viebrock
+
+-->
+
+	<head>
+		<title> Erich Viebrock </title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type"text/css" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/colorbox.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>-->
+		<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+		<script type="text/javascript" src="js/smooth_scroll.js"></script>
+		<script type="text/javascript" src="js/bind_scroll_event.js"></script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</head>
+	<body id="top">
+		<div id="headerBar">
+			<nav>
+				<a href="#top" id="erich" class="glow"> Erich Viebrock </a>
+				<a href="pdf/R&#233;sum&#233;.pdf" class="navtab" id="resume_tab" style="padding-right:80px" target="_blank"> R&#201;SUM&#201; </a>
+				<a href="#contact" class="navtab"> CONTACT </a>
+				<a href="#college" class="navtab"> COLLEGE </a>
+				<a href="#experience" class="navtab"> EXPERIENCE </a>
+				<a href="#about" class="navtab"> ABOUT </a>
+			</nav>
+		</div>
+		</br> </br> </br> </br>
+		<section id="intro">
+		</section>
+		<section class="white_background" id="about">
+			<div id="container">
+				<article>
+					<header>
+						<img src="img/about_header.png" draggable="false"/>
+					</header>
+					<div id="portrait">
+						<img src="img/polo_poloroid.png" draggable="false"/>
+					</div>
+					<div>
+						<p>
+							Welcome! Here you will find all the boilerplate information you may (or may not) want to know about me. I am a recent graduate of University of the Pacific with a Bachelor of Science in Computer Engineering, and a Minor in Computer Science.
+						</p>
+						<p>
+							My skills in engineering include robotics, object-oriented programming, multi-threading, data structures, and networking. From school and industry projects, I have acquired unique experience in nearly all facets of the software development stack...from 2D 30-FPS GUI application layer programs in C++, to creating custom multi-threaded servers in Python, and even writing driver-level Arduino C for an obstacle-detecting robot!
+						</p>
+						<p>
+							If you have any questions or inquiries in regards to previous, current, or future work, please don't hesitate to contact me!
+						</p>
+						 
+					</div>
+					</br>
+					<div id="skillz">
+						<center> <img src="img/code_c++.png" draggable="false"/> </center>
+						<center> <h3> C++/C </h3> </center>
+						<p>
+							I was raised on C++. I wrote my first <font face="courier new"> hello_world </font> program using this language, and now, I am working in the industry using C++ to help create a robotic surgeon.
+						</p>
+					</div>
+					<div id="skillz">
+						<center> <img src="img/code_python.png" draggable="false"/> </center>
+						<center> <h3> Python </h3> </center>
+						<p>
+							From using Python, I quickly learned "There's a library for that!" Now, I choose developing with libraries instead of building <i> everything </i> from scratch.
+						</p>
+					</div>
+					<div id="skillz">
+						<center> <img src="img/code_html.png" draggable="false"/> </center>
+						<center> <h3> HTML/CSS </h3> </center>
+						<p>
+							What's the best part about front-end web development, you say? <b> No error messages! </b> Of course, troubleshooting bugs can be quite tricky at times...
+						</p>
+					</div>
+				</article>
+			</div>
+			</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> 
+		</section>
+		<section class="gray_background" id="experience">
+			<div id="container">
+				<article>
+					<header id="work">
+						<img src="img/work_header.png" draggable="false"/>
+					</header>
+					<div>
+						<a href="http://www.thinksurgical.com" target="_blank">
+							<img src="img/think_logo.png" id="company_logo" class="color" draggable="false"/>
+						</a>
+						<p id="company_text">
+							<h2> Software Engineer </h2>
+							<h3> Think Surgical, Inc. </br>
+							Fremont, CA </br>
+							August 2014 - Present </h3>
+						</p>
+						<ul id="company_text" class="square">
+							<li class="list_space"> 
+								Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+							</li>
+							<li class="list_space">
+								Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+							</li>
+							<li class="list_space">
+								Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+							</li>
+							<li class="list_space">
+								Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+							</li>
+						</ul>
+					</div>
+					<div>
+						<a href="http://www.thinksurgical.com" target="_blank">
+							<img src="img/think_logo.png" id="company_logo" class="color" draggable="false"/>
+						</a>
+						<p id="company_text">
+							<h2> Software Test Engineer </h2>
+							<h3> Think Surgical, Inc. </br>
+							Fremont, CA </br>
+							January 2014 - August 2014 </h3>
+						</p>
+						<ul id="company_text" class="square">
+							<li class="list_space"> 
+								Responsible for designing and executing risk-based software integration level tests covering Diagnostics and Calibration functionality of a robotic surgical assistant
+							</li>
+							<li class="list_space">
+								Developed automated white-box tests in C++ on a QNX platform. Designed and executed additional manual tests for system validation. Work was completed on time, under tight scheduling conditions
+							</li>
+							<li class="list_space">
+								Trained company personnel on proper use for new software features of a robotic surgical assistant, including developers, electrical engineers, and clinical trainers
+							</li>
+							<li class="list_space">
+								Assisted with preparing international standard IEC 62304 compliant test documentation for an FDA 510(k) submission
+							</li>
+						</ul>
+					</div>
+					<div>
+						<a href="http://www.thinksurgical.com" target="_blank">
+							<img src="img/think_logo.png" id="company_logo" class="color" draggable="false"/>
+						</a>
+						<p id="company_text">
+							<h2> Software Test Engineer Intern </h2>
+							<h3> Think Surgical, Inc. </br>
+							Fremont, CA </br>
+							May 2013 - August 2013 </h3>
+						</p>
+						<ul id="company_text" class="square">
+							<li class="list_space"> 
+								Documented requirements and performed manual black box testing trials to enhance product quality of a robotic surgical assistant
+							</li>
+							<li class="list_space">
+								Implemented and managed an email notification system for an automated testing system integrated with commercial static analysis tools, and made front-end changes for usability
+							</li>
+							<li class="list_space">
+								Established specifications and validation procedures for off-the-shelf software to ensure FDA and ISO compliancy
+							</li>
+						</ul>
+					</div>
+					<div>
+						<a href="http://www.jst.com" target="_blank">
+							<img src="img/jst_logo.png" id="company_logo" class="color" draggable="false"/>
+						</a>
+						<p id="company_text">
+							<h2> Electrical Engineer Intern </h2>
+							<h3> JST Corporation </br>
+							Harrisburg, PA </br>
+							January 2012 - August 2012 </h3>
+						</p>
+						<ul id="company_text" class="square">
+							<li class="list_space"> 
+								Wired and tested electrical control panel I/O by varying PLC outputs with RSLogix 5000
+							</li>
+							<li class="list_space">
+								Backed up and recovered information on industrial HMIs used for high speed connector assembly machines
+							</li>
+							<li class="list_space">
+								Updated electrical schematics with design changes of different types of servo motors ranging from linear, direct drive, and rotary motors with gear boxes via AutoCAD Electrical
+							</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+			</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
+		</section>
+		<section class="white_background" id="college">
+			<div id="container">
+				<article>
+					<header>
+						<img src="img/college_header.png" draggable="false"/>
+					</header>
+
+					<ul>
+						<li class="inline">
+							<figure class="cap-bot">
+								<a class ="gallery" href="img/robot.png" title="Senior Project">
+									<img src="img/robot.png" alt="" draggable="false"/>
+								</a>
+								<figcaption>
+									Senior Project
+								</figcaption>
+							</figure>						
+						</li>
+						<li class="inline">
+							<figure class="cap-bot">
+								<a href="img/chat.png" data-lightbox="projects" data-title="Networking">
+									<img src="img/chat.png" alt="" draggable="false"/>
+								</a>
+								<figcaption>
+									Networking
+								</figcaption>
+							</figure>						
+						</li>
+						<li class="inline">
+							<!--<figure class="cap-bot">
+								<a class='ajax' href="../content/ajax.html" title="Homer Defined">
+									<img src="img/atari.png" alt="" draggable="false"/>
+								</a>
+								<figcaption>
+									Data Structures
+								</figcaption>
+							</figure>-->
+							<a class='ajax' href="../content/ajax.html" title="Homer Defined">Outside HTML (Ajax)</a>
+						</li>
+						<li class="inline">
+							<figure class="cap-bot">
+								<a href="img/mips_cpu.png" data-lightbox="projects" data-title="Computer Architecture">
+									<img src="img/mips_cpu.png" alt="" draggable="false"/>
+								</a>
+								<figcaption>
+									Computer Architecture
+								</figcaption>
+							</figure>						
+						</li>
+						<li class="inline">
+							<figure class="cap-bot">
+								<a href="img/mp3.png" data-lightbox="projects" data-title="Microcontrollers">
+									<img src="img/mp3.png" alt="" draggable="false"/>
+								</a>
+								<figcaption>
+									Microcontrollers
+								</figcaption>
+							</figure>						
+						</li>
+						<li class="inline">
+							<figure class="cap-bot">
+								<a href="img/ford.png" data-lightbox="projects" data-title="Advanced Digital Logic">
+									<img src="img/ford.png" alt="" draggable="false"/>
+								</a>
+								<figcaption>
+									Advanced Digital Logic
+								</figcaption>
+							</figure>						
+						</li>
+					</ul>
+				</article>
+			</div>
+			</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> 
+		</section>
+		<section class="gray_background" id="contact">
+			<div id="container">
+				<article>
+					<header id="contact_me">
+						<img src="img/contact_header.png" draggable="false"/>
+					</header>
+					<div id="float_left" style="width:600px">
+						<h3> The Easy Way </h3>
+						<form>
+							<div id="user_input">
+								<label> Name </label>
+								<input type="text" name="name" size="40" id="user_credentials">
+							</div>
+							<div id="user_input">
+								<label> Email </label>
+								<input type="text" name="email" size="40" id="user_credentials">
+							</div>
+							<div id="user_input">
+								<label> Phone </label>
+								<input type="text" name="phone" size="40" id="user_credentials"> </br>
+							</div>
+							<div id="user_input">
+								<label> Message </label>
+								<textarea name="message" cols="40" rows="5" id="user_message"> </textarea>
+							</div>
+							<div style="padding-left:80px"> <input type="submit" value="Send" class="send-button"> </div>
+						</form>
+					</div>
+					<div id="float_right" style="width:210px">
+						<h3> The Other Way </h3>
+						<p>
+							Erich Viebrock </br>
+							Milpitas, CA </br>
+							(916) 247-2265 </br>
+							<a href="mailto:erich.viebrock@gmail.com" id="email_link"> erich.viebrock@gmail.com </a>
+						</p>
+					</div>
+					</br> </br> </br> </br> </br> </br> </br> </br> 
+					<div id="float_right" style="width:210px">
+						<h3> Conversation Topics </h3>
+						<p>
+							Keyboard shortcuts </br>
+							Skiing </br>
+							Tic-tac-toe </br>
+							Arrested Development </br>
+							Louis C.K.
+						</p>
+					</div>
+				</article>
+			</div>
+			</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
+		</section>
+		<div id="footerBar">
+			<footer id="container">
+				<a id="footcopyright"> Erich Viebrock &#169; 2014 </a>
+				</br>
+				<a href="https://github.com/eviebrock/git" class="foottab" id="github_icon" draggable="false" target="_blank"></a>
+				<a href="http://www.linkedin.com/in/eviebrock" class="foottab" id="linkedin_icon" draggable="false" target="_blank"></a>				
+				<a href="mailto:erich.viebrock@gmail.com" class="foottab" id="email_icon" draggable="false" target="_blank"></a>
+			</footer>
+		</div>
+	</body>
+</html>

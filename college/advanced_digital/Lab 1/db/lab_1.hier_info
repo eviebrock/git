@@ -1,0 +1,69 @@
+|lab_1
+L => process_0.IN0
+L => y.OUTPUTSELECT
+L => y.OUTPUTSELECT
+L => y.DATAA
+L => y.OUTPUTSELECT
+L => y.OUTPUTSELECT
+L => y.OUTPUTSELECT
+L => y.OUTPUTSELECT
+L => y.DATAA
+R => process_0.IN1
+R => y.DATAA
+R => y.OUTPUTSELECT
+R => y.OUTPUTSELECT
+R => y.OUTPUTSELECT
+R => y.DATAA
+R => y.OUTPUTSELECT
+R => y.DATAA
+R => y.DATAA
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.OUTPUTSELECT
+H => y.DATAA
+clockdiv => clk:clkassignstage.iclk
+Lights[6] << Lights.DB_MAX_OUTPUT_PORT_TYPE
+Lights[5] << Lights.DB_MAX_OUTPUT_PORT_TYPE
+Lights[4] << Lights.DB_MAX_OUTPUT_PORT_TYPE
+Lights[3] << Lights.DB_MAX_OUTPUT_PORT_TYPE
+Lights[2] << Lights.DB_MAX_OUTPUT_PORT_TYPE
+Lights[1] << Lights.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab_1|clk:clkassignstage
+iclk => clkstate.CLK
+iclk => Count[0].CLK
+iclk => Count[1].CLK
+iclk => Count[2].CLK
+iclk => Count[3].CLK
+iclk => Count[4].CLK
+iclk => Count[5].CLK
+iclk => Count[6].CLK
+iclk => Count[7].CLK
+iclk => Count[8].CLK
+iclk => Count[9].CLK
+iclk => Count[10].CLK
+iclk => Count[11].CLK
+iclk => Count[12].CLK
+iclk => Count[13].CLK
+iclk => Count[14].CLK
+iclk => Count[15].CLK
+iclk => Count[16].CLK
+iclk => Count[17].CLK
+iclk => Count[18].CLK
+iclk => Count[19].CLK
+iclk => Count[20].CLK
+iclk => Count[21].CLK
+iclk => Count[22].CLK
+iclk => Count[23].CLK
+oclk <= clkstate.DB_MAX_OUTPUT_PORT_TYPE
+
+

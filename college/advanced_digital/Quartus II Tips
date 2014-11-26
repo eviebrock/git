@@ -1,0 +1,5 @@
+Equations: Tools->Options->General->Processing->"Auto Generate Equations"
+
+State Machine Type: Assignments->Settings->Analysis&Synthesis->More Settings->"State Machine Processing"
+
+State Machine Viewer: Tools->Netlist Viewers

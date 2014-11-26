@@ -1,0 +1,482 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind_selection.out' (creator: callgrind-3.7.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 10002627850
+Trigger: Program termination
+Profiled target:  ./sorting_program selection (PID 3946, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       100
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+            Ir 
+--------------------------------------------------------------------------------
+70,014,935,439  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+            Ir  file:function
+--------------------------------------------------------------------------------
+70,004,514,985  your_functions.c:selectionSort [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+     4,100,000  /build/buildd/eglibc-2.15/stdlib/random_r.c:random_r [/lib/i386-linux-gnu/libc-2.15.so]
+     2,300,000  /build/buildd/eglibc-2.15/stdlib/random.c:random [/lib/i386-linux-gnu/libc-2.15.so]
+     1,500,002  helper_functions.c:verifySort [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+     1,000,018  helper_functions.c:initArray [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+       800,000  /build/buildd/eglibc-2.15/stdlib/rand.c:rand [/lib/i386-linux-gnu/libc-2.15.so]
+       600,162  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/strcat.S:0x00126c73 [/lib/i386-linux-gnu/libc-2.15.so]
+        23,400  /build/buildd/eglibc-2.15/elf/dl-lookup.c:do_lookup_x [/lib/i386-linux-gnu/ld-2.15.so]
+        20,193  /build/buildd/eglibc-2.15/elf/dl-lookup.c:_dl_lookup_symbol_x [/lib/i386-linux-gnu/ld-2.15.so]
+        12,603  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-machine.h:_dl_relocate_object
+         9,585  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../strcmp.S:strcmp [/lib/i386-linux-gnu/ld-2.15.so]
+         8,994  /build/buildd/eglibc-2.15/elf/do-rel.h:_dl_relocate_object
+         5,418  /build/buildd/eglibc-2.15/elf/dl-lookup.c:check_match.8823 [/lib/i386-linux-gnu/ld-2.15.so]
+         3,492  /build/buildd/eglibc-2.15/stdlib/bsearch.c:bsearch [/lib/i386-linux-gnu/libc-2.15.so]
+         2,180  /build/buildd/eglibc-2.15/elf/../elf/dl-sysdep.c:_dl_important_hwcaps [/lib/i386-linux-gnu/ld-2.15.so]
+         2,142  /build/buildd/eglibc-2.15/string/../sysdeps/x86_64/cacheinfo.c:intel_02_known_compare [/lib/i386-linux-gnu/libc-2.15.so]
+         1,497  /build/buildd/eglibc-2.15/elf/dl-version.c:_dl_check_map_versions [/lib/i386-linux-gnu/ld-2.15.so]
+         1,322  /build/buildd/eglibc-2.15/elf/dl-misc.c:_dl_name_match_p [/lib/i386-linux-gnu/ld-2.15.so]
+         1,235  /build/buildd/eglibc-2.15/elf/dl-minimal.c:strsep [/lib/i386-linux-gnu/ld-2.15.so]
+         1,199  /build/buildd/eglibc-2.15/elf/dl-load.c:open_path [/lib/i386-linux-gnu/ld-2.15.so]
+         1,185  /build/buildd/eglibc-2.15/elf/dl-load.c:_dl_map_object_from_fd [/lib/i386-linux-gnu/ld-2.15.so]
+         1,125  /build/buildd/eglibc-2.15/elf/dl-deps.c:_dl_map_object_deps [/lib/i386-linux-gnu/ld-2.15.so]
+         1,036  /build/buildd/eglibc-2.15/string/../sysdeps/x86_64/cacheinfo.c:intel_check_word [/lib/i386-linux-gnu/libc-2.15.so]
+         1,004  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../memcmp.S:0x00018b9b [/lib/i386-linux-gnu/ld-2.15.so]
+           917  /build/buildd/eglibc-2.15/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.1 [/lib/i386-linux-gnu/libc-2.15.so]
+           888  /build/buildd/eglibc-2.15/elf/dl-load.c:open_verify [/lib/i386-linux-gnu/ld-2.15.so]
+           884  /build/buildd/eglibc-2.15/elf/dl-cache.c:_dl_cache_libcmp [/lib/i386-linux-gnu/ld-2.15.so]
+           866  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../../i586/strlen.S:strlen [/lib/i386-linux-gnu/ld-2.15.so]
+           835  /build/buildd/eglibc-2.15/elf/dl-reloc.c:_dl_relocate_object [/lib/i386-linux-gnu/ld-2.15.so]
+           830  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../mempcpy.S:mempcpy [/lib/i386-linux-gnu/ld-2.15.so]
+           819  /build/buildd/eglibc-2.15/elf/rtld.c:dl_main [/lib/i386-linux-gnu/ld-2.15.so]
+           747  /build/buildd/eglibc-2.15/libio/fileops.c:_IO_file_overflow@@GLIBC_2.1 [/lib/i386-linux-gnu/libc-2.15.so]
+           709  /build/buildd/eglibc-2.15/elf/dl-minimal.c:__libc_memalign [/lib/i386-linux-gnu/ld-2.15.so]
+           696  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../../i586/strchr.S:index [/lib/i386-linux-gnu/ld-2.15.so]
+           601  /build/buildd/eglibc-2.15/elf/dl-load.c:_dl_init_paths [/lib/i386-linux-gnu/ld-2.15.so]
+           591  /build/buildd/eglibc-2.15/elf/dl-object.c:_dl_new_object [/lib/i386-linux-gnu/ld-2.15.so]
+           541  /build/buildd/eglibc-2.15/elf/dynamic-link.h:_dl_map_object_from_fd
+           523  /build/buildd/eglibc-2.15/elf/../elf/dl-sysdep.c:_dl_sysdep_start [/lib/i386-linux-gnu/ld-2.15.so]
+           490  /build/buildd/eglibc-2.15/elf/dl-runtime.c:_dl_fixup [/lib/i386-linux-gnu/ld-2.15.so]
+           453  /build/buildd/eglibc-2.15/elf/dl-load.c:_dl_map_object [/lib/i386-linux-gnu/ld-2.15.so]
+           401  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../memcmp.S:bcmp [/lib/i386-linux-gnu/ld-2.15.so]
+           361  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../memcpy.S:memcpy [/lib/i386-linux-gnu/ld-2.15.so]
+           344  /build/buildd/eglibc-2.15/elf/dl-tls.c:_dl_allocate_tls_storage [/lib/i386-linux-gnu/ld-2.15.so]
+           323  /build/buildd/eglibc-2.15/elf/dl-environ.c:_dl_next_ld_env_entry [/lib/i386-linux-gnu/ld-2.15.so]
+           304  /build/buildd/eglibc-2.15/stdio-common/vfprintf.c:vfprintf [/lib/i386-linux-gnu/libc-2.15.so]
+           302  /build/buildd/eglibc-2.15/io/../sysdeps/unix/syscall-template.S:open [/lib/i386-linux-gnu/ld-2.15.so]
+           297  /build/buildd/eglibc-2.15/elf/dl-cache.c:_dl_load_cache_lookup [/lib/i386-linux-gnu/ld-2.15.so]
+           276  /build/buildd/eglibc-2.15/elf/dl-version.c:match_symbol [/lib/i386-linux-gnu/ld-2.15.so]
+           268  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../../i586/strlen.S:__GI_strlen [/lib/i386-linux-gnu/libc-2.15.so]
+           259  /build/buildd/eglibc-2.15/elf/dl-fini.c:_dl_fini [/lib/i386-linux-gnu/ld-2.15.so]
+           259  /build/buildd/eglibc-2.15/elf/dynamic-link.h:dl_main
+           256  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../memset.S:memset [/lib/i386-linux-gnu/ld-2.15.so]
+           253  /build/buildd/eglibc-2.15/io/../sysdeps/unix/sysv/linux/xstat64.c:__xstat64 [/lib/i386-linux-gnu/ld-2.15.so]
+           250  /build/buildd/eglibc-2.15/libio/genops.c:_IO_default_xsputn [/lib/i386-linux-gnu/libc-2.15.so]
+           233  /build/buildd/eglibc-2.15/elf/dynamic-link.h:_dl_start
+           230  /build/buildd/eglibc-2.15/misc/../sysdeps/unix/sysv/linux/i386/mmap.S:mmap [/lib/i386-linux-gnu/libc-2.15.so]
+           221  /build/buildd/eglibc-2.15/elf/rtld.c:process_envvars [/lib/i386-linux-gnu/ld-2.15.so]
+           220  /build/buildd/eglibc-2.15/elf/dl-minimal.c:malloc [/lib/i386-linux-gnu/ld-2.15.so]
+           218  /build/buildd/eglibc-2.15/elf/dl-init.c:call_init [/lib/i386-linux-gnu/ld-2.15.so]
+           216  /build/buildd/eglibc-2.15/libio/ioputs.c:puts [/lib/i386-linux-gnu/libc-2.15.so]
+           207  /build/buildd/eglibc-2.15/string/../sysdeps/i386/strchrnul.S:strchrnul [/lib/i386-linux-gnu/libc-2.15.so]
+           205  /build/buildd/eglibc-2.15/elf/rtld.c:_dl_start [/lib/i386-linux-gnu/ld-2.15.so]
+           201  /build/buildd/eglibc-2.15/elf/dl-fini.c:_dl_sort_fini [/lib/i386-linux-gnu/ld-2.15.so]
+           196  /build/buildd/eglibc-2.15/string/../sysdeps/x86_64/cacheinfo.c:handle_intel [/lib/i386-linux-gnu/libc-2.15.so]
+           193  /build/buildd/eglibc-2.15/elf/dl-load.c:fillin_rpath [/lib/i386-linux-gnu/ld-2.15.so]
+           192  /build/buildd/eglibc-2.15/libio/fileops.c:new_do_write [/lib/i386-linux-gnu/libc-2.15.so]
+           175  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-machine.h:_dl_start
+           168  /build/buildd/eglibc-2.15/elf/dl-minimal.c:calloc [/lib/i386-linux-gnu/ld-2.15.so]
+           156  /build/buildd/eglibc-2.15/libio/fileops.c:_IO_file_write@@GLIBC_2.1 [/lib/i386-linux-gnu/libc-2.15.so]
+           151  /build/buildd/eglibc-2.15/elf/do-rel.h:_dl_start
+           140  /build/buildd/eglibc-2.15/elf/dl-lookup.c:_dl_setup_hash [/lib/i386-linux-gnu/ld-2.15.so]
+           130  /build/buildd/eglibc-2.15/elf/dl-object.c:_dl_add_to_namespace_list [/lib/i386-linux-gnu/ld-2.15.so]
+           125  /build/buildd/eglibc-2.15/string/../sysdeps/x86_64/cacheinfo.c:init_cacheinfo [/lib/i386-linux-gnu/libc-2.15.so]
+           120  /build/buildd/eglibc-2.15/elf/dl-error.c:_dl_catch_error [/lib/i386-linux-gnu/ld-2.15.so]
+           110  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../../strrchr.S:__GI_strrchr [/lib/i386-linux-gnu/libc-2.15.so]
+           108  /build/buildd/eglibc-2.15/elf/dl-reloc.c:_dl_protect_relro [/lib/i386-linux-gnu/ld-2.15.so]
+           106  /build/buildd/eglibc-2.15/libio/genops.c:_IO_cleanup [/lib/i386-linux-gnu/libc-2.15.so]
+            99  /build/buildd/eglibc-2.15/elf/dl-debug.c:_dl_debug_initialize [/lib/i386-linux-gnu/ld-2.15.so]
+            97  /build/buildd/eglibc-2.15/libio/genops.c:_IO_flush_all_lockp [/lib/i386-linux-gnu/libc-2.15.so]
+            96  /build/buildd/eglibc-2.15/stdio-common/_itoa.c:_itoa_word [/lib/i386-linux-gnu/libc-2.15.so]
+            90  /build/buildd/eglibc-2.15/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_discover_osversion [/lib/i386-linux-gnu/ld-2.15.so]
+            89  /build/buildd/eglibc-2.15/elf/dl-tls.c:_dl_allocate_tls_init [/lib/i386-linux-gnu/ld-2.15.so]
+            88  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../mempcpy.S:__GI_mempcpy [/lib/i386-linux-gnu/libc-2.15.so]
+            83  /build/buildd/eglibc-2.15/elf/dl-tls.c:_dl_determine_tlsoffset [/lib/i386-linux-gnu/ld-2.15.so]
+            82  /build/buildd/eglibc-2.15/elf/dl-init.c:_dl_init [/lib/i386-linux-gnu/ld-2.15.so]
+            79  sorting.c:main [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+            77  /build/buildd/eglibc-2.15/libio/fileops.c:_IO_do_write@@GLIBC_2.1 [/lib/i386-linux-gnu/libc-2.15.so]
+            77  /build/buildd/eglibc-2.15/elf/dl-version.c:_dl_check_all_versions [/lib/i386-linux-gnu/ld-2.15.so]
+            77  /build/buildd/eglibc-2.15/elf/rtld.c:init_tls.part.3 [/lib/i386-linux-gnu/ld-2.15.so]
+            66  /build/buildd/eglibc-2.15/csu/../sysdeps/x86_64/multiarch/init-arch.c:__init_cpu_features [/lib/i386-linux-gnu/libc-2.15.so]
+            66  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-trampoline.S:_dl_runtime_resolve [/lib/i386-linux-gnu/ld-2.15.so]
+            63  /build/buildd/eglibc-2.15/csu/libc-start.c:(below main) [/lib/i386-linux-gnu/libc-2.15.so]
+            62  /build/buildd/eglibc-2.15/libio/filedoalloc.c:_IO_file_doallocate [/lib/i386-linux-gnu/libc-2.15.so]
+            57  /build/buildd/eglibc-2.15/libio/genops.c:__overflow [/lib/i386-linux-gnu/libc-2.15.so]
+            56  /build/buildd/eglibc-2.15/stdlib/exit.c:__run_exit_handlers [/lib/i386-linux-gnu/libc-2.15.so]
+            54  /build/buildd/eglibc-2.15/elf/dl-deps.c:openaux [/lib/i386-linux-gnu/ld-2.15.so]
+            50  /build/buildd/eglibc-2.15/stdlib/cxa_atexit.c:__new_exitfn [/lib/i386-linux-gnu/libc-2.15.so]
+            50  /build/buildd/eglibc-2.15/elf/dl-load.c:local_strdup [/lib/i386-linux-gnu/ld-2.15.so]
+            48  /build/buildd/eglibc-2.15/io/../sysdeps/unix/syscall-template.S:access [/lib/i386-linux-gnu/ld-2.15.so]
+            46  /build/buildd/eglibc-2.15/io/../sysdeps/unix/syscall-template.S:0x00018b97 [/lib/i386-linux-gnu/ld-2.15.so]
+            45  /build/buildd/eglibc-2.15/stdlib/cxa_finalize.c:__cxa_finalize [/lib/i386-linux-gnu/libc-2.15.so]
+            45  /build/buildd/eglibc-2.15/elf/dl-misc.c:_dl_sysdep_read_whole_file [/lib/i386-linux-gnu/ld-2.15.so]
+            44  /build/buildd/eglibc-2.15/libio/genops.c:_IO_setb [/lib/i386-linux-gnu/libc-2.15.so]
+            42  /build/buildd/eglibc-2.15/libio/libioP.h:puts
+            40  /build/buildd/eglibc-2.15/io/../sysdeps/unix/syscall-template.S:__write_nocancel [/lib/i386-linux-gnu/libc-2.15.so]
+            40  /build/buildd/eglibc-2.15/misc/../sysdeps/unix/syscall-template.S:mprotect [/lib/i386-linux-gnu/ld-2.15.so]
+            39  /build/buildd/eglibc-2.15/elf/dl-load.c:cache_rpath [/lib/i386-linux-gnu/ld-2.15.so]
+            39  /build/buildd/eglibc-2.15/libio/genops.c:_IO_default_setbuf [/lib/i386-linux-gnu/libc-2.15.so]
+            39  /build/buildd/eglibc-2.15/io/../sysdeps/unix/sysv/linux/fxstat64.c:__fxstat64 [/lib/i386-linux-gnu/ld-2.15.so]
+            39  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-procinfo.h:_dl_load_cache_lookup
+            33  /build/buildd/eglibc-2.15/csu/../sysdeps/unix/sysv/linux/init-first.c:_init [/lib/i386-linux-gnu/libc-2.15.so]
+            33  /build/buildd/eglibc-2.15/setjmp/../sysdeps/i386/setjmp.S:__sigsetjmp [/lib/i386-linux-gnu/ld-2.15.so]
+            32  /build/buildd/eglibc-2.15/elf/rtld.c:do_preload [/lib/i386-linux-gnu/ld-2.15.so]
+            31  /build/buildd/eglibc-2.15/elf/dl-error.c:_dl_receive_error [/lib/i386-linux-gnu/ld-2.15.so]
+            29  ???:0x00000370 [/usr/lib/valgrind/vgpreload_core-x86-linux.so]
+            28  /build/buildd/eglibc-2.15/misc/init-misc.c:__init_misc [/lib/i386-linux-gnu/libc-2.15.so]
+            28  /build/buildd/eglibc-2.15/malloc/malloc.c:free [/lib/i386-linux-gnu/libc-2.15.so]
+            26  /build/buildd/eglibc-2.15/libio/fileops.c:_IO_file_setbuf@@GLIBC_2.1 [/lib/i386-linux-gnu/libc-2.15.so]
+            25  /build/buildd/eglibc-2.15/ctype/ctype-info.c:__ctype_init [/lib/i386-linux-gnu/libc-2.15.so]
+            24  /build/buildd/eglibc-2.15/io/../sysdeps/unix/syscall-template.S:close [/lib/i386-linux-gnu/ld-2.15.so]
+            24  /build/buildd/eglibc-2.15/elf/dl-tls.c:allocate_dtv [/lib/i386-linux-gnu/ld-2.15.so]
+            24  /build/buildd/eglibc-2.15/elf/dl-tls.c:_dl_add_to_slotinfo [/lib/i386-linux-gnu/ld-2.15.so]
+            24  ???:0x000011d0 [/lib/i386-linux-gnu/ld-2.15.so]
+            22  /build/buildd/eglibc-2.15/stdlib/cxa_atexit.c:__internal_atexit [/lib/i386-linux-gnu/libc-2.15.so]
+            22  /build/buildd/eglibc-2.15/elf/dl-load.c:expand_dynamic_string_token [/lib/i386-linux-gnu/ld-2.15.so]
+            21  /build/buildd/eglibc-2.15/libio/genops.c:_IO_doallocbuf [/lib/i386-linux-gnu/libc-2.15.so]
+            21  ???:__libc_csu_init [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+            21  /build/buildd/eglibc-2.15/elf/../misc/sbrk.c:sbrk [/lib/i386-linux-gnu/ld-2.15.so]
+            20  /build/buildd/eglibc-2.15/libio/fileops.c:_IO_file_sync@@GLIBC_2.1 [/lib/i386-linux-gnu/libc-2.15.so]
+            20  /build/buildd/eglibc-2.15/io/../sysdeps/unix/syscall-template.S:read [/lib/i386-linux-gnu/ld-2.15.so]
+            20  /build/buildd/eglibc-2.15/elf/../sysdeps/unix/sysv/linux/i386/brk.c:brk [/lib/i386-linux-gnu/ld-2.15.so]
+            18  /build/buildd/eglibc-2.15/nptl/../nptl/sysdeps/unix/sysv/linux/unregister-atfork.c:__unregister_atfork [/lib/i386-linux-gnu/libc-2.15.so]
+            18  ???:0x08048410 [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+            18  /build/buildd/eglibc-2.15/elf/dl-tls.c:_dl_next_tls_modid [/lib/i386-linux-gnu/ld-2.15.so]
+            18  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-machine.h:_dl_fixup
+            18  /build/buildd/eglibc-2.15/elf/rtld.c:security_init [/lib/i386-linux-gnu/ld-2.15.so]
+            16  /build/buildd/eglibc-2.15/elf/rtld.c:version_check_doit [/lib/i386-linux-gnu/ld-2.15.so]
+            16  /build/buildd/eglibc-2.15/setjmp/../sysdeps/i386/bsd-_setjmp.S:_setjmp [/lib/i386-linux-gnu/libc-2.15.so]
+            16  /build/buildd/eglibc-2.15/elf/dl-cache.c:_dl_unload_cache [/lib/i386-linux-gnu/ld-2.15.so]
+            16  /build/buildd/eglibc-2.15/stdlib/cxa_atexit.c:__cxa_atexit [/lib/i386-linux-gnu/libc-2.15.so]
+            16  /build/buildd/eglibc-2.15/elf/rtld.c:_dl_initial_error_catch_tsd [/lib/i386-linux-gnu/ld-2.15.so]
+            16  /build/buildd/eglibc-2.15/elf/rtld.c:map_doit [/lib/i386-linux-gnu/ld-2.15.so]
+            15  /build/buildd/eglibc-2.15/stdio-common/printf.c:printf [/lib/i386-linux-gnu/libc-2.15.so]
+            13  ???:0x000003f0 [/usr/lib/valgrind/vgpreload_core-x86-linux.so]
+            13  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/strncase.S:strncasecmp [/lib/i386-linux-gnu/libc-2.15.so]
+            13  ???:0x080483e0 [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+            13  ???:0x00000520 [/usr/lib/valgrind/vgpreload_core-x86-linux.so]
+            13  /build/buildd/eglibc-2.15/io/../sysdeps/unix/sysv/linux/fxstat64.c:__fxstat64@@GLIBC_2.2 [/lib/i386-linux-gnu/libc-2.15.so]
+            12  ???:0x08048330 [???]
+            12  /build/buildd/eglibc-2.15/elf/rtld.c:rtld_lock_default_unlock_recursive [/lib/i386-linux-gnu/ld-2.15.so]
+            12  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/strnlen.S:strnlen [/lib/i386-linux-gnu/libc-2.15.so]
+            12  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/memrchr.S:memrchr [/lib/i386-linux-gnu/libc-2.15.so]
+            12  /build/buildd/eglibc-2.15/elf/rtld.c:rtld_lock_default_lock_recursive [/lib/i386-linux-gnu/ld-2.15.so]
+            12  ???:_dl_sysinfo_int80 [/lib/i386-linux-gnu/ld-2.15.so]
+            12  ???:0x040252f8 [???]
+            11  ???:0x080488d0 [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+            11  /build/buildd/eglibc-2.15/wcsmbs/../sysdeps/i386/i686/multiarch/wcslen.S:wcslen [/lib/i386-linux-gnu/libc-2.15.so]
+            10  /build/buildd/eglibc-2.15/libio/fileops.c:_IO_file_stat [/lib/i386-linux-gnu/libc-2.15.so]
+            10  /build/buildd/eglibc-2.15/stdlib/exit.c:exit [/lib/i386-linux-gnu/libc-2.15.so]
+            10  /build/buildd/eglibc-2.15/libio/oldstdfiles.c:_IO_check_libio [/lib/i386-linux-gnu/libc-2.15.so]
+            10  /build/buildd/eglibc-2.15/stdio-common/printf-parse.h:vfprintf
+             9  /build/buildd/eglibc-2.15/elf/dl-altinit.c:dlinit_alt [/lib/i386-linux-gnu/libc-2.15.so]
+             9  /build/buildd/eglibc-2.15/misc/../sysdeps/unix/syscall-template.S:munmap [/lib/i386-linux-gnu/ld-2.15.so]
+             8  ???:0x080488fc [???]
+             8  ???:0x08048470 [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+             8  /build/buildd/eglibc-2.15/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h:security_init
+             8  /build/buildd/eglibc-2.15/posix/../sysdeps/unix/syscall-template.S:uname [/lib/i386-linux-gnu/ld-2.15.so]
+             8  /build/buildd/eglibc-2.15/io/../sysdeps/unix/syscall-template.S:write [/lib/i386-linux-gnu/libc-2.15.so]
+             8  ???:0x04025558 [???]
+             6  ???:0x00000427 [/usr/lib/valgrind/vgpreload_core-x86-linux.so]
+             5  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-machine.h:_dl_sysdep_start
+             5  /build/buildd/eglibc-2.15/libio/../sysdeps/unix/sysv/linux/sys/sysmacros.h:_IO_file_doallocate
+             3  /build/buildd/eglibc-2.15/posix/../sysdeps/unix/sysv/linux/i386/_exit.S:_Exit [/lib/i386-linux-gnu/libc-2.15.so]
+             2  ???:0x000011c0 [/lib/i386-linux-gnu/ld-2.15.so]
+             2  /build/buildd/eglibc-2.15/elf/dl-debug.c:_dl_debug_state [/lib/i386-linux-gnu/ld-2.15.so]
+             2  /build/buildd/eglibc-2.15/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_sysdep_start
+             2  ???:0x080488c2 [/home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/sorting_program]
+             1  /build/buildd/eglibc-2.15/elf/../elf/dl-sysdep.c:_dl_sysdep_start_cleanup [/lib/i386-linux-gnu/ld-2.15.so]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: your_functions.c
+--------------------------------------------------------------------------------
+            Ir 
+
+-- line 6 ----------------------------------------
+             .  
+             .  // Selection sort algorithm
+             .  // Arguments:
+             .  //  (1) Pointer to start of array
+             .  //  (2) Number of elements in array
+             .  // Return value: None
+             .  
+             .  void selectionSort(int *array_start, int array_size)
+             3  {
+             2    	printf("Using selection sort algorithm...\n");
+           622  => /build/buildd/eglibc-2.15/libio/ioputs.c:puts (1x)
+           775  => /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-trampoline.S:_dl_runtime_resolve (1x)
+             .  	
+             .  	int i, j, min;
+       500,001  	for (i = 0; i < array_size-1; i++)
+             .  	{
+       199,998  		min = i; // sets initial index to min
+20,000,499,993  		for (j = i+1; j < array_size; j++) // steps through array with different variable to compare to next element
+             .  		{
+49,999,500,000  			if (array_start[j] < array_start[min]) // compares second array with min
+             .  			{
+     2,015,004  				min = j; // if true, sets j to min
+             .  			}
+             .  		}
+             .  		int temp; // create temporary variable to allow swapping
+       499,995  		temp = array_start[i]; // gives value of index 'i' to temp
+       799,992  		array_start[i] = array_start[min]; // changes value of 'i' to min
+       499,995  		array_start[min] = temp; // gives min value of i
+             .  	}
+             .  	
+             .    	return;
+             .  
+             2  }
+             .  
+             .  
+             .  
+             .  /*
+             .  void bubbleSort(int *array_start, int array_size)
+             .  {
+             .  	printf("Using bubble sort algorithm...\n");
+             .  
+-- line 44 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: helper_functions.c
+--------------------------------------------------------------------------------
+       Ir 
+
+-- line 5 ----------------------------------------
+        .  #include "helper_functions.h"
+        .  
+        .  // Initialize array with random numbers in range from 0 to RAND_MAX
+        .  // Arguments:
+        .  //  (1) Pointer to start of array
+        .  //  (2) Number of elements in array
+        .  // Return value: None
+        .  void initArray(int *array_start, int array_size)
+        4  {
+        5  	printf("Initializing %i elements in array...\n", array_size);
+    2,756  => /build/buildd/eglibc-2.15/stdio-common/printf.c:printf (1x)
+      838  => /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-trampoline.S:_dl_runtime_resolve (1x)
+        .  
+  400,005  	for(int i=0; i<array_size; i++)
+        .  	{
+  600,000  		array_start[i] = rand();
+7,800,000  => /build/buildd/eglibc-2.15/stdlib/rand.c:rand (100000x)
+      768  => /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-trampoline.S:_dl_runtime_resolve (1x)
+        .  	}
+        .  
+        .  	return;
+        4  }
+        .  
+        .  
+        .  // Bubble sort algorithm
+        .  // Arguments:
+        .  //  (1) Pointer to start of array
+        .  //  (2) Number of elements in array
+        .  // Return value: None
+        .  void bubbleSort(int *array_start, int array_size)
+-- line 30 ----------------------------------------
+-- line 51 ----------------------------------------
+        .  
+        .  
+        .  // Test if array is sorted in ascending order
+        .  // Arguments:
+        .  //  (1) Pointer to start of array
+        .  //  (2) Number of elements in array
+        .  // Return value: True (if sorted), false otherwise
+        .  bool verifySort(int *array_start, int array_size)
+        3  {
+        2  	printf("Verifying array sorting...\n");
+      569  => /build/buildd/eglibc-2.15/libio/ioputs.c:puts (1x)
+        .  
+        2  	if(array_size == 1)
+        .  	{
+        .  		return true;  // Array with 1 element is always sorted
+        .  	}  
+        2  	else if(array_size <= 0)
+        .  	{    
+        .  		return false;  // Invalid array
+        .  	}  
+        .  	else
+        .  	{
+  400,001  		for(int i=1; i<array_size; i++)
+        .  		{
+        .  			// Starting from element 1 (not 0), compare with preceeding
+1,099,989  	  		if(array_start[i-1] > array_start[i])
+        .  	    		return false; // Found 1 example out of order - stop searching
+        .  		}
+        .  
+        1        	return true;
+        .      	}
+        2  }
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: sorting.c
+--------------------------------------------------------------------------------
+Ir 
+
+-- line 12 ----------------------------------------
+ .  
+ .  #include "helper_functions.h"
+ .  #include "your_functions.h"
+ .  
+ .  #define ARRAY_SIZE 100000
+ .  //#define ARRAY_SIZE 10
+ .  
+ .  int main(int argc, char *argv[])
+ 6  {
+ .  	int my_array[ARRAY_SIZE];
+ 1  	int *temp_array = NULL;
+ 1  	bool sorted = false;
+ .  	 
+ 2  	if( argc != 2)
+ .  	{
+ .  		printf("Program usage: %s sortname\n", argv[0]);
+ .  	  	return 1;
+ .  	}
+ .  
+ .  	// Fill array with random numbers
+ 4  	initArray(my_array, ARRAY_SIZE);
+8,804,380  => /home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/helper_functions.c:initArray (1x)
+ .  
+ .  	// Sort array by chosen algorithm
+17  	if(strcmp(argv[1], "bubble") == 0)
+ .  	{
+ .  		bubbleSort(my_array, ARRAY_SIZE);
+ .  	}
+27  	else if(strcmp(argv[1], "selection") == 0)
+ .  	{
+ 5  	  	selectionSort(my_array, ARRAY_SIZE);
+70,004,516,382  => /home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/your_functions.c:selectionSort (1x)
+ .  	}
+ .  	else if(strcmp(argv[1], "merge") == 0)
+ .  	{
+ .  		// Merge sort needs a second (temporary) array
+ .  		// Dynamically allocate this
+ .  		temp_array = calloc(ARRAY_SIZE, sizeof(int));
+ .  		 
+ .  		mergeSort(my_array, temp_array, ARRAY_SIZE);
+-- line 49 ----------------------------------------
+-- line 52 ----------------------------------------
+ .  	}
+ .  	else
+ .  	{
+ .    		printf("Invalid sort algorithm. Must specifiy 'bubble', 'selection', or 'merge'\n");
+ .    	return 1;
+ .    	}
+ .  
+ .  	// Test if array is sorted correctly
+ 5  	sorted = verifySort(my_array, ARRAY_SIZE);
+1,500,571  => /home/erich/bitbucket/2012_fall_ecpe170/lab04/prelab/helper_functions.c:verifySort (1x)
+ .  
+ 2  	if(sorted)
+ .  	{  
+ 3  		printf("Congrats! Array is sorted correctly\n");
+635  => /build/buildd/eglibc-2.15/libio/ioputs.c:puts (1x)
+ .  	}
+ .  	else
+ .  	{
+ .  	  	printf("*** Error: Array sort algorithm fails verification test ***\n");
+ .  	}
+ .  
+ 1  	return 0;
+ 5  }
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../../strrchr.S
+  /build/buildd/eglibc-2.15/stdio-common/printf.c
+  /build/buildd/eglibc-2.15/misc/../sysdeps/unix/sysv/linux/i386/mmap.S
+  /build/buildd/eglibc-2.15/libio/oldstdfiles.c
+  /build/buildd/eglibc-2.15/elf/dl-runtime.c
+  /build/buildd/eglibc-2.15/misc/../sysdeps/unix/syscall-template.S
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/strnlen.S
+  /build/buildd/eglibc-2.15/string/../sysdeps/x86_64/cacheinfo.c
+  /build/buildd/eglibc-2.15/elf/dl-minimal.c
+  /build/buildd/eglibc-2.15/csu/../sysdeps/unix/sysv/linux/init-first.c
+  /build/buildd/eglibc-2.15/stdio-common/printf-parse.h
+  /build/buildd/eglibc-2.15/misc/init-misc.c
+  /build/buildd/eglibc-2.15/stdio-common/_itoa.c
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../mempcpy.S
+  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-trampoline.S
+  /build/buildd/eglibc-2.15/stdlib/cxa_atexit.c
+  /build/buildd/eglibc-2.15/elf/dl-lookup.c
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../memset.S
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/memrchr.S
+  /build/buildd/eglibc-2.15/wcsmbs/../sysdeps/i386/i686/multiarch/wcslen.S
+  /build/buildd/eglibc-2.15/elf/dl-version.c
+  /build/buildd/eglibc-2.15/elf/dl-cache.c
+  /build/buildd/eglibc-2.15/nptl/../nptl/sysdeps/unix/sysv/linux/unregister-atfork.c
+  /build/buildd/eglibc-2.15/elf/../sysdeps/unix/sysv/linux/i386/brk.c
+  /build/buildd/eglibc-2.15/elf/dl-fini.c
+  /build/buildd/eglibc-2.15/libio/../sysdeps/unix/sysv/linux/sys/sysmacros.h
+  /build/buildd/eglibc-2.15/elf/dl-load.c
+  /build/buildd/eglibc-2.15/elf/dl-altinit.c
+  /build/buildd/eglibc-2.15/stdlib/cxa_finalize.c
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../../i586/strchr.S
+  /build/buildd/eglibc-2.15/libio/genops.c
+  /build/buildd/eglibc-2.15/io/../sysdeps/unix/sysv/linux/xstat64.c
+  /build/buildd/eglibc-2.15/elf/dl-misc.c
+  /build/buildd/eglibc-2.15/elf/dl-init.c
+  /build/buildd/eglibc-2.15/elf/rtld.c
+  /build/buildd/eglibc-2.15/stdlib/exit.c
+  /build/buildd/eglibc-2.15/libio/fileops.c
+  /build/buildd/eglibc-2.15/elf/dl-reloc.c
+  /build/buildd/eglibc-2.15/elf/dl-error.c
+  /build/buildd/eglibc-2.15/elf/dl-deps.c
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/strncase.S
+  /build/buildd/eglibc-2.15/malloc/malloc.c
+  /build/buildd/eglibc-2.15/stdlib/random.c
+  /build/buildd/eglibc-2.15/stdlib/bsearch.c
+  /build/buildd/eglibc-2.15/stdio-common/vfprintf.c
+  /build/buildd/eglibc-2.15/csu/../sysdeps/x86_64/multiarch/init-arch.c
+  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-procinfo.h
+  /build/buildd/eglibc-2.15/ctype/ctype-info.c
+  /build/buildd/eglibc-2.15/posix/../sysdeps/unix/sysv/linux/i386/_exit.S
+  /build/buildd/eglibc-2.15/elf/../misc/sbrk.c
+  /build/buildd/eglibc-2.15/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+  /build/buildd/eglibc-2.15/elf/../sysdeps/i386/dl-machine.h
+  /build/buildd/eglibc-2.15/setjmp/../sysdeps/i386/bsd-_setjmp.S
+  /build/buildd/eglibc-2.15/io/../sysdeps/unix/sysv/linux/fxstat64.c
+  /build/buildd/eglibc-2.15/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../../i586/strlen.S
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/strchrnul.S
+  /build/buildd/eglibc-2.15/posix/../sysdeps/unix/syscall-template.S
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../memcmp.S
+  /build/buildd/eglibc-2.15/elf/dynamic-link.h
+  /build/buildd/eglibc-2.15/csu/libc-start.c
+  /build/buildd/eglibc-2.15/stdlib/rand.c
+  /build/buildd/eglibc-2.15/elf/do-rel.h
+  /build/buildd/eglibc-2.15/libio/libioP.h
+  /build/buildd/eglibc-2.15/libio/ioputs.c
+  /build/buildd/eglibc-2.15/elf/dl-tls.c
+  /build/buildd/eglibc-2.15/elf/../elf/dl-sysdep.c
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/strcat.S
+  /build/buildd/eglibc-2.15/elf/dl-object.c
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../memcpy.S
+  /build/buildd/eglibc-2.15/setjmp/../sysdeps/i386/setjmp.S
+  /build/buildd/eglibc-2.15/libio/filedoalloc.c
+  /build/buildd/eglibc-2.15/io/../sysdeps/unix/syscall-template.S
+  /build/buildd/eglibc-2.15/string/../sysdeps/i386/i686/multiarch/../strcmp.S
+  /build/buildd/eglibc-2.15/elf/dl-debug.c
+  /build/buildd/eglibc-2.15/stdlib/random_r.c
+  /build/buildd/eglibc-2.15/elf/dl-environ.c
+
+--------------------------------------------------------------------------------
+ Ir 
+--------------------------------------------------------------------------------
+100  percentage of events annotated
+

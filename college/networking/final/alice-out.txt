@@ -1,0 +1,218 @@
+Carol: CAROL input file: carol-in.txt
+
+Bob: BOB input file: bob-in.txt
+CHAT/1.0 TEXT
+Carol: Act 1, Scene 1 
+CHAT/1.0 TEXT
+Carol: 
+CHAT/1.0 TEXT
+Carol: SCENE I. Rousillon. The COUNT's palace.
+CHAT/1.0 TEXT
+Bob: PROLOGUE
+CHAT/1.0 TEXT
+Bob: 
+CHAT/1.0 TEXT
+Bob: Two households, both alike in dignity,
+CHAT/1.0 TEXT
+Bob: Where civil blood makes civil hands unclean.
+
+Carol: In delivering my son from me, I bury a second husband.
+CHAT/1.0 TEXT
+Bob: Whose misadventured piteous overthrows
+
+Carol: And I in going, madam, weep o'er my father's death
+CHAT/1.0 TEXT
+Bob: The fearful passage of their death-mark'd love,
+
+Carol: whom I am now in ward, evermore in subjection.
+CHAT/1.0 TEXT
+Bob: Which, but their children's end, nought could remove,
+CHAT/1.0 TEXT
+Bob: The which if you with patient ears attend,
+CHAT/1.0 TEXT
+Bob: What here shall miss, our toil shall strive to mend.
+CHAT/1.0 TEXT
+Carol: good must of necessity hold his virtue to you; whose
+
+Carol: worthiness would stir it up where it wanted rather
+CHAT/1.0 TEXT
+Carol: than lack it where there is such abundance.
+CHAT/1.0 TEXT
+Bob: 
+
+Carol: What hope is there of his majesty's amendment?
+CHAT/1.0 TEXT
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Bob: GREGORY
+CHAT/1.0 TEXT
+Carol: losing of hope by time.
+CHAT/1.0 TEXT
+Carol: This young gentlewoman had a father,--O, that
+CHAT/1.0 TEXT
+Carol: 'had'! how sad a passage 'tis!--whose skill was
+CHAT/1.0 TEXT
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Carol: should have play for lack of work. Would, for the
+CHAT/1.0 TEXT
+Carol: king's sake, he were living! I think it would be
+
+Carol: the death of the king's disease.
+CHAT/1.0 TEXT
+Carol: LAFEU
+
+Bob: GREGORY
+CHAT/1.0 TEXT
+Carol: COUNTESS
+
+Bob: therefore, if thou art moved, thou runn'st away.
+CHAT/1.0 TEXT
+Carol: his great right to be so: Gerard de Narbon.
+CHAT/1.0 TEXT
+Carol: LAFEU
+CHAT/1.0 TEXT
+Bob: That shows thee a weak slave; for the weakest goes
+CHAT/1.0 TEXT
+Bob: to the wall.
+CHAT/1.0 TEXT
+Carol: was skilful enough to have lived still, if knowledge
+
+Bob: True; and therefore women, being the weaker vessels,
+CHAT/1.0 TEXT
+Bob: Montague's men from the wall, and thrust his maids
+CHAT/1.0 TEXT
+Bob: to the wall.
+
+Carol: What is it, my good lord, the king languishes of?
+CHAT/1.0 TEXT
+Bob: The quarrel is between our masters and us their men.
+CHAT/1.0 TEXT
+Bob: 'Tis all one, I will show myself a tyrant: when I
+CHAT/1.0 TEXT
+Bob: maids, and cut off their heads.
+CHAT/1.0 TEXT
+Carol: I heard not of it before.
+CHAT/1.0 TEXT
+Carol: LAFEU
+CHAT/1.0 TEXT
+Carol: I would it were not notorious. Was this gentlewoman
+CHAT/1.0 TEXT
+Carol: the daughter of Gerard de Narbon?
+CHAT/1.0 TEXT
+Bob: GREGORY
+
+Bob: They must take it in sense that feel it.
+CHAT/1.0 TEXT
+Carol: His sole child, my lord, and bequeathed to my
+CHAT/1.0 TEXT
+Carol: overlooking. I have those hopes of her good that
+CHAT/1.0 TEXT
+Carol: her education promises; her dispositions she
+CHAT/1.0 TEXT
+Bob: two of the house of the Montagues.
+CHAT/1.0 TEXT
+Bob: My naked weapon is out: quarrel, I will back thee.
+CHAT/1.0 TEXT
+Carol: traitors too; in her they are the better for their
+CHAT/1.0 TEXT
+Bob: How! turn thy back and run?
+CHAT/1.0 TEXT
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Carol: COUNTESS
+CHAT/1.0 TEXT
+Bob: No, marry; I fear thee!
+CHAT/1.0 TEXT
+Carol: her heart but the tyranny of her sorrows takes all
+
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Carol: go to, no more; lest it be rather thought you affect
+CHAT/1.0 TEXT
+Bob: I will frown as I pass by, and let them take it as
+CHAT/1.0 TEXT
+Carol: I do affect a sorrow indeed, but I have it too.
+CHAT/1.0 TEXT
+Carol: LAFEU
+CHAT/1.0 TEXT
+Bob: Nay, as they dare. I will bite my thumb at them;
+CHAT/1.0 TEXT
+Carol: COUNTESS
+CHAT/1.0 TEXT
+Carol: makes it soon mortal.
+CHAT/1.0 TEXT
+Bob: ABRAHAM
+CHAT/1.0 TEXT
+Carol: LAFEU
+
+Bob: Do you bite your thumb at us, sir?
+CHAT/1.0 TEXT
+Carol: COUNTESS
+
+Bob: I do bite my thumb, sir.
+CHAT/1.0 TEXT
+Bob: Do you bite your thumb at us, sir?
+
+Carol: In manners, as in shape! thy blood and virtue
+
+Carol: Contend for empire in thee, and thy goodness
+CHAT/1.0 TEXT
+Carol: Share with thy birthright! Love all, trust a few,
+CHAT/1.0 TEXT
+Carol: Do wrong to none: be able for thine enemy
+CHAT/1.0 TEXT
+Bob: GREGORY
+
+Carol: Under thy own life's key: be cheque'd for silence,
+CHAT/1.0 TEXT
+Carol: But never tax'd for speech. What heaven more will,
+CHAT/1.0 TEXT
+Carol: That thee may furnish and my prayers pluck down,
+CHAT/1.0 TEXT
+Carol: Fall on thy head! Farewell, my lord;
+CHAT/1.0 TEXT
+Carol: 'Tis an unseason'd courtier; good my lord,
+CHAT/1.0 TEXT
+Carol: Advise him.
+CHAT/1.0 TEXT
+Carol: LAFEU
+CHAT/1.0 TEXT
+Carol: That shall attend his love.
+
+Bob: Quarrel sir! no, sir.
+
+Carol: COUNTESS
+CHAT/1.0 TEXT
+Bob: If you do, sir, I am for you: I serve as good a man as you.
+
+Carol: Exit
+CHAT/1.0 TEXT
+Carol: 
+CHAT/1.0 TEXT
+Carol: BERTRAM
+CHAT/1.0 TEXT
+Carol: [To HELENA] The best wishes that can be forged in
+
+Bob: Well, sir.
+CHAT/1.0 TEXT
+Bob: GREGORY
+CHAT/1.0 TEXT
+Bob: Say 'better:' here comes one of my master's kinsmen.
+
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Bob: ABRAHAM
+CHAT/1.0 TEXT
+Bob: 
+CHAT/1.0 TEXT
+Bob: And yours, close fighting ere I did approach:
+CHAT/1.0 TEXT
+Carol: porridge than in your cheek; and your virginity,
+CHAT/1.0 TEXT
+Bob: So far from sounding and discovery,
+CHAT/1.0 TEXT
+Carol: When he was retrograde, I think, rather.
+CHAT/1.0 TEXT
+Carol: Impossible be strange attempts to those
+CHAT/1.0 TEXT

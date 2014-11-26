@@ -1,0 +1,53 @@
+//LIBRARY ieee ;
+//USE ieee.std_logic_1164.all ;
+//
+//ENTITY masterclk IS
+//    PORT ( iclk 		: IN STD_LOGIC;
+//	   oclk		: OUT STD_LOGIC);
+//END masterclk;
+//
+//ARCHITECTURE Behavior OF masterclk IS
+//CONSTANT halfcount : POSITIVE := 13500000;
+//SIGNAL Count:  INTEGER RANGE 0 TO halfcount-1; 
+//SIGNAL clkstate :   STD_LOGIC;
+//BEGIN
+//    PROCESS ( iclk )
+//	BEGIN
+//		IF (iclk'EVENT AND iclk = '1') THEN
+//			IF Count = halfcount-1 THEN	
+//				Count <= 0;
+//				clkstate <= not clkstate;
+//			ELSE
+//				Count <= Count + 1;
+//			END IF;
+//		END IF;
+//	END PROCESS;
+//	oclk <= clkstate;
+//END Behavior;
+
+
+
+
+
+
+
+
+module clk (
+iclk,     // input clock
+oclk     // output clock
+);
+input iclk;  // input
+output reg oclk; // output
+reg [1:24] halfcount = 24'b0;
+parameter halfcountmax = 24'd13500000;
+reg clkstate = 1'b0;
+always @(posedge iclk) begin
+	if (halfcount == halfcountmax) begin
+		halfcount <= 24'b0;
+		clkstate <= ~clkstate;
+	end
+	else halfcount <= halfcount + 24'b1;
+	
+	oclk <= clkstate;
+end
+endmodule

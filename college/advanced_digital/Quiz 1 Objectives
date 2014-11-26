@@ -1,0 +1,11 @@
+Students should be able to:
+-	From a problem statement:
+        o	Design a state diagram
+        o	Outline the associated state table
+        o	Develop a state assignment table based on minimal or one-hot encoding
+        o	Write behavioral VHDL implementing the state diagram using either minimal or one-hot
+-	From VHDL:
+        o	Outline the associated state table
+        o	Design the associated state diagram
+-	Explain the difference between Mealy and Moore FSMs as well as the design trade-offs between them
+-	Explain the advantages and disadvantages of one-hot encoding

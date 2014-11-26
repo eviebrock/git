@@ -1,0 +1,1 @@
+http://validator.w3.org/check?uri=erichviebrock.com&charset=%28detect+automatically%29&doctype=Inline&group=0

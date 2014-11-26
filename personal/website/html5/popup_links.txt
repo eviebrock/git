@@ -1,0 +1,7 @@
+https://www.google.com/search?safe=off&es_sm=125&sclient=psy-ab&q=html%20dim%20page&oq=&gs_l=&pbx=1&biw=1855&bih=968&pf=p&pdl=300&cad=cbv&sei=XjFZU_OyLKiy8AGgrIHIDg#q=html%20dim%20background%20popup&safe=off
+
+http://pantuts.com/2013/04/27/jquery-greyed-out-background-and-popup-window/
+
+http://displayhelloworld.blogspot.com/2013/01/pop-out-window-with-dim-background.html
+
+http://pantuts.com/demos/jquery/greyedBG-PopupWin/index.html

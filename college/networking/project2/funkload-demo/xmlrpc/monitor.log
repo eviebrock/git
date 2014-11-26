@@ -1,0 +1,4 @@
+2013-10-15 23:32:18,560 INFO Init XML/RPC server localhost:44402.
+2013-10-15 23:32:18,565 INFO XML/RPC server pid=8796 running.
+2013-10-15 23:33:50,979 INFO stopServer request.
+2013-10-15 23:33:51,480 INFO XML/RPC server pid=8796 stopped.

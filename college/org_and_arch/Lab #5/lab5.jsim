@@ -1,0 +1,217 @@
+.include "C:\Users\Erich Viebrock\Google Drive\Classes\Spring 13\Computer Organization and Architecture\Labs\Lab #3\Library Files\nominal.jsim"
+.include "C:\Users\Erich Viebrock\Google Drive\Classes\Spring 13\Computer Organization and Architecture\Labs\Lab #3\Library Files\stdcell.jsim"
+.include "C:\Users\Erich Viebrock\Google Drive\Classes\Spring 13\Computer Organization and Architecture\Labs\Lab #5\lab3.jsim"
+.include "C:\Users\Erich Viebrock\Google Drive\Classes\Spring 13\Computer Organization and Architecture\Labs\Lab #5\lab5checkoff.jsim"
+
+.subckt pc clk reset ia[31:0] pcsel[2:0] sext[31:0] JT[31:0]
+	
+	// add pc with 4
+	Xxor_b 0#29 VDD 0#2 ia[31:0] xorOUT_b[31:0] xor2
+	// pc + 4 result
+	Xxor_c xorOUT_b[31:0] Cout[30:0] 0 OUT[31:0] xor2
+	Xand_a xorOUT_b[31:0] Cout[30:0] 0 andOUT_a[31:0] and2
+	Xand_b 0#29 VDD 0#2 ia[31:0] andOUT_b[31:0] and2
+	Xor andOUT_a[31:0] andOUT_b[31:0] Cout[31:0] or2
+
+	// *** A *** //
+	// set reset to constant 0x80000000
+	Xreset VDD 0#31 reset_address[31:0] buffer
+	// set ill_op to constant 0x80000004
+	XILL_Op VDD 0#28 VDD 0#2 ILL_Op[31:0] buffer
+	// set xadr to constant 0x80000008
+	XXAdr VDD 0#27 VDD 0#3 XAdr[31:0] buffer
+	// first mux to choose from pcsel[0] and pcsel[1]
+	Xpc_mux_a pcsel[0]#32 pcsel[1]#32 OUT[31:0] sext[31:0] JT[31:0] ILL_Op[31:0] pc_mux_OUT[31:0] mux4
+	// second mux to choose from pcsel[2] and reset
+	Xpc_mux_b reset#32 pcsel[2]#32 pc_mux_OUT[31:0] reset_address[31:0] XAdr[31:0] reset_address[31:0] ia_tmp[31:0] mux4
+	// *** A *** //
+
+	//Xpc_a reset#32 OUT[31:0] 0#32 ia_tmp_b[31:0] mux2
+	Xpc_b ia_tmp[31:0] CLK#32 ia[31:0] dreg
+
+.ends
+
+.subckt regfile clk werf ra2sel ra[4:0] rb[4:0] rc[4:0]
+	+ wdata[31:0] radata[31:0] rbdata[31:0] 
+
+	Xregfile
+		+ vdd 0 0 ra[4:0] adata[31:0]		// A read port
+		+ vdd 0 0 ra2mux[4:0] bdata[31:0]	// B read port
+		+ 0 clk werf rc[4:0] wdata[31:0]	// write port
+		+ $memory width=32 nlocations=32
+	Xrb_mux ra2sel#5 rb[4:0] rc[4:0] ra2mux[4:0] mux2
+	Xzilch_and_a ra[3:0] zilch_OUT_a and4
+	Xzilch_and_b zilch_OUT_a ra[4] zilch_OUT_b and2
+	Xzilch_mux zilch_OUT_b#32 adata[31:0] 0#32 radata[31:0] mux2
+	Xzilch_and_ba ra2mux[3:0] zilch_OUT_ba and4
+	Xzilch_and_bb zilch_OUT_ba ra2mux[4] zilch_OUT_bb and2
+	Xzilch_muxb zilch_OUT_bb#32 bdata[31:0] 0#32 rbdata[31:0] mux2
+
+.ends
+
+.subckt ctl reset id[31:26] ra2sel bsel alufn[4:0] wdsel[1:0] werf
+	+ moe wr pcsel[2:0] asel wasel
+
+		Xrom VDD 0 0 id[31:26]
+			+ pcsel[2:0] ra2sel asel bsel wdsel[1:0] alufn[4:0] wr_dummy werf wasel
+			+ $memory width=16 nlocations=64 contents=
+			+ (
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000011000000010 // 011 000
+			+ 0b0001011000000100 // 011 001
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000100000010 // 100 000
+			+ 0b0000000100001010 // 100 001
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000000100101010 // 100 100
+			+ 0b0000000100111010 // 100 101
+			+ 0b0000000101101010 // 100 110
+			+ 0b0000000000000000
+			+ 0b0000000111000010 // 101 000
+			+ 0b0000000111110010 // 101 001
+			+ 0b0000000110110010 // 101 010
+			+ 0b0000000111001010 // 101 011
+			+ 0b0000000101000010 // 101 100
+			+ 0b0000000101001010 // 101 101
+			+ 0b0000000101011010 // 101 110
+			+ 0b0000000000000000
+			+ 0b0000010100000010 // 110 000
+			+ 0b0000010100001010 // 110 001
+			+ 0b0000000000000000
+			+ 0b0000000000000000
+			+ 0b0000010100101010 // 110 100
+			+ 0b0000010100111010 // 110 101
+			+ 0b0000010101101010 // 110 110
+			+ 0b0000000000000000
+			+ 0b0000010111000010 // 111 000
+			+ 0b0000010111110010 // 111 001
+			+ 0b0000010110110010 // 111 010
+			+ 0b0000010111001010 // 111 011
+			+ 0b0000010101000010 // 111 100
+			+ 0b0000010101001010 // 111 101
+			+ 0b0000010101011010 // 111 110
+			+ 0b0000000000000000
+			+ )
+	Xxor_moe_a id[31] VDD moeOUT_a xor2
+	Xxor_moe_b id[30] 0 moeOUT_b xor2
+	Xxor_moe_c id[29] 0 moeOUT_c xor2
+	Xxor_moe_d id[28] VDD moeOUT_d xor2
+	Xxor_moe_e id[27] VDD moeOUT_e xor2
+	Xxor_moe_f id[26] VDD moeOUT_f xor2
+	Xmoe_a moeOUT_a moeOUT_b moeOUT_c moeOUT_d moeOUT_g and4
+	Xmoe_b moeOUT_g moeOUT_e moeOUT_f VDD moe and4
+	Xwr_mux reset wr_dummy 0 wr mux2
+
+.ends
+
+.subckt beta clk reset irq ia[31:0] id[31:0] ma[31:0] moe mrd[31:0] wr
+	+ mwd[31:0]
+
+		// PC //
+		Xpc clk reset ia[31:0] pcsel[2:0] sext[31:0] JT[31:0] pc
+
+		// CONTROL //
+		Xctl reset id[31:26] ra2sel bsel alufn[4:0] wdsel[1:0] werf 
+			+ moe wr pcsel[2:0] asel wasel ctl 
+
+		// REG FILE //
+		Xbuffer_a id[15:0] id_dummy[15:0] buffer
+		Xbuffer_b id[15]#16 id_dummy[31:16] buffer
+		Xmux_a bsel#32 rbdata[31:0] id_dummy[31:0] b[31:0] mux2
+		Xalu alufn[4:0] radata_dummy[31:0] b[31:0] ma[31:0] z_alu v n alu
+		Xmux_b wdsel[0]#32 wdsel[1]#32 0#32 ma[31:0] mrd[31:0] 0#32 wdata[31:0] mux4
+		Xregfile clk werf ra2sel id[20:16] id[15:11] id[25:21]
+			+ wdata[31:0] radata[31:0] rbdata[31:0] regfile
+		Xbuffer_c rbdata[31:0] mwd[31:0] buffer
+
+		// *** A *** //
+		// set xadr to constant 8
+		//XXAdr VDD 0#27 VDD 0#3 XAdr[31:0] buffer
+		// set ill_op to constant 4
+		//XILL_Op VDD 0#28 VDD 0#2 ILL_Op[31:0] buffer
+		// first mux to choose from pcsel[0] and pcsel[1]
+		//Xpc_mux_a pcsel[0]#32 pcsel[1]#32 ma[31:0] sext[31:0] JT[31:0] ILL_Op[31:0] pc_mux_a_OUT[31:0] mux4
+		// second mux to choose from pcsel[2] and reset
+		//Xpc_mux_b reset#32 pcsel[2]#32 pc_mux_a_OUT[31:0] VDD 0#31 XAdr[31:0] VDD 0#31 ia[31:0] mux4
+		// *** A *** //
+
+		// *** B *** //
+		Xxp VDD#4 0 xp[4:0] buffer
+		Xwa_mux wasel#5 id[25:21] xp[4:0] wa[4:0] mux2
+		Xrc wa[4:0] rc[25:21] buffer
+		// *** B *** //
+
+		// *** C *** //
+		// shift c[15:0] left two bits
+		Xsext_a id[15:0] sext[17:2] buffer
+		// place 0 in empty bits
+		Xsext_b 0#2 sext[1:0] buffer
+		// sign extend with c[17]
+		Xsext_c id[15]#14 sext[31:18] buffer
+
+		// add pc with 4
+		Xxor_f sext[31:0] ma[31:0] xorOUT_f[31:0] xor2
+		// pc + 4 result
+		Xxor_g xorOUT_f[31:0] Cout_PC_4_C[30:0] 0 PC_4_C[31:0] xor2
+		Xand_c xorOUT_f[31:0] Cout_PC_4_C[30:0] 0 andOUT_c[31:0] and2
+		Xand_d 0#29 VDD 0#2 ia[31:0] andOUT_d[31:0] and2
+		Xor_a andOUT_c[31:0] andOUT_d[31:0] Cout_PC_4_C[31:0] or2
+		// *** C *** //
+
+		// *** D *** //
+		XZ_a radata[31:28] Z_a_out nor4
+		XZ_b radata[27:24] Z_b_out nor4
+		XZ_c radata[23:20] Z_c_out nor4
+		XZ_d radata[19:16] Z_d_out nor4
+		XZ_e radata[15:12] Z_e_out nor4
+		XZ_f radata[11:8] Z_f_out nor4
+		XZ_g radata[7:4] Z_g_out nor4
+		XZ_h radata[3:0] Z_h_out nor4
+		XZ_i Z_a_out Z_b_out Z_c_out Z_d_out Z_i_out and4
+		XZ_j Z_e_out Z_f_out Z_g_out Z_h_out Z_j_out and4
+		XZ_k Z_i_out Z_j_out Z and2
+		// JT
+		XJT_a radata[31] ia[31] JT[31] and2
+		XJT_b ia[30:0] JT[30:0] buffer
+		// ASEL mux feeding ALU
+		Xalu_a_mux asel#32 radata[31:0] PC_4_C[31:0] radata_dummy[31:0] mux2
+		// map a to radata_dummy
+		// *** D *** //
+
+		// *** E *** //
+		Xwdsel_mux wdsel[0]#32 wdsel[1]#32 ma[31:0] ma[31:0] mrd[31:0] 0#32 wd[31:0] mux4
+		// *** E *** //
+
+		// If ILL_Op, save PC+4 into XP
+		// XILL_Op_mux pcsel[0]#32 pcsel[1]#32 0#32 0#32 0#32 OUT[31:0] xp#32 mux4
+		
+.ends

@@ -1,0 +1,44 @@
+|lab_5
+clkin => clk:blah.iclk
+send => SEND1.DATAIN
+devB => DEVB1.DATAIN
+devB => devBView.DATAIN
+reset => y~2.DATAA
+reset => y~4.DATAA
+reset => y~3.DATAA
+reset => y~5.DATAA
+devA << devA~reg0.DB_MAX_OUTPUT_PORT_TYPE
+riseSend << rise_send.DB_MAX_OUTPUT_PORT_TYPE
+devAView << devA~reg0.DB_MAX_OUTPUT_PORT_TYPE
+devBView << devB.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab_5|clk:blah
+iclk => clkstate.CLK
+iclk => Count[0].CLK
+iclk => Count[1].CLK
+iclk => Count[2].CLK
+iclk => Count[3].CLK
+iclk => Count[4].CLK
+iclk => Count[5].CLK
+iclk => Count[6].CLK
+iclk => Count[7].CLK
+iclk => Count[8].CLK
+iclk => Count[9].CLK
+iclk => Count[10].CLK
+iclk => Count[11].CLK
+iclk => Count[12].CLK
+iclk => Count[13].CLK
+iclk => Count[14].CLK
+iclk => Count[15].CLK
+iclk => Count[16].CLK
+iclk => Count[17].CLK
+iclk => Count[18].CLK
+iclk => Count[19].CLK
+iclk => Count[20].CLK
+iclk => Count[21].CLK
+iclk => Count[22].CLK
+iclk => Count[23].CLK
+oclk <= clkstate.DB_MAX_OUTPUT_PORT_TYPE
+
+

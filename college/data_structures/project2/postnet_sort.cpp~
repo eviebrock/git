@@ -1,0 +1,17 @@
+/*
+	Erich Viebrock
+	e_viebrock@u.pacific.edu
+	September 20th, 2012
+	Compiler: Visual Studio 2008
+	This program converts between zip codes and barcodes, and outputs the result in a text file.
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "Heyyy." << endl;
+	return 0;
+}

@@ -1,0 +1,16 @@
+# CC = compiler to use
+CC=g++
+
+# CFLAGS = options passed to the compiler
+CFLAGS=-c -Wall
+
+all: postnet_sort
+
+tic_tac_toe: postnet_sort.o
+	$(CC) postnet_sort.o -o postnet_sort
+
+postnet_sort.o: postnet_sort.cpp
+	$(CC) $(CFLAGS) postnet_sort.cpp
+
+clean:
+	rm -rf *o hello

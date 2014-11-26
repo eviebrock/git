@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html>
+
+<!--
+
+Thanks for taking the time to view the code! This website was created with the help of 
+
+	1. Notepad++
+	2. W3Schools
+	3. Stack Overflow
+
+- Erich Viebrock
+
+-->
+
+	<head>
+		<title> Erich Viebrock </title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<style type='text/css'>
+			html 
+			{
+				overflow-y: scroll;
+			}
+			body
+			{
+				background-image: url(bright_squares.png);
+				font-family: Garamond;
+				font-size: 150%;
+			}
+			body:before
+			{
+				content: "";
+				position: fixed;
+				top: -10px;
+				left: 0;
+				width: 100%;
+				height: 10px;
+				
+				-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+				-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+				box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+				z-index: 100;
+			}
+			div
+			{
+				margin: 0 auto;
+				border: 3px solid black;
+				background-color: white;
+				margin-bottom: 45px;
+			}
+			a
+			{
+				color: black;
+				text-decoration: none;
+			}
+			a:hover
+			{
+				color: white;
+			}
+			span
+			{
+				float: right;
+			}
+			#header
+			{
+				//width: 900px;
+				width: 900px;
+				//background-color: transparent;
+				background-color: red;
+				border: none;
+				margin: auto;
+			}
+			#erich
+			{
+				text-align: center;
+				float: left;
+				margin-left: -8px;
+				margin-top: 20px;
+				font-size: 50px;
+				width: 280px;
+				padding: 10px;
+				background: transparent;
+				border: none;
+				color: #2b2b2b;
+				font-weight: bold;
+				letter-spacing: -3px;
+			}
+			#tab
+			{
+				text-align: center;
+				float: right;
+				margin-left: 5px;
+				margin-top: 35px;
+				font-size: 28px;
+				width: 125px;
+				padding: 5px;
+				transition: .5s;
+				-o-transition: .5s;
+				-ms-transition: .5s;
+				-moz-transition: 2s;
+				-webkit-transition: .5s;
+			}
+			#tab:hover
+			{
+				background-color: #2f5caa;
+			}
+			#this_tab
+			{
+				text-align: center;
+				float: right;
+				margin-left: 5px;
+				margin-top: 35px;
+				font-size: 28px;
+				width: 125px;
+				padding: 5px;
+				background-color: #2f5caa;
+				color: white;
+			}
+			#link
+			{
+				color: #00a0fc;
+			}
+			#link:hover
+			{
+				color: #f57921;
+				text-decoration: underline;
+			}
+			#container
+			{
+				width: 850px;
+				text-align: left;
+				background-color: transparent;
+				border: none;
+			}
+			#card
+			{
+				padding: 15px;
+				float: center;
+				//box-shadow: 10px 10px 5px #888888;
+			}
+			#footer
+			{
+				border: none;
+				background-color: transparent;
+				padding: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<a href="index.html"> <div id="erich"> Erich Viebrock </div> </a>
+			<a href="about_me.html"> <div id="tab"> About Me </div> </a>
+			<a href="personal.html"> <div id="this_tab"> Personal </div> </a>
+			<a href="experience.html"> <div id="tab"> Experience </div> </a>
+			<a href="education.html"> <div id="tab"> Education </div> </a>
+		</div>
+		</br> </br> </br> </br> </br> </br>  
+		<div id="container">		
+			<div id="card">
+				<center> <b> Android Application </b> </center>
+				</br>
+				<center> <img src="android.png"> </center> 
+				</br> </br>
+				Developed the sliding block puzzle game "Rush Hour" in Java and XML. Used the Android SDK, as well as the Android Developer Tools plugin for the Eclipse IDE. The application was ported to the Android Play Store, downloadable and playable for any Android device version 2.2 or higher.
+				</br> </br>
+				<center> Source Code in Progress </center>
+				</br>
+			</div>
+			<div id="card">
+				<center> <b> Event Scheduler and Calendar </b> </center>
+				</br>
+				<center> <img src="calendar.png"> </center> 
+				</br> </br>
+				Created a calendar application with MySQL for allowing a user to enter a date and time of an event, enable a notification for the event, event notes, and then schedule the single or reoccurring events within a database. The user can then browse the calendar, search for specific events, or modify pre-existing events.
+				</br> </br>
+				<center> Source Code in Progress </center>
+				</br>
+			</div>
+			<div id="card">
+				<center> <b> This Website! </b> </center>
+				</br>
+				<center> <img src="website.png"> </center> 
+				</br> </br>
+				This portfolio has been, and will always be an ongoing project to currently reflect my capabilities as an engineer. Not only will future projects be added to the website as they become apparent, but the logic will be changed as well. This portfolio was created from scratch with XHTML and CSS, without a template of any sort.
+				</br> </br>
+				<center> Source Code in Progress </center>
+				</br>
+			</div>
+			<div id="footer"> &#169; 2014 Erich Viebrock </div>
+		</div>
+	</body>
+</html>

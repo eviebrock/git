@@ -1,0 +1,7 @@
+
+State Machine - |lab_5|y
+Name y.recieve y.s2 y.s1 y.idle 
+y.idle 0 0 0 0 
+y.s1 0 0 1 1 
+y.s2 0 1 0 1 
+y.recieve 1 0 0 1 

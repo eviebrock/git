@@ -1,0 +1,41 @@
+Erich Viebrock
+December 10th, 2013
+Project #5
+ECPE 177
+
+Tested project with:
+	1. Dr. Shafer
+	
+Any bugs found/fixed:
+	1. client.py
+		a. When testing TEXT messages, username fields appeared to be corrupted.
+		   After discussing the issue with Dr. Shafer, we came to the conclusion
+		   my client was designed to obtain the username header from a hardcoded
+		   position, instead of searching for the field with the username header
+		   initially. However, JOIN and LEAVE messages function correctly.
+	2. server.py
+		a. Also had issues with sending TEXT messages, as the client's local copy
+		   of their message would appear on the GUI, as well as the server's copy.
+		   This is obviously an issue, because a client should not have to see their
+		   single message multiple times. I suspect this issue is closely related to
+		   hardcoding the username field to a specific section of the TEXT message,
+		   rather than parsing the message to find the username header.
+		b. I also had an issue with clients leaving the chat rooom. When a client
+		   leaves, the server crashes. In order for a client to leave the chat room,
+		   I was simply closing the GUI window. To investigate the issue, I printed the
+		   incoming data off recv(), on line 47. When I closed the GUI window, there was
+		   a zero-length message recv()'d. Specifically, I printed the data as such:
+		   
+		   	print (str(raw_bytes))
+		   	
+		   which resulted in:
+		   
+		   	b''
+		   	
+		   Of course, the "b" symbolizes the string is in bytes, as the data had not been
+		   properly converted to an ascii string yet. This leads me to believe Dr. Shafer
+		   had a different way to exit the chat room that I am not aware of. In my own
+		   client script, whenever I detect the GUI window closes, I send a LEAVE message
+		   to the server, then exit the program. Being the server does not receive this
+		   message, the server does not remove the socket from the socket list, and continues
+		   to try and send to it. Hence, it crashes.

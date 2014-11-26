@@ -1,0 +1,11 @@
+
+State Machine - |lab_1|y
+Name y.LR y.RC y.RB y.RA y.LC y.LB y.LA y.IDLE 
+y.IDLE 0 0 0 0 0 0 0 0 
+y.LA 0 0 0 0 0 0 1 1 
+y.LB 0 0 0 0 0 1 0 1 
+y.LC 0 0 0 0 1 0 0 1 
+y.RA 0 0 0 1 0 0 0 1 
+y.RB 0 0 1 0 0 0 0 1 
+y.RC 0 1 0 0 0 0 0 1 
+y.LR 1 0 0 0 0 0 0 1 

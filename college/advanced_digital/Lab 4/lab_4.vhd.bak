@@ -1,0 +1,91 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY lab_4 IS
+	PORT(D, N, RESET, clk : IN STD_LOGIC;
+					CANDY : OUT STD_LOGIC);
+END lab_4;
+
+ARCHITECTURE BEHAVIOR OF lab_4 IS
+	SIGNAL RISE_D 	  : STD_LOGIC;
+	SIGNAL RISE_N 	  : STD_LOGIC;
+	SIGNAL RISE_RESET : STD_LOGIC;
+	SIGNAL D1 		  : STD_LOGIC;
+	SIGNAL D2		  : STD_LOGIC;
+	SIGNAL D3 		  : STD_LOGIC;
+	SIGNAL N1 		  : STD_LOGIC;
+	SIGNAL N2 		  : STD_LOGIC;
+	SIGNAL N3 		  : STD_LOGIC;
+	SIGNAL RESET1 	  : STD_LOGIC;
+	SIGNAL RESET2 	  : STD_LOGIC;
+	SIGNAL RESET3 	  : STD_LOGIC;
+	
+	TYPE STATE_TYPE IS (S1, S2, S3, S4, S5);
+	SIGNAL Y : STATE_TYPE:=S1;
+	
+	BEGIN
+
+	PROCESS(clk)
+
+	BEGIN
+     IF(RISING_EDGE(clk)) THEN
+          D1 <= D;
+          D2 <= D1;
+          D3 <= D2;
+          RISE_D <= (NOT D3) AND D2;
+          
+          N1 <= n;
+          N2 <= N1;
+          N3 <= N2;
+          RISE_N <= (NOT N3) AND N2;
+          
+          RESET1 <= reset;
+          RESET2 <= RESET1;
+          RESET3 <= RESET2;
+          RISE_RESET <= (NOT RESET3) AND RESET2;
+
+	CASE Y IS
+		WHEN S1=>
+		IF RISE_D = '1' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S3;
+		ELSIF RISE_N = '1' AND RISE_D = '0' AND RISE_RESET = '0' THEN Y <= S2;
+		ELSIF RISE_D = '0' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S1;
+		ELSE Y <= S1;
+		END IF;
+		
+		WHEN S2=>
+		IF RISE_D = '1' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S4;
+		ELSIF RISE_N = '1' AND RISE_D = '0' AND RISE_RESET = '0' THEN Y <= S3;
+		ELSIF RISE_D = '0' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S2;
+		ELSE Y <= S1;
+		END IF;
+		
+		WHEN S3=>
+		IF RISE_D = '1' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S5;
+		ELSIF RISE_N = '1' AND RISE_D = '0' AND RISE_RESET = '0' THEN Y <= S4;
+		ELSIF RISE_D = '0' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S3;
+		ELSE Y <= S1;
+		END IF;
+		
+		WHEN S4=>
+		IF RISE_D = '1' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S5;
+		ELSIF RISE_N = '1' AND RISE_D = '0' AND RISE_RESET = '0' THEN Y <= S5;
+		ELSIF RISE_D = '0' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S4;
+		ELSE Y <= S1;
+		END IF;
+		
+		WHEN S5=>
+		IF RISE_D = '1' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S5;
+		ELSIF RISE_N = '1' AND RISE_D = '0' AND RISE_RESET = '0' THEN Y <= S5;
+		ELSIF RISE_D = '0' AND RISE_N = '0' AND RISE_RESET = '0' THEN Y <= S5;
+		ELSE Y <= S1;
+		END IF;
+
+		END CASE;
+		
+	END IF;
+	
+END PROCESS;
+
+CANDY <= '1' WHEN Y = S5 ELSE '0';
+
+END BEHAVIOR;

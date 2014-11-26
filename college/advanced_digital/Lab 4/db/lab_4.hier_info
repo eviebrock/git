@@ -1,0 +1,20 @@
+|lab_4
+d => d1.DATAIN
+n => n1.DATAIN
+reset => reset1.DATAIN
+clk => rise_reset.CLK
+clk => reset3.CLK
+clk => reset2.CLK
+clk => reset1.CLK
+clk => rise_n.CLK
+clk => n3.CLK
+clk => n2.CLK
+clk => n1.CLK
+clk => rise_d.CLK
+clk => d3.CLK
+clk => d2.CLK
+clk => d1.CLK
+clk => Y~16.DATAIN
+candy <= candy~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

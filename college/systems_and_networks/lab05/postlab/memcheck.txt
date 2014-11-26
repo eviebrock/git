@@ -1,0 +1,20 @@
+==2497== Memcheck, a memory error detector
+==2497== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==2497== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==2497== Command: ./analysis_program -ngram 2
+==2497== Parent PID: 1721
+==2497== 
+==2497== Invalid free() / delete / delete[] / realloc()
+==2497==    at 0x402B06C: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==2497==    by 0x8049224: main (analysis.c:366)
+==2497==  Address 0x80487c0 is in the Text segment of /home/erich/bitbucket/2012_fall_ecpe170/lab05/postlab/analysis_program
+==2497== 
+==2497== 
+==2497== HEAP SUMMARY:
+==2497==     in use at exit: 0 bytes in 0 blocks
+==2497==   total heap usage: 228,845 allocs, 228,846 frees, 3,224,755 bytes allocated
+==2497== 
+==2497== All heap blocks were freed -- no leaks are possible
+==2497== 
+==2497== For counts of detected and suppressed errors, rerun with: -v
+==2497== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

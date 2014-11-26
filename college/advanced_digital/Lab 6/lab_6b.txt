@@ -1,0 +1,31 @@
+Erich Viebrock
+ECPE 174
+
+Pre-Lab #6B
+
+
+
+
+
+
+VHDL:
+
+
+See attached.
+
+
+
+Design Choices:
+
+
+
+We chose to design a Moore FSM for our ALU. We chose this design because it is easier to create, and debug.
+Because we chose a Moore, our output only depends on the present state, rather than present state and input.
+Designing a Mealy FSM would create one more possible situation for error, output during input. Because we
+did not want an extra case for error during debugging, we chose a Moore FSM. 
+
+
+
+Simulation Results:
+
+See attached.

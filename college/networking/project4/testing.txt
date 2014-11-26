@@ -1,0 +1,40 @@
+In it, name the student(s) you tested your project with, describe any bugs found/fixed, describe the real network you tested your program over, and provide the performance results obtained from your program.
+
+
+Students tested project with:
+	1. Gorav
+	2. Ohan Ohan
+	3. Daniel
+	4. Shafer
+	
+Any bugs found/fixed:
+	1. No design or logic bugs found
+	2. Wasn't sure if counting bytes or packets for tests, decided to count bytes
+	3. 
+
+Describe the real network tested over:
+	Tested the --client and --server versions of the University's network.
+	
+Performance results obtained:
+	--- localhost ---	
+		1. TCP_STREAM
+			a. Bandwidth: 532 Mbps
+		2. TCP_RR
+			a. Latency: 32615 packets/second
+		3. UDP_STREAM
+			a. Bandwidth: 7 Mbps
+			b. Packet Loss: 0.000000%
+		4. UDP_RR
+			a. Latency: 10772 packets/second
+			b. Packet Loss: 0.000000%
+	--- Ohan Ohan's Server ---
+		1. TCP_STREAM
+			a. Bandwidth: 10 Mbps
+		2. TCP_RR
+			a. Latency: 1795 packets/second
+		3. UDP_STREAM
+			a. Bandwidth: 9 Mbps
+			b. Packet Loss: 29.885668%
+		4. UDP_RR
+			a. Latency: 1558 packets/second
+			b. Packet Loss: 0.000000%

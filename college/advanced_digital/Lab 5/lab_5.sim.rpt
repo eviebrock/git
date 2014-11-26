@@ -1,0 +1,428 @@
+Simulator report for lab_5
+Tue Oct 18 12:59:45 2011
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 480.0 ns     ;
+; Simulation Netlist Size     ; 145 nodes    ;
+; Simulation Coverage         ;      15.86 % ;
+; Total Number of Transitions ; 311          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; lab_5.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      15.86 % ;
+; Total nodes checked                                 ; 145          ;
+; Total output ports checked                          ; 145          ;
+; Total output ports with complete 1/0-value coverage ; 23           ;
+; Total output ports with no 1/0-value coverage       ; 121          ;
+; Total output ports with no 1-value coverage         ; 121          ;
+; Total output ports with no 0-value coverage         ; 122          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                            ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |lab_5|clkin             ; |lab_5|clkin             ; out              ;
+; |lab_5|send              ; |lab_5|send              ; out              ;
+; |lab_5|devB              ; |lab_5|devB              ; out              ;
+; |lab_5|devBView          ; |lab_5|devBView          ; pin_out          ;
+; |lab_5|clk:blah|Count[3] ; |lab_5|clk:blah|Count[3] ; regout           ;
+; |lab_5|clk:blah|Count[2] ; |lab_5|clk:blah|Count[2] ; regout           ;
+; |lab_5|clk:blah|Count[1] ; |lab_5|clk:blah|Count[1] ; regout           ;
+; |lab_5|clk:blah|Count[0] ; |lab_5|clk:blah|Count[0] ; regout           ;
+; |lab_5|clk:blah|Count~18 ; |lab_5|clk:blah|Count~18 ; out              ;
+; |lab_5|clk:blah|Count~19 ; |lab_5|clk:blah|Count~19 ; out              ;
+; |lab_5|clk:blah|Count~20 ; |lab_5|clk:blah|Count~20 ; out              ;
+; |lab_5|clk:blah|Count~21 ; |lab_5|clk:blah|Count~21 ; out              ;
+; |lab_5|clk:blah|Count~22 ; |lab_5|clk:blah|Count~22 ; out              ;
+; |lab_5|clk:blah|Count~23 ; |lab_5|clk:blah|Count~23 ; out              ;
+; |lab_5|clk:blah|Add0~0   ; |lab_5|clk:blah|Add0~0   ; out0             ;
+; |lab_5|clk:blah|Add0~1   ; |lab_5|clk:blah|Add0~1   ; out0             ;
+; |lab_5|clk:blah|Add0~2   ; |lab_5|clk:blah|Add0~2   ; out0             ;
+; |lab_5|clk:blah|Add0~3   ; |lab_5|clk:blah|Add0~3   ; out0             ;
+; |lab_5|clk:blah|Add0~4   ; |lab_5|clk:blah|Add0~4   ; out0             ;
+; |lab_5|clk:blah|Add0~5   ; |lab_5|clk:blah|Add0~5   ; out0             ;
+; |lab_5|clk:blah|Add0~6   ; |lab_5|clk:blah|Add0~6   ; out0             ;
+; |lab_5|clk:blah|Add0~7   ; |lab_5|clk:blah|Add0~7   ; out0             ;
+; |lab_5|clk:blah|Add0~8   ; |lab_5|clk:blah|Add0~8   ; out0             ;
++--------------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |lab_5|devA~reg0          ; |lab_5|devA~reg0          ; regout           ;
+; |lab_5|y.idle             ; |lab_5|y.idle             ; regout           ;
+; |lab_5|rise_send~0        ; |lab_5|rise_send~0        ; out0             ;
+; |lab_5|rise_devB~0        ; |lab_5|rise_devB~0        ; out0             ;
+; |lab_5|fall_devB~0        ; |lab_5|fall_devB~0        ; out0             ;
+; |lab_5|y~0                ; |lab_5|y~0                ; out              ;
+; |lab_5|y~1                ; |lab_5|y~1                ; out              ;
+; |lab_5|y~2                ; |lab_5|y~2                ; out              ;
+; |lab_5|y~3                ; |lab_5|y~3                ; out              ;
+; |lab_5|y~4                ; |lab_5|y~4                ; out              ;
+; |lab_5|y~5                ; |lab_5|y~5                ; out              ;
+; |lab_5|y.s1               ; |lab_5|y.s1               ; regout           ;
+; |lab_5|y.s2               ; |lab_5|y.s2               ; regout           ;
+; |lab_5|y.recieve          ; |lab_5|y.recieve          ; regout           ;
+; |lab_5|devA~0             ; |lab_5|devA~0             ; out0             ;
+; |lab_5|fall_devB          ; |lab_5|fall_devB          ; regout           ;
+; |lab_5|rise_devB          ; |lab_5|rise_devB          ; regout           ;
+; |lab_5|DEVB2              ; |lab_5|DEVB2              ; regout           ;
+; |lab_5|DEVB1              ; |lab_5|DEVB1              ; regout           ;
+; |lab_5|rise_send          ; |lab_5|rise_send          ; regout           ;
+; |lab_5|SEND2              ; |lab_5|SEND2              ; regout           ;
+; |lab_5|SEND1              ; |lab_5|SEND1              ; regout           ;
+; |lab_5|reset              ; |lab_5|reset              ; out              ;
+; |lab_5|devA               ; |lab_5|devA               ; pin_out          ;
+; |lab_5|riseSend           ; |lab_5|riseSend           ; pin_out          ;
+; |lab_5|devAView           ; |lab_5|devAView           ; pin_out          ;
+; |lab_5|y~9                ; |lab_5|y~9                ; out0             ;
+; |lab_5|devA~2             ; |lab_5|devA~2             ; out0             ;
+; |lab_5|Selector0~0        ; |lab_5|Selector0~0        ; out0             ;
+; |lab_5|devA~4             ; |lab_5|devA~4             ; out0             ;
+; |lab_5|Selector0~1        ; |lab_5|Selector0~1        ; out0             ;
+; |lab_5|y~13               ; |lab_5|y~13               ; out0             ;
+; |lab_5|clk:blah|Count[9]  ; |lab_5|clk:blah|Count[9]  ; regout           ;
+; |lab_5|clk:blah|Count[8]  ; |lab_5|clk:blah|Count[8]  ; regout           ;
+; |lab_5|clk:blah|Count[7]  ; |lab_5|clk:blah|Count[7]  ; regout           ;
+; |lab_5|clk:blah|Count[6]  ; |lab_5|clk:blah|Count[6]  ; regout           ;
+; |lab_5|clk:blah|Count[5]  ; |lab_5|clk:blah|Count[5]  ; regout           ;
+; |lab_5|clk:blah|clkstate  ; |lab_5|clk:blah|clkstate  ; regout           ;
+; |lab_5|clk:blah|Count~0   ; |lab_5|clk:blah|Count~0   ; out              ;
+; |lab_5|clk:blah|Count~1   ; |lab_5|clk:blah|Count~1   ; out              ;
+; |lab_5|clk:blah|Count~2   ; |lab_5|clk:blah|Count~2   ; out              ;
+; |lab_5|clk:blah|Count~3   ; |lab_5|clk:blah|Count~3   ; out              ;
+; |lab_5|clk:blah|Count~4   ; |lab_5|clk:blah|Count~4   ; out              ;
+; |lab_5|clk:blah|Count~5   ; |lab_5|clk:blah|Count~5   ; out              ;
+; |lab_5|clk:blah|Count~6   ; |lab_5|clk:blah|Count~6   ; out              ;
+; |lab_5|clk:blah|Count~7   ; |lab_5|clk:blah|Count~7   ; out              ;
+; |lab_5|clk:blah|Count~8   ; |lab_5|clk:blah|Count~8   ; out              ;
+; |lab_5|clk:blah|Count~9   ; |lab_5|clk:blah|Count~9   ; out              ;
+; |lab_5|clk:blah|Count~10  ; |lab_5|clk:blah|Count~10  ; out              ;
+; |lab_5|clk:blah|Count~11  ; |lab_5|clk:blah|Count~11  ; out              ;
+; |lab_5|clk:blah|Count~12  ; |lab_5|clk:blah|Count~12  ; out              ;
+; |lab_5|clk:blah|Count~13  ; |lab_5|clk:blah|Count~13  ; out              ;
+; |lab_5|clk:blah|Count~14  ; |lab_5|clk:blah|Count~14  ; out              ;
+; |lab_5|clk:blah|Count~15  ; |lab_5|clk:blah|Count~15  ; out              ;
+; |lab_5|clk:blah|Count~16  ; |lab_5|clk:blah|Count~16  ; out              ;
+; |lab_5|clk:blah|Count~17  ; |lab_5|clk:blah|Count~17  ; out              ;
+; |lab_5|clk:blah|Count[10] ; |lab_5|clk:blah|Count[10] ; regout           ;
+; |lab_5|clk:blah|Count[11] ; |lab_5|clk:blah|Count[11] ; regout           ;
+; |lab_5|clk:blah|Count[12] ; |lab_5|clk:blah|Count[12] ; regout           ;
+; |lab_5|clk:blah|Count[13] ; |lab_5|clk:blah|Count[13] ; regout           ;
+; |lab_5|clk:blah|Count[14] ; |lab_5|clk:blah|Count[14] ; regout           ;
+; |lab_5|clk:blah|Count[15] ; |lab_5|clk:blah|Count[15] ; regout           ;
+; |lab_5|clk:blah|Count[16] ; |lab_5|clk:blah|Count[16] ; regout           ;
+; |lab_5|clk:blah|Count[17] ; |lab_5|clk:blah|Count[17] ; regout           ;
+; |lab_5|clk:blah|Count[18] ; |lab_5|clk:blah|Count[18] ; regout           ;
+; |lab_5|clk:blah|Count[19] ; |lab_5|clk:blah|Count[19] ; regout           ;
+; |lab_5|clk:blah|Count[20] ; |lab_5|clk:blah|Count[20] ; regout           ;
+; |lab_5|clk:blah|Count[21] ; |lab_5|clk:blah|Count[21] ; regout           ;
+; |lab_5|clk:blah|Count[22] ; |lab_5|clk:blah|Count[22] ; regout           ;
+; |lab_5|clk:blah|Count[23] ; |lab_5|clk:blah|Count[23] ; regout           ;
+; |lab_5|Selector0~2        ; |lab_5|Selector0~2        ; out0             ;
+; |lab_5|Selector0~3        ; |lab_5|Selector0~3        ; out0             ;
+; |lab_5|Selector0~4        ; |lab_5|Selector0~4        ; out0             ;
+; |lab_5|Selector0~5        ; |lab_5|Selector0~5        ; out0             ;
+; |lab_5|Selector0~6        ; |lab_5|Selector0~6        ; out0             ;
+; |lab_5|Selector1~0        ; |lab_5|Selector1~0        ; out0             ;
+; |lab_5|Selector1~1        ; |lab_5|Selector1~1        ; out0             ;
+; |lab_5|Selector1~2        ; |lab_5|Selector1~2        ; out0             ;
+; |lab_5|Selector2~0        ; |lab_5|Selector2~0        ; out0             ;
+; |lab_5|Selector2~1        ; |lab_5|Selector2~1        ; out0             ;
+; |lab_5|Selector2~2        ; |lab_5|Selector2~2        ; out0             ;
+; |lab_5|Selector3~0        ; |lab_5|Selector3~0        ; out0             ;
+; |lab_5|Selector3~1        ; |lab_5|Selector3~1        ; out0             ;
+; |lab_5|Selector3~2        ; |lab_5|Selector3~2        ; out0             ;
+; |lab_5|clk:blah|Add0~9    ; |lab_5|clk:blah|Add0~9    ; out0             ;
+; |lab_5|clk:blah|Add0~10   ; |lab_5|clk:blah|Add0~10   ; out0             ;
+; |lab_5|clk:blah|Add0~11   ; |lab_5|clk:blah|Add0~11   ; out0             ;
+; |lab_5|clk:blah|Add0~12   ; |lab_5|clk:blah|Add0~12   ; out0             ;
+; |lab_5|clk:blah|Add0~13   ; |lab_5|clk:blah|Add0~13   ; out0             ;
+; |lab_5|clk:blah|Add0~14   ; |lab_5|clk:blah|Add0~14   ; out0             ;
+; |lab_5|clk:blah|Add0~15   ; |lab_5|clk:blah|Add0~15   ; out0             ;
+; |lab_5|clk:blah|Add0~16   ; |lab_5|clk:blah|Add0~16   ; out0             ;
+; |lab_5|clk:blah|Add0~17   ; |lab_5|clk:blah|Add0~17   ; out0             ;
+; |lab_5|clk:blah|Add0~18   ; |lab_5|clk:blah|Add0~18   ; out0             ;
+; |lab_5|clk:blah|Add0~19   ; |lab_5|clk:blah|Add0~19   ; out0             ;
+; |lab_5|clk:blah|Add0~20   ; |lab_5|clk:blah|Add0~20   ; out0             ;
+; |lab_5|clk:blah|Add0~21   ; |lab_5|clk:blah|Add0~21   ; out0             ;
+; |lab_5|clk:blah|Add0~22   ; |lab_5|clk:blah|Add0~22   ; out0             ;
+; |lab_5|clk:blah|Add0~23   ; |lab_5|clk:blah|Add0~23   ; out0             ;
+; |lab_5|clk:blah|Add0~24   ; |lab_5|clk:blah|Add0~24   ; out0             ;
+; |lab_5|clk:blah|Add0~25   ; |lab_5|clk:blah|Add0~25   ; out0             ;
+; |lab_5|clk:blah|Add0~26   ; |lab_5|clk:blah|Add0~26   ; out0             ;
+; |lab_5|clk:blah|Add0~27   ; |lab_5|clk:blah|Add0~27   ; out0             ;
+; |lab_5|clk:blah|Add0~28   ; |lab_5|clk:blah|Add0~28   ; out0             ;
+; |lab_5|clk:blah|Add0~29   ; |lab_5|clk:blah|Add0~29   ; out0             ;
+; |lab_5|clk:blah|Add0~30   ; |lab_5|clk:blah|Add0~30   ; out0             ;
+; |lab_5|clk:blah|Add0~31   ; |lab_5|clk:blah|Add0~31   ; out0             ;
+; |lab_5|clk:blah|Add0~32   ; |lab_5|clk:blah|Add0~32   ; out0             ;
+; |lab_5|clk:blah|Add0~33   ; |lab_5|clk:blah|Add0~33   ; out0             ;
+; |lab_5|clk:blah|Add0~34   ; |lab_5|clk:blah|Add0~34   ; out0             ;
+; |lab_5|clk:blah|Add0~35   ; |lab_5|clk:blah|Add0~35   ; out0             ;
+; |lab_5|clk:blah|Add0~36   ; |lab_5|clk:blah|Add0~36   ; out0             ;
+; |lab_5|clk:blah|Add0~37   ; |lab_5|clk:blah|Add0~37   ; out0             ;
+; |lab_5|clk:blah|Add0~38   ; |lab_5|clk:blah|Add0~38   ; out0             ;
+; |lab_5|clk:blah|Add0~39   ; |lab_5|clk:blah|Add0~39   ; out0             ;
+; |lab_5|clk:blah|Add0~40   ; |lab_5|clk:blah|Add0~40   ; out0             ;
+; |lab_5|clk:blah|Add0~41   ; |lab_5|clk:blah|Add0~41   ; out0             ;
+; |lab_5|clk:blah|Add0~42   ; |lab_5|clk:blah|Add0~42   ; out0             ;
+; |lab_5|clk:blah|Add0~43   ; |lab_5|clk:blah|Add0~43   ; out0             ;
+; |lab_5|clk:blah|Add0~44   ; |lab_5|clk:blah|Add0~44   ; out0             ;
+; |lab_5|clk:blah|Equal0~0  ; |lab_5|clk:blah|Equal0~0  ; out0             ;
++---------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |lab_5|devA~reg0          ; |lab_5|devA~reg0          ; regout           ;
+; |lab_5|y.idle             ; |lab_5|y.idle             ; regout           ;
+; |lab_5|rise_send~0        ; |lab_5|rise_send~0        ; out0             ;
+; |lab_5|rise_devB~0        ; |lab_5|rise_devB~0        ; out0             ;
+; |lab_5|fall_devB~0        ; |lab_5|fall_devB~0        ; out0             ;
+; |lab_5|y~0                ; |lab_5|y~0                ; out              ;
+; |lab_5|y~1                ; |lab_5|y~1                ; out              ;
+; |lab_5|y~2                ; |lab_5|y~2                ; out              ;
+; |lab_5|y~3                ; |lab_5|y~3                ; out              ;
+; |lab_5|y~4                ; |lab_5|y~4                ; out              ;
+; |lab_5|y~5                ; |lab_5|y~5                ; out              ;
+; |lab_5|y.s1               ; |lab_5|y.s1               ; regout           ;
+; |lab_5|y.s2               ; |lab_5|y.s2               ; regout           ;
+; |lab_5|y.recieve          ; |lab_5|y.recieve          ; regout           ;
+; |lab_5|devA~0             ; |lab_5|devA~0             ; out0             ;
+; |lab_5|fall_devB          ; |lab_5|fall_devB          ; regout           ;
+; |lab_5|rise_devB          ; |lab_5|rise_devB          ; regout           ;
+; |lab_5|DEVB2              ; |lab_5|DEVB2              ; regout           ;
+; |lab_5|DEVB1              ; |lab_5|DEVB1              ; regout           ;
+; |lab_5|rise_send          ; |lab_5|rise_send          ; regout           ;
+; |lab_5|SEND2              ; |lab_5|SEND2              ; regout           ;
+; |lab_5|SEND1              ; |lab_5|SEND1              ; regout           ;
+; |lab_5|reset              ; |lab_5|reset              ; out              ;
+; |lab_5|devA               ; |lab_5|devA               ; pin_out          ;
+; |lab_5|riseSend           ; |lab_5|riseSend           ; pin_out          ;
+; |lab_5|devAView           ; |lab_5|devAView           ; pin_out          ;
+; |lab_5|y~9                ; |lab_5|y~9                ; out0             ;
+; |lab_5|devA~2             ; |lab_5|devA~2             ; out0             ;
+; |lab_5|Selector0~0        ; |lab_5|Selector0~0        ; out0             ;
+; |lab_5|devA~4             ; |lab_5|devA~4             ; out0             ;
+; |lab_5|Selector0~1        ; |lab_5|Selector0~1        ; out0             ;
+; |lab_5|y~13               ; |lab_5|y~13               ; out0             ;
+; |lab_5|clk:blah|Count[9]  ; |lab_5|clk:blah|Count[9]  ; regout           ;
+; |lab_5|clk:blah|Count[8]  ; |lab_5|clk:blah|Count[8]  ; regout           ;
+; |lab_5|clk:blah|Count[7]  ; |lab_5|clk:blah|Count[7]  ; regout           ;
+; |lab_5|clk:blah|Count[6]  ; |lab_5|clk:blah|Count[6]  ; regout           ;
+; |lab_5|clk:blah|Count[5]  ; |lab_5|clk:blah|Count[5]  ; regout           ;
+; |lab_5|clk:blah|Count[4]  ; |lab_5|clk:blah|Count[4]  ; regout           ;
+; |lab_5|clk:blah|clkstate  ; |lab_5|clk:blah|clkstate  ; regout           ;
+; |lab_5|clk:blah|Count~0   ; |lab_5|clk:blah|Count~0   ; out              ;
+; |lab_5|clk:blah|Count~1   ; |lab_5|clk:blah|Count~1   ; out              ;
+; |lab_5|clk:blah|Count~2   ; |lab_5|clk:blah|Count~2   ; out              ;
+; |lab_5|clk:blah|Count~3   ; |lab_5|clk:blah|Count~3   ; out              ;
+; |lab_5|clk:blah|Count~4   ; |lab_5|clk:blah|Count~4   ; out              ;
+; |lab_5|clk:blah|Count~5   ; |lab_5|clk:blah|Count~5   ; out              ;
+; |lab_5|clk:blah|Count~6   ; |lab_5|clk:blah|Count~6   ; out              ;
+; |lab_5|clk:blah|Count~7   ; |lab_5|clk:blah|Count~7   ; out              ;
+; |lab_5|clk:blah|Count~8   ; |lab_5|clk:blah|Count~8   ; out              ;
+; |lab_5|clk:blah|Count~9   ; |lab_5|clk:blah|Count~9   ; out              ;
+; |lab_5|clk:blah|Count~10  ; |lab_5|clk:blah|Count~10  ; out              ;
+; |lab_5|clk:blah|Count~11  ; |lab_5|clk:blah|Count~11  ; out              ;
+; |lab_5|clk:blah|Count~12  ; |lab_5|clk:blah|Count~12  ; out              ;
+; |lab_5|clk:blah|Count~13  ; |lab_5|clk:blah|Count~13  ; out              ;
+; |lab_5|clk:blah|Count~14  ; |lab_5|clk:blah|Count~14  ; out              ;
+; |lab_5|clk:blah|Count~15  ; |lab_5|clk:blah|Count~15  ; out              ;
+; |lab_5|clk:blah|Count~16  ; |lab_5|clk:blah|Count~16  ; out              ;
+; |lab_5|clk:blah|Count~17  ; |lab_5|clk:blah|Count~17  ; out              ;
+; |lab_5|clk:blah|Count[10] ; |lab_5|clk:blah|Count[10] ; regout           ;
+; |lab_5|clk:blah|Count[11] ; |lab_5|clk:blah|Count[11] ; regout           ;
+; |lab_5|clk:blah|Count[12] ; |lab_5|clk:blah|Count[12] ; regout           ;
+; |lab_5|clk:blah|Count[13] ; |lab_5|clk:blah|Count[13] ; regout           ;
+; |lab_5|clk:blah|Count[14] ; |lab_5|clk:blah|Count[14] ; regout           ;
+; |lab_5|clk:blah|Count[15] ; |lab_5|clk:blah|Count[15] ; regout           ;
+; |lab_5|clk:blah|Count[16] ; |lab_5|clk:blah|Count[16] ; regout           ;
+; |lab_5|clk:blah|Count[17] ; |lab_5|clk:blah|Count[17] ; regout           ;
+; |lab_5|clk:blah|Count[18] ; |lab_5|clk:blah|Count[18] ; regout           ;
+; |lab_5|clk:blah|Count[19] ; |lab_5|clk:blah|Count[19] ; regout           ;
+; |lab_5|clk:blah|Count[20] ; |lab_5|clk:blah|Count[20] ; regout           ;
+; |lab_5|clk:blah|Count[21] ; |lab_5|clk:blah|Count[21] ; regout           ;
+; |lab_5|clk:blah|Count[22] ; |lab_5|clk:blah|Count[22] ; regout           ;
+; |lab_5|clk:blah|Count[23] ; |lab_5|clk:blah|Count[23] ; regout           ;
+; |lab_5|Selector0~2        ; |lab_5|Selector0~2        ; out0             ;
+; |lab_5|Selector0~3        ; |lab_5|Selector0~3        ; out0             ;
+; |lab_5|Selector0~4        ; |lab_5|Selector0~4        ; out0             ;
+; |lab_5|Selector0~5        ; |lab_5|Selector0~5        ; out0             ;
+; |lab_5|Selector0~6        ; |lab_5|Selector0~6        ; out0             ;
+; |lab_5|Selector1~0        ; |lab_5|Selector1~0        ; out0             ;
+; |lab_5|Selector1~1        ; |lab_5|Selector1~1        ; out0             ;
+; |lab_5|Selector1~2        ; |lab_5|Selector1~2        ; out0             ;
+; |lab_5|Selector2~0        ; |lab_5|Selector2~0        ; out0             ;
+; |lab_5|Selector2~1        ; |lab_5|Selector2~1        ; out0             ;
+; |lab_5|Selector2~2        ; |lab_5|Selector2~2        ; out0             ;
+; |lab_5|Selector3~0        ; |lab_5|Selector3~0        ; out0             ;
+; |lab_5|Selector3~1        ; |lab_5|Selector3~1        ; out0             ;
+; |lab_5|Selector3~2        ; |lab_5|Selector3~2        ; out0             ;
+; |lab_5|clk:blah|Add0~9    ; |lab_5|clk:blah|Add0~9    ; out0             ;
+; |lab_5|clk:blah|Add0~10   ; |lab_5|clk:blah|Add0~10   ; out0             ;
+; |lab_5|clk:blah|Add0~11   ; |lab_5|clk:blah|Add0~11   ; out0             ;
+; |lab_5|clk:blah|Add0~12   ; |lab_5|clk:blah|Add0~12   ; out0             ;
+; |lab_5|clk:blah|Add0~13   ; |lab_5|clk:blah|Add0~13   ; out0             ;
+; |lab_5|clk:blah|Add0~14   ; |lab_5|clk:blah|Add0~14   ; out0             ;
+; |lab_5|clk:blah|Add0~15   ; |lab_5|clk:blah|Add0~15   ; out0             ;
+; |lab_5|clk:blah|Add0~16   ; |lab_5|clk:blah|Add0~16   ; out0             ;
+; |lab_5|clk:blah|Add0~17   ; |lab_5|clk:blah|Add0~17   ; out0             ;
+; |lab_5|clk:blah|Add0~18   ; |lab_5|clk:blah|Add0~18   ; out0             ;
+; |lab_5|clk:blah|Add0~19   ; |lab_5|clk:blah|Add0~19   ; out0             ;
+; |lab_5|clk:blah|Add0~20   ; |lab_5|clk:blah|Add0~20   ; out0             ;
+; |lab_5|clk:blah|Add0~21   ; |lab_5|clk:blah|Add0~21   ; out0             ;
+; |lab_5|clk:blah|Add0~22   ; |lab_5|clk:blah|Add0~22   ; out0             ;
+; |lab_5|clk:blah|Add0~23   ; |lab_5|clk:blah|Add0~23   ; out0             ;
+; |lab_5|clk:blah|Add0~24   ; |lab_5|clk:blah|Add0~24   ; out0             ;
+; |lab_5|clk:blah|Add0~25   ; |lab_5|clk:blah|Add0~25   ; out0             ;
+; |lab_5|clk:blah|Add0~26   ; |lab_5|clk:blah|Add0~26   ; out0             ;
+; |lab_5|clk:blah|Add0~27   ; |lab_5|clk:blah|Add0~27   ; out0             ;
+; |lab_5|clk:blah|Add0~28   ; |lab_5|clk:blah|Add0~28   ; out0             ;
+; |lab_5|clk:blah|Add0~29   ; |lab_5|clk:blah|Add0~29   ; out0             ;
+; |lab_5|clk:blah|Add0~30   ; |lab_5|clk:blah|Add0~30   ; out0             ;
+; |lab_5|clk:blah|Add0~31   ; |lab_5|clk:blah|Add0~31   ; out0             ;
+; |lab_5|clk:blah|Add0~32   ; |lab_5|clk:blah|Add0~32   ; out0             ;
+; |lab_5|clk:blah|Add0~33   ; |lab_5|clk:blah|Add0~33   ; out0             ;
+; |lab_5|clk:blah|Add0~34   ; |lab_5|clk:blah|Add0~34   ; out0             ;
+; |lab_5|clk:blah|Add0~35   ; |lab_5|clk:blah|Add0~35   ; out0             ;
+; |lab_5|clk:blah|Add0~36   ; |lab_5|clk:blah|Add0~36   ; out0             ;
+; |lab_5|clk:blah|Add0~37   ; |lab_5|clk:blah|Add0~37   ; out0             ;
+; |lab_5|clk:blah|Add0~38   ; |lab_5|clk:blah|Add0~38   ; out0             ;
+; |lab_5|clk:blah|Add0~39   ; |lab_5|clk:blah|Add0~39   ; out0             ;
+; |lab_5|clk:blah|Add0~40   ; |lab_5|clk:blah|Add0~40   ; out0             ;
+; |lab_5|clk:blah|Add0~41   ; |lab_5|clk:blah|Add0~41   ; out0             ;
+; |lab_5|clk:blah|Add0~42   ; |lab_5|clk:blah|Add0~42   ; out0             ;
+; |lab_5|clk:blah|Add0~43   ; |lab_5|clk:blah|Add0~43   ; out0             ;
+; |lab_5|clk:blah|Add0~44   ; |lab_5|clk:blah|Add0~44   ; out0             ;
+; |lab_5|clk:blah|Equal0~0  ; |lab_5|clk:blah|Equal0~0  ; out0             ;
++---------------------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Oct 18 12:59:45 2011
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab_5 -c lab_5
+Info: Using vector source file "C:/Users/Erich Viebrock/Desktop/Classes/Fall 11/Advanced Digital/Lab 5/lab_5.vwf"
+Warning: Can't find signal in vector source file for input pin "|lab_5|reset"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      15.86 %
+Info: Number of transitions in simulation is 311
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 146 megabytes
+    Info: Processing ended: Tue Oct 18 12:59:45 2011
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

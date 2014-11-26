@@ -1,0 +1,382 @@
+//LIBRARY ieee;
+//USE ieee.std_logic_1164.all;
+//
+//ENTITY lab_1 IS
+//	PORT ( L, R, H, clk		:IN STD_LOGIC;
+//		   Lights			:BUFFER STD_LOGIC_VECTOR (1 to 6));
+//END lab_1;
+//
+//ARCHITECTURE Behavior OF lab_1 IS
+//	TYPE State_type IS (IDLE, LA, LB, LC, RA, RB, RC, LR);
+//	SIGNAL y: State_type;
+//BEGIN
+//	PROCESS (clk, H, L, R)
+//	BEGIN
+//--		IF clk = '0' THEN
+//--			y <= IDLE;
+//		IF H = '1' THEN
+//			y <= LR;
+//		ELSIF (clk'EVENT AND clk = '1') THEN
+//			CASE clk IS
+//				WHEN IDLE =>
+//					IF H = '1' THEN y <= LR;
+//					ELSIF L = '1' THEN y <= LA;
+//					ELSIF R = '1' THEN Y <= RA;
+//					ELSE y <= IDLE;
+//					END IF;
+//				WHEN LA =>
+//					IF H = '1' then y <= LR;
+//					ELSE y <= LB;
+//					END IF;
+//				WHEN LB =>
+//					IF H = '1' then y <= LR;
+//					ELSE y <= LC;
+//					END IF;
+//				WHEN LC =>
+//					y <= IDLE;
+//				WHEN RA =>
+//					IF H = '1' then y <= LR;
+//					ELSE y <= RB;
+//					END IF;
+//				WHEN RB =>
+//					IF H = '1' then y <= LR;
+//					ELSE y <= RC;
+//					END IF;
+//				WHEN RC =>
+//					y <= IDLE;
+//				WHEN LR =>
+//					y <= LR;
+//			END CASE;
+//		END IF;
+//	END PROCESS;
+//PROCESS (Lights, y)
+//BEGIN
+//IF
+//		y = IDLE
+//			THEN Lights <= "000000";
+//ElSIF
+//		y = LR
+//			THEN Lights <= "111111";
+//ElSIF
+//		y = LA			
+//			THEN Lights <= "010000";
+//ElSIF
+//		y = LB
+//			THEN Lights <= "101000";
+//ElSIF
+//		y = LC
+//			THEN Lights <= "111000";
+//ElSIF
+//		y = RA
+//			THEN Lights <= "000010";
+//ElSIF
+//		y = RB
+//			THEN Lights <= "000101";
+//ElSIF
+//		y = RC
+//			THEN Lights <= "000111";
+//END IF;
+//END PROCESS;
+//END Behavior;
+
+module lab_8 (
+L,     // left
+R,     // right
+H,     // hazard
+//clockdiv,    // clock
+clock, // pseudo clock, use for testing in quartus
+Lights // lights
+);
+input L, R, H, clock; // clockdiv  // inputs
+output reg [1:6] Lights; // outputs
+
+//wire clock;
+
+//clk myclock (.iclk(clockdiv), .oclk(clock));
+
+parameter IDLE = 3'b000, LA = 3'b001, LB = 3'b010, LC = 3'b011, RA = 3'b100, RB = 3'b101, RC = 3'b110, LR = 3'b111;
+reg [2:0]	y;
+
+always @(posedge clock) begin
+case(y)
+IDLE : 	if (H == 1'b1) begin
+			y <= LR;
+		end else if (L == 1'b1 && R == 1'b1) begin
+			y <= IDLE;
+		end else if (R == 1'b1) begin
+			y <= RA;
+		end else if (L == 1'b1) begin
+			y <= LA;
+		end else begin
+			y <= IDLE;
+		end
+LA : 	if (H == 1'b1) begin
+			y <= LR;
+		end else if (L == 1'b1 && R == 1'b1) begin
+			y <= IDLE;
+		end else if (R == 1'b1) begin
+			y <= IDLE;
+		end else if (L == 1'b1) begin
+			y <= LB;
+		end else begin
+			y <= IDLE;
+		end
+LB : 	if (H == 1'b1) begin
+			y <= LR;
+		end else if (L == 1'b1 && R == 1'b1) begin
+			y <= IDLE;
+		end else if (R == 1'b1) begin
+			y <= IDLE;
+		end else if (L == 1'b1) begin
+			y <= LC;
+		end else begin
+			y <= IDLE;
+		end
+LC : 	if (H == 1'b1) begin
+			y <= LR;
+		end else if (L == 1'b1 && R == 1'b1) begin
+			y <= IDLE;
+		end else if (R == 1'b1) begin
+			y <= IDLE;
+		end else if (L == 1'b1) begin
+			y <= IDLE;
+		end else begin
+			y <= IDLE;
+		end
+RA : 	if (H == 1'b1) begin
+			y <= LR;
+		end else if (L == 1'b1 && R == 1'b1) begin
+			y <= IDLE;
+		end else if (R == 1'b1) begin
+			y <= RB;
+		end else if (L == 1'b1) begin
+			y <= IDLE;
+		end else begin
+			y <= IDLE;
+		end
+RB : 	if (H == 1'b1) begin
+			y <= LR;
+		end else if (L == 1'b1 && R == 1'b1) begin
+			y <= IDLE;
+		end else if (R == 1'b1) begin
+			y <= RC;
+		end else if (L == 1'b1) begin
+			y <= IDLE;
+		end else begin
+			y <= IDLE;
+		end
+RC : 	if (H == 1'b1) begin
+			y <= LR;
+		end else if (L == 1'b1 && R == 1'b1) begin
+			y <= IDLE;
+		end else if (R == 1'b1) begin
+			y <= IDLE;
+		end else if (L == 1'b1) begin
+			y <= IDLE;
+		end else begin
+			y <= IDLE;
+		end
+LR : 	if (H == 1'b1) begin
+			y <= IDLE;
+		end else if (L == 1'b1 && R == 1'b1) begin
+			y <= IDLE;
+		end else if (R == 1'b1) begin
+			y <= IDLE;
+		end else if (L == 1'b1) begin
+			y <= IDLE;
+		end else begin
+			y <= IDLE;
+		end
+	default: y <= IDLE;
+	endcase
+end
+
+always@*
+begin
+	case(y)
+		IDLE:begin
+			Lights <= 6'b000000;
+		end
+		RA:begin
+			Lights <= 6'b000010;
+		end
+		RB:begin
+			Lights <= 6'b000101;
+		end
+		RC:begin
+			Lights <= 6'b000111;
+		end
+		LA:begin
+			Lights <= 6'b010000;
+		end
+		LB:begin
+			Lights <= 6'b101000;
+		end
+		LC:begin
+			Lights <= 6'b111000;
+		end
+		LR:begin
+			Lights <= 6'b111111;
+		end
+	endcase
+end
+
+endmodule
+
+
+
+
+
+//if (L) begin
+//	Lights <= LA;
+//	Lights <= LB;
+//	Lights <= LC;
+//if (R) begin
+//	Lights <= RA;
+//	Lights <= RB;
+//	Lights <= RC;
+//if (H) begin
+//	Lights <= LR;
+//
+//
+//
+//
+//end
+//endmodule;
+
+
+//VHDL:
+//ENTITY blah IS
+//PORT (a : in STD_LOGIC;
+//b : out STD_LOGIC);
+//END blah;
+//
+//Verilog:
+//module blah
+//(input a,
+//output b);
+//endmodule;
+//
+//VHDL:
+//ENTITY blah IS
+//PORT (a : in STD_LOGIC_VECTOR(2 DOWNTO 0);
+//b : out STD_LOGIC_VECTOR(0 TO 1));
+//END blah;
+//
+//Verilog:
+//module blah
+//(input [2:0] a,
+//output [0:1] b);
+//endmodule;
+//
+//Verilog:
+//module blah (a,b);
+//input [2:0] a;
+//output [0:1] b;
+//endmodule;
+//
+//VHDL:
+//ENTITY blah IS
+//PORT (a : in STD_LOGIC_VECTOR(2 DOWNTO 0);
+//b : out STD_LOGIC_VECTOR(0 TO 1));
+//END blah;
+//ARCHITECTURE Behavior OF blah IS
+//BEGIN
+//CODE GOES HERE
+//END Behavior;
+//
+//Verilog:
+//module blah (a,b);
+//input [2:0] a;
+//output [0:1] b;
+//CODE GOES HERE
+//endmodule;
+//
+//VHDL:
+//ENTITY blah IS
+//PORT (clk : in STD_LOGIC;
+//a : in STD_LOGIC_VECTOR(2 DOWNTO 0);
+//b : out STD_LOGIC_VECTOR(0 TO 1));
+//END blah;
+//ARCHITECTURE Behavior OF blah IS
+//BEGIN
+//PROCESS(clk)
+//BEGIN
+//IF(rising_edge(clk)) THEN
+//END IF;
+//END PROCESS;
+//END Behavior;
+//
+//Verilog:
+//module blah (clk,a,b);
+//input clk;
+//input [2:0] a;
+//output [0:1] b;
+//always @(posedge clk) begin
+//end
+//endmodule;
+//
+//VHDL:
+//ENTITY blah IS
+//PORT (clk : in STD_LOGIC;
+//a : in STD_LOGIC_VECTOR(2 DOWNTO 0);
+//b : out STD_LOGIC_VECTOR(0 TO 1));
+//END blah;
+//ARCHITECTURE Behavior OF blah IS
+//SIGNAL y : STD_LOGIC_VECTOR(1 DOWNTO 0);
+//BEGIN
+//PROCESS(clk)
+//VARIABLE resync : STD_LOGIC_VECTOR(1 DOWNTO 0);
+//BEGIN
+//IF(rising_edge(clk)) THEN
+//END IF;
+//END PROCESS;
+//END Behavior;
+//
+//Verilog:
+//module blah (clk,a,b);
+//input clk;
+//input [2:0] a;
+//output [0:1] b;
+//reg [0:1] b; // storage elements
+//wire [1:0] y; // literally wires
+//always @(posedge clk) begin
+//end
+//endmodule;
+//
+//VHDL:
+//ENTITY blah IS
+//PORT (clk : IN STD_LOGIC;
+//a : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+//b : OUT STD_LOGIC_VECTOR(0 TO 1));
+//END blah;
+//ARCHITECTURE Behavior OF blah IS
+//SIGNAL y : STD_LOGIC_VECTOR(1 DOWNTO 0);
+//SIGNAL outclk : STD_LOGIC;
+//COMPONENT masterclk
+//PORT (iclk : IN STD_LOGIC;
+//oclk : OUT STD_LOGIC);
+//END COMPONENT;
+//BEGIN
+//clkdivide : masterclk PORT MAP(iclk => clk, oclk => outclk);
+//PROCESS(outclk)
+//VARIABLE resync : STD_LOGIC_VECTOR(1 DOWNTO 0);
+//BEGIN
+//IF(rising_edge(outclk)) THEN
+//END IF;
+//END PROCESS;
+//END Behavior;
+//
+//Verilog:
+//module blah (clk,a,b);
+//input clk;
+//input [2:0] a;
+//output [0:1] b;
+//reg [0:1] b;
+//wire [1:0] y;
+//reg outclk;
+//masterclk clkdivide(.iclk(clk),.oclk(outclk));
+//always @(posedge outclk) begin
+//end
+//endmodule;
+//

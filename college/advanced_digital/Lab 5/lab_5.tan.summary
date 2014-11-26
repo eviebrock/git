@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.056 ns
+From           : reset
+To             : y.idle
+From Clock     : --
+To Clock       : clkin
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.586 ns
+From           : rise_send
+To             : riseSend
+From Clock     : clkin
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.933 ns
+From           : devB
+To             : devBView
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.347 ns
+From           : send
+To             : SEND1
+From Clock     : --
+To Clock       : clkin
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clkin'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 234.14 MHz ( period = 4.271 ns )
+From           : clk:blah|Count[0]
+To             : clk:blah|Count[22]
+From Clock     : clkin
+To Clock       : clkin
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

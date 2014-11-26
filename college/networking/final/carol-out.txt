@@ -1,0 +1,614 @@
+Alice: ALICE input file: alice-in.txt
+
+Alice: The Life and Death of Julies Caesar
+CHAT/1.0 TEXT
+Alice: Act 1, Scene 1 
+
+Bob: Romeo and Juliet
+
+Alice: 
+CHAT/1.0 TEXT
+Alice: SCENE I. Rome. A street.
+CHAT/1.0 TEXT
+Bob: 
+
+Alice: Enter FLAVIUS, MARULLUS, and certain Commoners
+CHAT/1.0 TEXT
+Bob: In fair Verona, where we lay our scene,
+CHAT/1.0 TEXT
+Alice: Is this a holiday? what! know you not,
+
+Bob: From forth the fatal loins of these two foes
+CHAT/1.0 TEXT
+Bob: Whose misadventured piteous overthrows
+CHAT/1.0 TEXT
+Alice: Of your profession? Speak, what trade art thou?
+CHAT/1.0 TEXT
+Alice: First Commoner
+CHAT/1.0 TEXT
+Bob: Which, but their children's end, nought could remove,
+CHAT/1.0 TEXT
+Bob: Is now the two hours' traffic of our stage;
+CHAT/1.0 TEXT
+Alice: Where is thy leather apron and thy rule?
+CHAT/1.0 TEXT
+Alice: What dost thou with thy best apparel on?
+
+Alice: You, sir, what trade are you?
+CHAT/1.0 TEXT
+Alice: Second Commoner
+CHAT/1.0 TEXT
+Alice: Truly, sir, in respect of a fine workman, I am but,
+CHAT/1.0 TEXT
+Alice: as you would say, a cobbler.
+
+Bob: Enter SAMPSON and GREGORY, of the house of Capulet, armed with swords and bucklers
+
+Alice: MARULLUS
+
+Bob: SAMPSON
+
+Bob: Gregory, o' my word, we'll not carry coals.
+
+Bob: GREGORY
+CHAT/1.0 TEXT
+Alice: Second Commoner
+CHAT/1.0 TEXT
+Bob: I mean, an we be in choler, we'll draw.
+
+Bob: GREGORY
+CHAT/1.0 TEXT
+Bob: SAMPSON
+
+Alice: MARULLUS
+CHAT/1.0 TEXT
+Alice: What trade, thou knave? thou naughty knave, what trade?
+CHAT/1.0 TEXT
+Alice: Second Commoner
+
+Alice: Nay, I beseech you, sir, be not out with me: yet,
+CHAT/1.0 TEXT
+Alice: MARULLUS
+CHAT/1.0 TEXT
+Bob: To move is to stir; and to be valiant is to stand:
+CHAT/1.0 TEXT
+Bob: therefore, if thou art moved, thou runn'st away.
+CHAT/1.0 TEXT
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Bob: take the wall of any man or maid of Montague's.
+
+Alice: FLAVIUS
+CHAT/1.0 TEXT
+Alice: Thou art a cobbler, art thou?
+CHAT/1.0 TEXT
+Bob: to the wall.
+CHAT/1.0 TEXT
+Alice: Truly, sir, all that I live by is with the awl: I
+CHAT/1.0 TEXT
+Bob: are ever thrust to the wall: therefore I will push
+
+Alice: matters, but with awl. I am, indeed, sir, a surgeon
+CHAT/1.0 TEXT
+Alice: recover them. As proper men as ever trod upon
+CHAT/1.0 TEXT
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Alice: But wherefore art not in thy shop today?
+CHAT/1.0 TEXT
+Bob: GREGORY
+
+Alice: Why dost thou lead these men about the streets?
+CHAT/1.0 TEXT
+Alice: Second Commoner
+CHAT/1.0 TEXT
+Alice: Truly, sir, to wear out their shoes, to get myself
+CHAT/1.0 TEXT
+Alice: into more work. But, indeed, sir, we make holiday,
+CHAT/1.0 TEXT
+Bob: SAMPSON
+
+Alice: Wherefore rejoice? What conquest brings he home?
+
+Bob: Me they shall feel while I am able to stand: and
+CHAT/1.0 TEXT
+Alice: To grace in captive bonds his chariot-wheels?
+
+Bob: two of the house of the Montagues.
+CHAT/1.0 TEXT
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Bob: My naked weapon is out: quarrel, I will back thee.
+
+Alice: Knew you not Pompey? Many a time and oft
+
+Bob: GREGORY
+CHAT/1.0 TEXT
+Alice: To towers and windows, yea, to chimney-tops,
+
+Bob: SAMPSON
+
+Alice: Your infants in your arms, and there have sat
+CHAT/1.0 TEXT
+Bob: GREGORY
+CHAT/1.0 TEXT
+Bob: No, marry; I fear thee!
+
+Alice: To see great Pompey pass the streets of Rome:
+
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Alice: Have you not made an universal shout,
+
+Bob: GREGORY
+CHAT/1.0 TEXT
+Bob: I will frown as I pass by, and let them take it as
+
+Alice: To hear the replication of your sounds
+CHAT/1.0 TEXT
+Alice: Made in her concave shores?
+CHAT/1.0 TEXT
+Bob: Nay, as they dare. I will bite my thumb at them;
+
+Alice: And do you now put on your best attire?
+
+Bob: which is a disgrace to them, if they bear it.
+CHAT/1.0 TEXT
+Bob: Enter ABRAHAM and BALTHASAR
+CHAT/1.0 TEXT
+Bob: 
+
+Alice: That comes in triumph over Pompey's blood? Be gone!
+
+Bob: ABRAHAM
+CHAT/1.0 TEXT
+Bob: Do you bite your thumb at us, sir?
+
+Alice: Pray to the gods to intermit the plague
+CHAT/1.0 TEXT
+Alice: FLAVIUS
+CHAT/1.0 TEXT
+Bob: ABRAHAM
+CHAT/1.0 TEXT
+Alice: Assemble all the poor men of your sort;
+
+Alice: Draw them to Tiber banks, and weep your tears
+CHAT/1.0 TEXT
+Alice: Into the channel, till the lowest stream
+CHAT/1.0 TEXT
+Alice: Do kiss the most exalted shores of all.
+CHAT/1.0 TEXT
+Alice: Exeunt all the Commoners
+CHAT/1.0 TEXT
+Alice: 
+CHAT/1.0 TEXT
+Alice: See whether their basest metal be not moved;
+CHAT/1.0 TEXT
+Alice: They vanish tongue-tied in their guiltiness.
+CHAT/1.0 TEXT
+Alice: Go you down that way towards the Capitol;
+CHAT/1.0 TEXT
+Alice: This way will I
+CHAT/1.0 TEXT
+Alice: disrobe the images,
+CHAT/1.0 TEXT
+Alice: If you do find them deck'd with ceremonies.
+
+Bob: ABRAHAM
+CHAT/1.0 TEXT
+Bob: Quarrel sir! no, sir.
+CHAT/1.0 TEXT
+Alice: You know it is the feast of Lupercal.
+CHAT/1.0 TEXT
+Alice: FLAVIUS
+CHAT/1.0 TEXT
+Alice: It is no matter; let no images
+CHAT/1.0 TEXT
+Alice: Be hung with Caesar's trophies. I'll about,
+CHAT/1.0 TEXT
+Alice: And drive away the vulgar from the streets:
+
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Alice: Will make him fly an ordinary pitch,
+CHAT/1.0 TEXT
+Bob: Say 'better:' here comes one of my master's kinsmen.
+CHAT/1.0 TEXT
+Bob: SAMPSON
+CHAT/1.0 TEXT
+Bob: Yes, better, sir.
+CHAT/1.0 TEXT
+Bob: You lie.
+
+Bob: SAMPSON
+
+Bob: Draw, if you be men. Gregory, remember thy swashing blow.
+
+Bob: They fight
+
+Bob: 
+
+Bob: Enter BENVOLIO
+
+Bob: 
+
+Bob: BENVOLIO
+
+Bob: Part, fools!
+
+Bob: Put up your swords; you know not what you do.
+
+Bob: Beats down their swords
+
+Bob: 
+
+Bob: Enter TYBALT
+
+Bob: 
+
+Bob: TYBALT
+
+Bob: What, art thou drawn among these heartless hinds?
+
+Bob: Turn thee, Benvolio, look upon thy death.
+
+Bob: BENVOLIO
+
+Bob: I do but keep the peace: put up thy sword,
+
+Bob: Or manage it to part these men with me.
+
+Bob: TYBALT
+
+Bob: What, drawn, and talk of peace! I hate the word,
+
+Bob: As I hate hell, all Montagues, and thee:
+
+Bob: Have at thee, coward!
+
+Bob: They fight
+
+Bob: 
+
+Bob: Enter, several of both houses, who join the fray; then enter Citizens, with clubs
+
+Bob: 
+
+Bob: First Citizen
+
+Bob: Clubs, bills, and partisans! strike! beat them down!
+
+Bob: Down with the Capulets! down with the Montagues!
+
+Bob: Enter CAPULET in his gown, and LADY CAPULET
+
+Bob: 
+
+Bob: CAPULET
+
+Bob: What noise is this? Give me my long sword, ho!
+
+Bob: LADY CAPULET
+
+Bob: A crutch, a crutch! why call you for a sword?
+
+Bob: CAPULET
+
+Bob: My sword, I say! Old Montague is come,
+
+Bob: And flourishes his blade in spite of me.
+CHAT/1.0 TEXT
+Bob: 
+
+Bob: MONTAGUE
+
+Bob: Thou villain Capulet,--Hold me not, let me go.
+
+Bob: LADY MONTAGUE
+
+Bob: Thou shalt not stir a foot to seek a foe.
+
+Bob: Enter PRINCE, with Attendants
+
+Bob: 
+
+Bob: PRINCE
+
+Bob: Rebellious subjects, enemies to peace,
+
+Bob: Profaners of this neighbour-stained steel,--
+
+Bob: Will they not hear? What, ho! you men, you beasts,
+
+Bob: That quench the fire of your pernicious rage
+
+Bob: With purple fountains issuing from your veins,
+
+Bob: On pain of torture, from those bloody hands
+
+Bob: Throw your mistemper'd weapons to the ground,
+
+Bob: And hear the sentence of your moved prince.
+
+Bob: Three civil brawls, bred of an airy word,
+
+Bob: By thee, old Capulet, and Montague,
+
+Bob: Have thrice disturb'd the quiet of our streets,
+
+Bob: And made Verona's ancient citizens
+
+Bob: Cast by their grave beseeming ornaments,
+
+Bob: To wield old partisans, in hands as old,
+
+Bob: Canker'd with peace, to part your canker'd hate:
+
+Bob: If ever you disturb our streets again,
+
+Bob: Your lives shall pay the forfeit of the peace.
+
+Bob: For this time, all the rest depart away:
+
+Bob: You Capulet; shall go along with me:
+
+Bob: And, Montague, come you this afternoon,
+
+Bob: To know our further pleasure in this case,
+
+Bob: To old Free-town, our common judgment-place.
+
+Bob: Once more, on pain of death, all men depart.
+
+Bob: Exeunt all but MONTAGUE, LADY MONTAGUE, and BENVOLIO
+
+Bob: 
+
+Bob: MONTAGUE
+
+Bob: Who set this ancient quarrel new abroach?
+
+Bob: Speak, nephew, were you by when it began?
+
+Bob: BENVOLIO
+
+Bob: Here were the servants of your adversary,
+
+Bob: And yours, close fighting ere I did approach:
+
+Bob: I drew to part them: in the instant came
+
+Bob: The fiery Tybalt, with his sword prepared,
+
+Bob: Which, as he breathed defiance to my ears,
+
+Bob: He swung about his head and cut the winds,
+
+Bob: Who nothing hurt withal hiss'd him in scorn:
+
+Bob: While we were interchanging thrusts and blows,
+
+Bob: Came more and more and fought on part and part,
+
+Bob: Till the prince came, who parted either part.
+
+Bob: LADY MONTAGUE
+
+Bob: O, where is Romeo? saw you him to-day?
+
+Bob: Right glad I am he was not at this fray.
+
+Bob: BENVOLIO
+
+Bob: Madam, an hour before the worshipp'd sun
+
+Bob: Peer'd forth the golden window of the east,
+
+Bob: A troubled mind drave me to walk abroad;
+
+Bob: Where, underneath the grove of sycamore
+
+Bob: That westward rooteth from the city's side,
+
+Bob: So early walking did I see your son:
+
+Bob: Towards him I made, but he was ware of me
+
+Bob: And stole into the covert of the wood:
+
+Bob: I, measuring his affections by my own,
+
+Bob: That most are busied when they're most alone,
+
+Bob: Pursued my humour not pursuing his,
+
+Bob: And gladly shunn'd who gladly fled from me.
+
+Bob: MONTAGUE
+
+Bob: Many a morning hath he there been seen,
+
+Bob: With tears augmenting the fresh morning dew.
+
+Bob: Adding to clouds more clouds with his deep sighs;
+
+Bob: But all so soon as the all-cheering sun
+
+Bob: Should in the furthest east begin to draw
+
+Bob: The shady curtains from Aurora's bed,
+
+Bob: Away from the light steals home my heavy son,
+
+Bob: And private in his chamber pens himself,
+
+Bob: Shuts up his windows, locks far daylight out
+
+Bob: And makes himself an artificial night:
+
+Bob: Black and portentous must this humour prove,
+
+Bob: Unless good counsel may the cause remove.
+
+Bob: BENVOLIO
+
+Bob: My noble uncle, do you know the cause?
+
+Bob: MONTAGUE
+
+Bob: I neither know it nor can learn of him.
+
+Bob: BENVOLIO
+
+Bob: Have you importuned him by any means?
+
+Bob: MONTAGUE
+
+Bob: Both by myself and many other friends:
+
+Bob: But he, his own affections' counsellor,
+
+Bob: Is to himself--I will not say how true--
+
+Bob: But to himself so secret and so close,
+
+Bob: So far from sounding and discovery,
+
+Bob: As is the bud bit with an envious worm,
+
+Bob: Ere he can spread his sweet leaves to the air,
+
+Bob: Or dedicate his beauty to the sun.
+
+Bob: Could we but learn from whence his sorrows grow.
+
+Bob: We would as willingly give cure as know.
+
+Bob: Enter ROMEO
+
+Bob: 
+
+Bob: BENVOLIO
+
+Bob: See, where he comes: so please you, step aside;
+
+Bob: I'll know his grievance, or be much denied.
+
+Bob: MONTAGUE
+
+Bob: I would thou wert so happy by thy stay,
+
+Bob: To hear true shrift. Come, madam, let's away.
+
+Bob: Exeunt MONTAGUE and LADY MONTAGUE
+
+Bob: 
+
+Bob: BENVOLIO
+
+Bob: Good-morrow, cousin.
+
+Bob: ROMEO
+
+Bob: Is the day so young?
+
+Bob: BENVOLIO
+
+Bob: But new struck nine.
+
+Bob: ROMEO
+
+Bob: Ay me! sad hours seem long.
+
+Bob: Was that my father that went hence so fast?
+
+Bob: BENVOLIO
+
+Bob: It was. What sadness lengthens Romeo's hours?
+
+Bob: ROMEO
+
+Bob: Not having that, which, having, makes them short.
+
+Bob: BENVOLIO
+
+Bob: In love?
+
+Bob: ROMEO
+
+Bob: Out--
+
+Bob: BENVOLIO
+
+Bob: Of love?
+
+Bob: ROMEO
+
+Bob: Out of her favour, where I am in love.
+
+Bob: BENVOLIO
+
+Bob: Alas, that love, so gentle in his view,
+
+Bob: Should be so tyrannous and rough in proof!
+
+Bob: ROMEO
+
+Bob: Alas, that love, whose view is muffled still,
+
+Bob: Should, without eyes, see pathways to his will!
+
+Bob: Where shall we dine? O me! What fray was here?
+
+Bob: Yet tell me not, for I have heard it all.
+
+Bob: Here's much to do with hate, but more with love.
+
+Bob: Why, then, O brawling love! O loving hate!
+
+Bob: O any thing, of nothing first create!
+
+Bob: O heavy lightness! serious vanity!
+
+Bob: Mis-shapen chaos of well-seeming forms!
+
+Bob: Feather of lead, bright smoke, cold fire,
+
+Bob: sick health!
+
+Bob: Still-waking sleep, that is not what it is!
+
+Bob: This love feel I, that feel no love in this.
+
+Bob: Dost thou not laugh?
+
+Bob: BENVOLIO
+
+Bob: No, coz, I rather weep.
+
+Bob: ROMEO
+
+Bob: Good heart, at what?
+
+Bob: BENVOLIO
+
+Bob: At thy good heart's oppression.
+
+Bob: ROMEO
+
+Bob: Why, such is love's transgression.
+
+Bob: Griefs of mine own lie heavy in my breast,
+
+Bob: Which thou wilt propagate, to have it prest
+
+Bob: With more of thine: this love that thou hast shown
+
+Bob: Doth add more grief to too much of mine own.
+
+Bob: Love is a smoke raised with the fume of sighs;
+
+Bob: Being purged, a fire sparkling in lovers' eyes;
+
+Bob: Being vex'd a sea nourish'd with lovers' tears:
+

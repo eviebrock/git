@@ -1,0 +1,181 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--bcd[0] is bcd[0]
+bcd[0] = OUTPUT(A1L48);
+
+
+--bcd[1] is bcd[1]
+bcd[1] = OUTPUT(A1L48);
+
+
+--bcd[2] is bcd[2]
+bcd[2] = OUTPUT(A1L48);
+
+
+--bcd[3] is bcd[3]
+bcd[3] = OUTPUT(A1L48);
+
+
+--leds1[7] is leds1[7]
+leds1[7] = OUTPUT(A1L48);
+
+
+--leds1[6] is leds1[6]
+leds1[6] = OUTPUT(A1L36);
+
+
+--leds1[5] is leds1[5]
+leds1[5] = OUTPUT(A1L36);
+
+
+--leds1[4] is leds1[4]
+leds1[4] = OUTPUT(A1L36);
+
+
+--leds1[3] is leds1[3]
+leds1[3] = OUTPUT(A1L49);
+
+
+--leds1[2] is leds1[2]
+leds1[2] = OUTPUT(A1L49);
+
+
+--leds1[1] is leds1[1]
+leds1[1] = OUTPUT(A1L36);
+
+
+--leds2[7] is leds2[7]
+leds2[7] = OUTPUT(A1L48);
+
+
+--leds2[6] is leds2[6]
+leds2[6] = OUTPUT(A1L48);
+
+
+--leds2[5] is leds2[5]
+leds2[5] = OUTPUT(A1L48);
+
+
+--leds2[4] is leds2[4]
+leds2[4] = OUTPUT(A1L48);
+
+
+--leds2[3] is leds2[3]
+leds2[3] = OUTPUT(A1L48);
+
+
+--leds2[2] is leds2[2]
+leds2[2] = OUTPUT(A1L48);
+
+
+--leds2[1] is leds2[1]
+leds2[1] = OUTPUT(A1L48);
+
+
+--trueFalse[0] is trueFalse[0]
+trueFalse[0] = OUTPUT(A1L36);
+
+
+--trueFalse[1] is trueFalse[1]
+trueFalse[1] = OUTPUT(A1L48);
+
+
+--trueFalse[2] is trueFalse[2]
+trueFalse[2] = OUTPUT(A1L48);
+
+
+--trueFalse[3] is trueFalse[3]
+trueFalse[3] = OUTPUT(A1L48);
+
+
+--Operation[2] is Operation[2]
+Operation[2] = INPUT();
+
+
+--Alogic[2] is Alogic[2]
+Alogic[2] = INPUT();
+
+
+--Blogic[1] is Blogic[1]
+Blogic[1] = INPUT();
+
+
+--Alogic[1] is Alogic[1]
+Alogic[1] = INPUT();
+
+
+--Blogic[2] is Blogic[2]
+Blogic[2] = INPUT();
+
+
+--A1L33 is LessThan1~0
+A1L33 = (Alogic[2] & (((Blogic[1] & !Alogic[1])) # (!Blogic[2]))) # (!Alogic[2] & (Blogic[1] & (!Alogic[1] & !Blogic[2])));
+
+
+--A1L14 is Equal0~0
+A1L14 = (Alogic[1] & (Blogic[1] & (Alogic[2] $ (!Blogic[2])))) # (!Alogic[1] & (!Blogic[1] & (Alogic[2] $ (!Blogic[2]))));
+
+
+--Blogic[0] is Blogic[0]
+Blogic[0] = INPUT();
+
+
+--Alogic[0] is Alogic[0]
+Alogic[0] = INPUT();
+
+
+--A1L34 is LessThan1~1
+A1L34 = (A1L33) # ((A1L14 & (Blogic[0] & !Alogic[0])));
+
+
+--Operation[1] is Operation[1]
+Operation[1] = INPUT();
+
+
+--A1L32 is LessThan0~0
+A1L32 = (Blogic[2] & (((Alogic[1] & !Blogic[1])) # (!Alogic[2]))) # (!Blogic[2] & (Alogic[1] & (!Blogic[1] & !Alogic[2])));
+
+
+--Operation[0] is Operation[0]
+Operation[0] = INPUT();
+
+
+--A1L15 is Equal1~0
+A1L15 = (!Alogic[1] & (!Alogic[2] & !Alogic[0]));
+
+
+--A1L35 is Mux4~0
+A1L35 = (Operation[1] & ((A1L38 & ((A1L15))) # (!A1L38 & (A1L34)))) # (!Operation[1] & (((A1L38))));
+
+
+--A1L36 is Mux4~1
+A1L36 = (Operation[2] & A1L35);
+
+
+--A1L37 is Mux4~2
+A1L37 = (A1L14 & ((Operation[0] & (!Blogic[0] & Alogic[0])) # (!Operation[0] & (Blogic[0] $ (!Alogic[0])))));
+
+
+--A1L38 is Mux4~3
+A1L38 = (Operation[1] & (Operation[0])) # (!Operation[1] & ((A1L37) # ((Operation[0] & A1L32))));
+
+
+--A1L48 is ~GND
+A1L48 = GND;
+
+
+--A1L49 is ~VCC
+A1L49 = VCC;
+
+

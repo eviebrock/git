@@ -1,0 +1,638 @@
+Alice: ALICE input file: alice-in.txt
+
+Alice: The Life and Death of Julies Caesar
+CHAT/1.0 TEXT
+Carol: All's Well That Ends Well
+CHAT/1.0 TEXT
+Alice: 
+CHAT/1.0 TEXT
+Alice: SCENE I. Rome. A street.
+
+Carol: SCENE I. Rousillon. The COUNT's palace.
+
+Alice: 
+CHAT/1.0 TEXT
+Alice: Enter FLAVIUS, MARULLUS, and certain Commoners
+CHAT/1.0 TEXT
+Alice: FLAVIUS
+
+Carol: COUNTESS
+
+Alice: Hence! home, you idle creatures get you home:
+
+Carol: In delivering my son from me, I bury a second husband.
+
+Alice: Is this a holiday? what! know you not,
+CHAT/1.0 TEXT
+Alice: Being mechanical, you ought not walk
+
+Alice: Upon a labouring day without the sign
+CHAT/1.0 TEXT
+Carol: anew: but I must attend his majesty's command, to
+CHAT/1.0 TEXT
+Carol: whom I am now in ward, evermore in subjection.
+
+Alice: First Commoner
+
+Carol: LAFEU
+CHAT/1.0 TEXT
+Carol: You shall find of the king a husband, madam; you,
+
+Alice: MARULLUS
+CHAT/1.0 TEXT
+Alice: Where is thy leather apron and thy rule?
+
+Carol: good must of necessity hold his virtue to you; whose
+
+Alice: What dost thou with thy best apparel on?
+
+Carol: worthiness would stir it up where it wanted rather
+CHAT/1.0 TEXT
+Carol: than lack it where there is such abundance.
+CHAT/1.0 TEXT
+Alice: Truly, sir, in respect of a fine workman, I am but,
+CHAT/1.0 TEXT
+Carol: He hath abandoned his physicians, madam; under whose
+CHAT/1.0 TEXT
+Carol: practises he hath persecuted time with hope, and
+
+Carol: finds no other advantage in the process but only the
+
+Alice: But what trade art thou? answer me directly.
+
+Carol: losing of hope by time.
+CHAT/1.0 TEXT
+Alice: A trade, sir, that, I hope, I may use with a safe
+
+Carol: This young gentlewoman had a father,--O, that
+
+Carol: 'had'! how sad a passage 'tis!--whose skill was
+
+Alice: conscience; which is, indeed, sir, a mender of bad soles.
+CHAT/1.0 TEXT
+Carol: far, would have made nature immortal, and death
+
+Alice: MARULLUS
+CHAT/1.0 TEXT
+Carol: should have play for lack of work. Would, for the
+
+Carol: king's sake, he were living! I think it would be
+
+Alice: Second Commoner
+CHAT/1.0 TEXT
+Alice: Nay, I beseech you, sir, be not out with me: yet,
+CHAT/1.0 TEXT
+Carol: LAFEU
+CHAT/1.0 TEXT
+Carol: How called you the man you speak of, madam?
+CHAT/1.0 TEXT
+Carol: COUNTESS
+CHAT/1.0 TEXT
+Carol: He was famous, sir, in his profession, and it was
+
+Alice: Why, sir, cobble you.
+
+Carol: his great right to be so: Gerard de Narbon.
+
+Carol: LAFEU
+CHAT/1.0 TEXT
+Alice: Thou art a cobbler, art thou?
+CHAT/1.0 TEXT
+Carol: lately spoke of him admiringly and mourningly: he
+CHAT/1.0 TEXT
+Carol: was skilful enough to have lived still, if knowledge
+CHAT/1.0 TEXT
+Alice: meddle with no tradesman's matters, nor women's
+
+Carol: could be set up against mortality.
+
+Alice: matters, but with awl. I am, indeed, sir, a surgeon
+CHAT/1.0 TEXT
+Alice: to old shoes; when they are in great danger, I
+
+Carol: What is it, my good lord, the king languishes of?
+CHAT/1.0 TEXT
+Alice: neat's leather have gone upon my handiwork.
+
+Carol: LAFEU
+
+Alice: FLAVIUS
+
+Carol: A fistula, my lord.
+
+Alice: But wherefore art not in thy shop today?
+
+Carol: BERTRAM
+
+Carol: I heard not of it before.
+CHAT/1.0 TEXT
+Alice: Truly, sir, to wear out their shoes, to get myself
+
+Carol: I would it were not notorious. Was this gentlewoman
+
+Alice: into more work. But, indeed, sir, we make holiday,
+CHAT/1.0 TEXT
+Alice: to see Caesar and to rejoice in his triumph.
+
+Alice: MARULLUS
+CHAT/1.0 TEXT
+Carol: His sole child, my lord, and bequeathed to my
+
+Alice: Wherefore rejoice? What conquest brings he home?
+
+Carol: overlooking. I have those hopes of her good that
+
+Alice: What tributaries follow him to Rome,
+
+Carol: her education promises; her dispositions she
+
+Alice: To grace in captive bonds his chariot-wheels?
+
+Carol: inherits, which makes fair gifts fairer; for where
+CHAT/1.0 TEXT
+Carol: an unclean mind carries virtuous qualities, there
+CHAT/1.0 TEXT
+Carol: commendations go with pity; they are virtues and
+
+Alice: Knew you not Pompey? Many a time and oft
+CHAT/1.0 TEXT
+Alice: Have you climb'd up to walls and battlements,
+CHAT/1.0 TEXT
+Alice: To towers and windows, yea, to chimney-tops,
+CHAT/1.0 TEXT
+Alice: Your infants in your arms, and there have sat
+CHAT/1.0 TEXT
+Carol: 'Tis the best brine a maiden can season her praise
+CHAT/1.0 TEXT
+Carol: in. The remembrance of her father never approaches
+CHAT/1.0 TEXT
+Alice: And when you saw his chariot but appear,
+CHAT/1.0 TEXT
+Carol: go to, no more; lest it be rather thought you affect
+CHAT/1.0 TEXT
+Carol: a sorrow than have it.
+
+Alice: That Tiber trembled underneath her banks,
+CHAT/1.0 TEXT
+Alice: To hear the replication of your sounds
+CHAT/1.0 TEXT
+Carol: Moderate lamentation is the right of the dead,
+
+Alice: And do you now put on your best attire?
+CHAT/1.0 TEXT
+Carol: COUNTESS
+CHAT/1.0 TEXT
+Carol: If the living be enemy to the grief, the excess
+CHAT/1.0 TEXT
+Carol: BERTRAM
+CHAT/1.0 TEXT
+Carol: Madam, I desire your holy wishes.
+CHAT/1.0 TEXT
+Carol: LAFEU
+CHAT/1.0 TEXT
+Alice: That needs must light on this ingratitude.
+CHAT/1.0 TEXT
+Alice: FLAVIUS
+
+Carol: Be thou blest, Bertram, and succeed thy father
+CHAT/1.0 TEXT
+Alice: Assemble all the poor men of your sort;
+CHAT/1.0 TEXT
+Alice: Draw them to Tiber banks, and weep your tears
+CHAT/1.0 TEXT
+Carol: Do wrong to none: be able for thine enemy
+CHAT/1.0 TEXT
+Carol: Rather in power than use, and keep thy friend
+CHAT/1.0 TEXT
+Alice: 
+
+Carol: Under thy own life's key: be cheque'd for silence,
+CHAT/1.0 TEXT
+Carol: That thee may furnish and my prayers pluck down,
+CHAT/1.0 TEXT
+Carol: Fall on thy head! Farewell, my lord;
+
+Alice: Go you down that way towards the Capitol;
+CHAT/1.0 TEXT
+Alice: disrobe the images,
+CHAT/1.0 TEXT
+Carol: LAFEU
+CHAT/1.0 TEXT
+Carol: He cannot want the best
+CHAT/1.0 TEXT
+Alice: May we do so?
+CHAT/1.0 TEXT
+Carol: Heaven bless him! Farewell, Bertram.
+
+Alice: FLAVIUS
+CHAT/1.0 TEXT
+Carol: 
+CHAT/1.0 TEXT
+Carol: BERTRAM
+CHAT/1.0 TEXT
+Carol: [To HELENA] The best wishes that can be forged in
+CHAT/1.0 TEXT
+Alice: These growing feathers pluck'd from Caesar's wing
+CHAT/1.0 TEXT
+Alice: Will make him fly an ordinary pitch,
+CHAT/1.0 TEXT
+Alice: Who else would soar above the view of men
+
+Alice: And keep us all in servile fearfulness.
+CHAT/1.0 TEXT
+Carol: Farewell, pretty lady: you must hold the credit of
+CHAT/1.0 TEXT
+Carol: your father.
+
+Carol: Exeunt BERTRAM and LAFEU
+
+Carol: 
+
+Carol: HELENA
+
+Carol: O, were that all! I think not on my father;
+
+Carol: And these great tears grace his remembrance more
+
+Carol: Than those I shed for him. What was he like?
+
+Carol: I have forgot him: my imagination
+
+Carol: Carries no favour in't but Bertram's.
+
+Carol: I am undone: there is no living, none,
+
+Carol: If Bertram be away. 'Twere all one
+
+Carol: That I should love a bright particular star
+
+Carol: And think to wed it, he is so above me:
+
+Carol: In his bright radiance and collateral light
+
+Carol: Must I be comforted, not in his sphere.
+
+Carol: The ambition in my love thus plagues itself:
+
+Carol: The hind that would be mated by the lion
+
+Carol: Must die for love. 'Twas pretty, though plague,
+
+Carol: To see him every hour; to sit and draw
+
+Carol: His arched brows, his hawking eye, his curls,
+
+Carol: In our heart's table; heart too capable
+
+Carol: Of every line and trick of his sweet favour:
+
+Carol: But now he's gone, and my idolatrous fancy
+
+Carol: Must sanctify his reliques. Who comes here?
+
+Carol: Enter PAROLLES
+
+Carol: 
+
+Carol: Aside
+
+Carol: 
+
+Carol: One that goes with him: I love him for his sake;
+
+Carol: And yet I know him a notorious liar,
+
+Carol: Think him a great way fool, solely a coward;
+
+Carol: Yet these fixed evils sit so fit in him,
+
+Carol: That they take place, when virtue's steely bones
+
+Carol: Look bleak i' the cold wind: withal, full oft we see
+
+Carol: Cold wisdom waiting on superfluous folly.
+
+Carol: PAROLLES
+
+Carol: Save you, fair queen!
+
+Carol: HELENA
+
+Carol: And you, monarch!
+
+Carol: PAROLLES
+
+Carol: No.
+
+Carol: HELENA
+
+Carol: And no.
+
+Carol: PAROLLES
+
+Carol: Are you meditating on virginity?
+
+Carol: HELENA
+
+Carol: Ay. You have some stain of soldier in you: let me
+
+Carol: ask you a question. Man is enemy to virginity; how
+
+Carol: may we barricado it against him?
+
+Carol: PAROLLES
+
+Carol: Keep him out.
+
+Carol: HELENA
+
+Carol: But he assails; and our virginity, though valiant,
+
+Carol: in the defence yet is weak: unfold to us some
+
+Carol: warlike resistance.
+
+Carol: PAROLLES
+
+Carol: There is none: man, sitting down before you, will
+
+Carol: undermine you and blow you up.
+
+Carol: HELENA
+
+Carol: Bless our poor virginity from underminers and
+
+Carol: blowers up! Is there no military policy, how
+
+Carol: virgins might blow up men?
+
+Carol: PAROLLES
+
+Carol: Virginity being blown down, man will quicklier be
+
+Carol: blown up: marry, in blowing him down again, with
+
+Carol: the breach yourselves made, you lose your city. It
+
+Carol: is not politic in the commonwealth of nature to
+
+Carol: preserve virginity. Loss of virginity is rational
+
+Carol: increase and there was never virgin got till
+
+Carol: virginity was first lost. That you were made of is
+
+Carol: metal to make virgins. Virginity by being once lost
+
+Carol: may be ten times found; by being ever kept, it is
+
+Carol: ever lost: 'tis too cold a companion; away with 't!
+
+Carol: HELENA
+
+Carol: I will stand for 't a little, though therefore I die a virgin.
+
+Carol: PAROLLES
+
+Carol: There's little can be said in 't; 'tis against the
+
+Carol: rule of nature. To speak on the part of virginity,
+
+Carol: is to accuse your mothers; which is most infallible
+
+Carol: disobedience. He that hangs himself is a virgin:
+
+Carol: virginity murders itself and should be buried in
+
+Carol: highways out of all sanctified limit, as a desperate
+
+Carol: offendress against nature. Virginity breeds mites,
+
+Carol: much like a cheese; consumes itself to the very
+
+Carol: paring, and so dies with feeding his own stomach.
+
+Carol: Besides, virginity is peevish, proud, idle, made of
+
+Carol: self-love, which is the most inhibited sin in the
+
+Carol: canon. Keep it not; you cannot choose but loose
+
+Carol: by't: out with 't! within ten year it will make
+
+Carol: itself ten, which is a goodly increase; and the
+
+Carol: principal itself not much the worse: away with 't!
+
+Carol: HELENA
+
+Carol: How might one do, sir, to lose it to her own liking?
+
+Carol: PAROLLES
+
+Carol: Let me see: marry, ill, to like him that ne'er it
+
+Carol: likes. 'Tis a commodity will lose the gloss with
+
+Carol: lying; the longer kept, the less worth: off with 't
+
+Carol: while 'tis vendible; answer the time of request.
+
+Carol: Virginity, like an old courtier, wears her cap out
+
+Carol: of fashion: richly suited, but unsuitable: just
+
+Carol: like the brooch and the tooth-pick, which wear not
+
+Carol: now. Your date is better in your pie and your
+
+Carol: porridge than in your cheek; and your virginity,
+
+Carol: your old virginity, is like one of our French
+
+Carol: withered pears, it looks ill, it eats drily; marry,
+
+Carol: 'tis a withered pear; it was formerly better;
+
+Carol: marry, yet 'tis a withered pear: will you anything with it?
+
+Carol: HELENA
+
+Carol: Not my virginity yet [ ]
+
+Carol: There shall your master have a thousand loves,
+
+Carol: A mother and a mistress and a friend,
+
+Carol: A phoenix, captain and an enemy,
+
+Carol: A guide, a goddess, and a sovereign,
+
+Carol: A counsellor, a traitress, and a dear;
+
+Carol: His humble ambition, proud humility,
+
+Carol: His jarring concord, and his discord dulcet,
+
+Carol: His faith, his sweet disaster; with a world
+
+Carol: Of pretty, fond, adoptious christendoms,
+
+Carol: That blinking Cupid gossips. Now shall he--
+
+Carol: I know not what he shall. God send him well!
+
+Carol: The court's a learning place, and he is one--
+
+Carol: PAROLLES
+
+Carol: What one, i' faith?
+
+Carol: HELENA
+
+Carol: That I wish well. 'Tis pity--
+
+Carol: PAROLLES
+
+Carol: What's pity?
+
+Carol: HELENA
+
+Carol: That wishing well had not a body in't,
+
+Carol: Which might be felt; that we, the poorer born,
+
+Carol: Whose baser stars do shut us up in wishes,
+
+Carol: Might with effects of them follow our friends,
+
+Carol: And show what we alone must think, which never
+
+Carol: Return us thanks.
+
+Carol: Enter Page
+
+Carol: 
+
+Carol: Page
+
+Carol: Monsieur Parolles, my lord calls for you.
+
+Carol: Exit
+
+Carol: 
+
+Carol: PAROLLES
+
+Carol: Little Helen, farewell; if I can remember thee, I
+
+Carol: will think of thee at court.
+
+Carol: HELENA
+
+Carol: Monsieur Parolles, you were born under a charitable star.
+
+Carol: PAROLLES
+
+Carol: Under Mars, I.
+
+Carol: HELENA
+
+Carol: I especially think, under Mars.
+
+Carol: PAROLLES
+
+Carol: Why under Mars?
+
+Carol: HELENA
+
+Carol: The wars have so kept you under that you must needs
+
+Carol: be born under Mars.
+
+Carol: PAROLLES
+
+Carol: When he was predominant.
+
+Carol: HELENA
+
+Carol: When he was retrograde, I think, rather.
+
+Carol: PAROLLES
+
+Carol: Why think you so?
+
+Carol: HELENA
+
+Carol: You go so much backward when you fight.
+
+Carol: PAROLLES
+
+Carol: That's for advantage.
+
+Carol: HELENA
+
+Carol: So is running away, when fear proposes the safety;
+
+Carol: but the composition that your valour and fear makes
+
+Carol: in you is a virtue of a good wing, and I like the wear well.
+
+Carol: PAROLLES
+
+Carol: I am so full of businesses, I cannot answer thee
+
+Carol: acutely. I will return perfect courtier; in the
+
+Carol: which, my instruction shall serve to naturalize
+
+Carol: thee, so thou wilt be capable of a courtier's
+
+Carol: counsel and understand what advice shall thrust upon
+
+Carol: thee; else thou diest in thine unthankfulness, and
+
+Carol: thine ignorance makes thee away: farewell. When
+
+Carol: thou hast leisure, say thy prayers; when thou hast
+
+Carol: none, remember thy friends; get thee a good husband,
+
+Carol: and use him as he uses thee; so, farewell.
+
+Carol: Exit
+
+Carol: 
+
+Carol: HELENA
+
+Carol: Our remedies oft in ourselves do lie,
+
+Carol: Which we ascribe to heaven: the fated sky
+
+Carol: Gives us free scope, only doth backward pull
+
+Carol: Our slow designs when we ourselves are dull.
+
+Carol: What power is it which mounts my love so high,
+
+Carol: That makes me see, and cannot feed mine eye?
+
+Carol: The mightiest space in fortune nature brings
+
+Carol: To join like likes and kiss like native things.
+
+Carol: Impossible be strange attempts to those
+
+Carol: That weigh their pains in sense and do suppose
+
+Carol: What hath been cannot be: who ever strove
+
+Carol: So show her merit, that did miss her love?
+
+Carol: The king's disease--my project may deceive me,
+
+Carol: But my intents are fix'd and will not leave me.
+
+Carol: Exit
+

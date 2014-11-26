@@ -1,0 +1,176 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--y.RB is y.RB at LCFF_X1_Y23_N1
+y.RB = DFFEAS(A1L31, GLOBAL(A1L22),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.RC is y.RC at LCFF_X1_Y23_N19
+y.RC = DFFEAS(A1L32, GLOBAL(A1L22),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.LR is y.LR at LCFF_X1_Y23_N29
+y.LR = DFFEAS(A1L16, GLOBAL(A1L22),  ,  ,  ,  ,  ,  ,  );
+
+
+--WideOr2 is WideOr2 at LCCOMB_X1_Y23_N6
+WideOr2 = (y.LR) # ((y.RB) # (y.RC));
+
+
+--y.RA is y.RA at LCFF_X1_Y23_N17
+y.RA = DFFEAS(A1L33, GLOBAL(A1L22),  ,  ,  ,  ,  ,  ,  );
+
+
+--WideOr3 is WideOr3 at LCCOMB_X1_Y23_N26
+WideOr3 = (y.LR) # ((y.RA) # (y.RC));
+
+
+--y.LB is y.LB at LCFF_X1_Y23_N21
+y.LB = DFFEAS(A1L34, GLOBAL(A1L22),  ,  ,  ,  ,  ,  ,  );
+
+
+--y.LC is y.LC at LCFF_X1_Y23_N23
+y.LC = DFFEAS(A1L35, GLOBAL(A1L22),  ,  ,  ,  ,  ,  ,  );
+
+
+--WideOr0 is WideOr0 at LCCOMB_X1_Y23_N24
+WideOr0 = (y.LR) # ((y.LB) # (y.LC));
+
+
+--y.LA is y.LA at LCFF_X1_Y23_N3
+y.LA = DFFEAS(A1L36, GLOBAL(A1L22),  ,  ,  ,  ,  ,  ,  );
+
+
+--WideOr1 is WideOr1 at LCCOMB_X1_Y23_N12
+WideOr1 = (y.LR) # ((y.LA) # (y.LC));
+
+
+--A1L31 is y~13 at LCCOMB_X1_Y23_N0
+A1L31 = (!H & (y.RA & (!L & R)));
+
+
+--A1L32 is y~14 at LCCOMB_X1_Y23_N18
+A1L32 = (!H & (y.RB & (!L & R)));
+
+
+--A1L16 is Selector1~0 at LCCOMB_X1_Y23_N28
+A1L16 = (!y.LR & H);
+
+
+--y.IDLE is y.IDLE at LCFF_X1_Y23_N15
+y.IDLE = DFFEAS(A1L15, GLOBAL(A1L22),  ,  ,  ,  ,  ,  ,  );
+
+
+--A1L33 is y~15 at LCCOMB_X1_Y23_N16
+A1L33 = (!H & (!y.IDLE & (!L & R)));
+
+
+--A1L34 is y~16 at LCCOMB_X1_Y23_N20
+A1L34 = (!H & (y.LA & (L & !R)));
+
+
+--A1L35 is y~17 at LCCOMB_X1_Y23_N22
+A1L35 = (y.LB & (!R & (L & !H)));
+
+
+--A1L36 is y~18 at LCCOMB_X1_Y23_N2
+A1L36 = (!H & (!y.IDLE & (L & !R)));
+
+
+--A1L11 is Selector0~0 at LCCOMB_X1_Y23_N8
+A1L11 = (!L & (!y.RB & (!y.RA & y.IDLE)));
+
+
+--A1L12 is Selector0~1 at LCCOMB_X1_Y23_N10
+A1L12 = (y.IDLE & (!y.LB & !y.LA));
+
+
+--A1L13 is Selector0~2 at LCCOMB_X1_Y23_N4
+A1L13 = (!y.RB & (!y.RC & (!y.RA & !y.LC)));
+
+
+--A1L14 is Selector0~3 at LCCOMB_X1_Y23_N30
+A1L14 = (A1L11) # ((L & ((R) # (A1L12))) # (!L & (!R)));
+
+
+--A1L15 is Selector0~4 at LCCOMB_X1_Y23_N14
+A1L15 = (H & (((!A1L13)) # (!A1L12))) # (!H & (!A1L14 & ((!A1L13) # (!A1L12))));
+
+
+--Lights[6] is Lights[6] at PIN_D4
+--operation mode is output
+
+Lights[6] = OUTPUT(WideOr2);
+
+
+--Lights[5] is Lights[5] at PIN_C1
+--operation mode is output
+
+Lights[5] = OUTPUT(WideOr3);
+
+
+--Lights[4] is Lights[4] at PIN_A5
+--operation mode is output
+
+Lights[4] = OUTPUT(WideOr2);
+
+
+--Lights[3] is Lights[3] at PIN_D5
+--operation mode is output
+
+Lights[3] = OUTPUT(WideOr0);
+
+
+--Lights[2] is Lights[2] at PIN_D6
+--operation mode is output
+
+Lights[2] = OUTPUT(WideOr1);
+
+
+--Lights[1] is Lights[1] at PIN_E4
+--operation mode is output
+
+Lights[1] = OUTPUT(WideOr0);
+
+
+--R is R at PIN_G6
+--operation mode is input
+
+R = INPUT();
+
+
+--L is L at PIN_F4
+--operation mode is input
+
+L = INPUT();
+
+
+--H is H at PIN_C2
+--operation mode is input
+
+H = INPUT();
+
+
+--clock is clock at PIN_M1
+--operation mode is input
+
+clock = INPUT();
+
+
+
+
+
+--A1L22 is clock~clkctrl at CLKCTRL_G3
+A1L22 = cycloneii_clkctrl(.INCLK[0] = clock) WITH (clock_type = "Global Clock", ena_register_mode = "none");
+
+
