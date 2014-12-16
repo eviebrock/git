@@ -158,6 +158,15 @@ u
 {
 	float: right;
 }
+#project_logo
+{
+	padding-left: 200px;
+	float: right;
+}
+#project_div
+{
+	padding-bottom: 50px;
+}
 ul
 {
 	list-style-type: none;
