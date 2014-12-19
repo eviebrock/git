@@ -64,6 +64,20 @@ a
 	-o-transition: .5s;
 	transition: .5s;
 }
+#link
+{
+	color: #00a0fc;
+}
+#link:hover
+{
+	color: #e67e22;
+	text-decoration: underline;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: .none;
+	-o-transition: none;
+	transition: none;
+}
 footer
 {
 	font-weight: 400;
@@ -191,18 +205,19 @@ li.inline
 .foottab
 {
 	float: right;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 #email_icon
 {
 	background:transparent url("../img/email_icon.png") center top no-repeat;
 	display:block;
 	height: 50px;
-	-moz-transition: none;
-	-webkit-transition: none;
-	-o-transition: color 0 ease-in;
-	transition: none;
+	-webkit-transition: .5s;
+	-moz-transition: 2s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
 }
 #email_icon:hover
 {
@@ -213,10 +228,11 @@ li.inline
 	background:transparent url("../img/linkedin_icon.png") center top no-repeat;
 	display:block;
 	height: 50px;
-	-moz-transition: none;
-	-webkit-transition: none;
-	-o-transition: color 0 ease-in;
-	transition: none;
+	-webkit-transition: .5s;
+	-moz-transition: 2s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
 }
 #linkedin_icon:hover
 {
@@ -227,10 +243,11 @@ li.inline
 	background:transparent url("../img/github_icon.png") center top no-repeat;
 	display:block;
 	height: 50px;
-	-moz-transition: none;
-	-webkit-transition: none;
-	-o-transition: color 0 ease-in;
-	transition: none;
+	-webkit-transition: .5s;
+	-moz-transition: 2s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
 }
 #github_icon:hover
 {
