@@ -464,19 +464,25 @@ form label
 	height: 200px;
 }
 .send-button {
-  position: relative;
-  vertical-align: top;
-  width: 90px;
-  height: 40px;
-  padding: 0;
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #2c3e50;
-  border: 0;
-  cursor: pointer;
-  border-radius: 10px;
+	position: relative;
+	vertical-align: top;
+	width: 90px;
+	height: 40px;
+	padding: 0;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	background: #2c3e50;
+	border: 0;
+	cursor: pointer;
+	border-radius: 10px;
+  
+	-webkit-transition: .5s;
+	-moz-transition: 2s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
 }
 .send-button:hover
 {
