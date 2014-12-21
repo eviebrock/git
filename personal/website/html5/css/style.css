@@ -67,16 +67,15 @@ a
 #link
 {
 	color: #00a0fc;
+	-webkit-transition: .5s;
+	-moz-transition: 2s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
 }
 #link:hover
 {
 	color: #e67e22;
-	text-decoration: underline;
-	-webkit-transition: none;
-	-moz-transition: none;
-	-ms-transition: .none;
-	-o-transition: none;
-	transition: none;
 }
 footer
 {
