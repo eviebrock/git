@@ -1,4 +1,4 @@
-html 
+html
 {
 	overflow-y: scroll;
 	-webkit-font-smoothing: antialiased;
@@ -442,7 +442,11 @@ ul.square
 form label
 {
 	float: left;
-	width: 80px;
+	width: 200px;
+	//font-family: 'PT Sans', sans-serif;
+	//font-size: 20px;
+	//margin: 0;
+	//color: #2c3e50;
 }
 #user_input
 {
@@ -453,7 +457,6 @@ form label
 	font-family: 'PT Sans', sans-serif;
 	font-size: 20px;
 	color: black;
-	height: 25px;
 }
 #user_message
 {
