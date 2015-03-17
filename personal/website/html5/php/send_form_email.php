@@ -1,10 +1,14 @@
 <?php
- 
-if(isset($_POST['email'])) {
+
+error_reporting(-1);
+ini_set('display_errors', 'On');
+
+if(isset($_POST['email']))
+{
  
 	// EDIT THE 2 LINES BELOW AS REQUIRED
 	$email_to = "erich.viebrock@gmail.com";
-	$email_subject = "Your email subject line";
+	$email_subject = "Message from Portfolio";
 	
     function died($error)
 	{
@@ -49,7 +53,7 @@ if(isset($_POST['email'])) {
  
 	if(!preg_match($string_exp,$last_name))
 	{
-		$error_message .= 'The Last Name you entered does not appear to be valid.<br />';s
+		$error_message .= 'The Last Name you entered does not appear to be valid.<br />';
 	}
  
 	if(strlen($comments) < 2)
@@ -62,7 +66,7 @@ if(isset($_POST['email'])) {
 		died($error_message);
 	}
  
-	$email_message = "Form details below.\n\n";
+	$email_message = "Form details below:<br/><br/>";
 	
 	function clean_string($string)
 	{
@@ -70,17 +74,24 @@ if(isset($_POST['email'])) {
 		return str_replace($bad,"",$string);
 	}
  
-	$email_message .= "First Name: ".clean_string($first_name)."\n";
-	$email_message .= "Last Name: ".clean_string($last_name)."\n";
-	$email_message .= "Email: ".clean_string($email_from)."\n";
-	$email_message .= "Telephone: ".clean_string($telephone)."\n";
-	$email_message .= "Comments: ".clean_string($comments)."\n";
+	$email_message .= "&emsp;First Name: ".clean_string($first_name)."<br/>";
+	$email_message .= "&emsp;Last Name: ".clean_string($last_name)."<br/>";
+	$email_message .= "&emsp;Email: ".clean_string($email_from)."<br/>";
+	$email_message .= "&emsp;Telephone: ".clean_string($telephone)."<br/>";
+	$email_message .= "&emsp;Comments: ".clean_string($comments);
  
-// create email headers
+/*// create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
+'X-Mailer: PHP/' . phpversion();*/
+
+$headers = array("From: ".$email_from,
+    "Reply-To: ".$email_from,
+    "X-Mailer: PHP/" . PHP_VERSION
+);
+$headers = implode("\r\n", $headers);
+
+$output = mail("evbrock20@hotmail.com", $email_subject, $email_message, $headers);
 ?>
  
 <!-- include your own success html here -->
