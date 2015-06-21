@@ -13,10 +13,10 @@ if(isset($_POST['email']))
     function died($error)
 	{
 		// your error code can go here
-		echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-		echo "These errors appear below.<br /><br />";
+		echo "Sorry to say, but there were error(s) found with the form you submitted. ";
+		echo "These error(s) appear below:<br /><br />";
 		echo $error."<br /><br />";
-		echo "Please go back and fix these errors.<br /><br />";
+		echo "Please go back and fix these error(s).<br /><br />";
 		die();
 	}
  
@@ -79,11 +79,6 @@ if(isset($_POST['email']))
 	$email_message .= "&emsp;Email: ".clean_string($email_from)."<br/>";
 	$email_message .= "&emsp;Telephone: ".clean_string($telephone)."<br/>";
 	$email_message .= "&emsp;Comments: ".clean_string($comments);
- 
-/*// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();*/
 
 $headers = array("From: ".$email_from,
     "Reply-To: ".$email_from,
@@ -91,12 +86,10 @@ $headers = array("From: ".$email_from,
 );
 $headers = implode("\r\n", $headers);
 
-$output = mail("evbrock20@hotmail.com", $email_subject, $email_message, $headers);
+$output = mail($email_to, $email_subject, $email_message, $headers);
 ?>
  
-<!-- include your own success html here -->
- 
-Thank you for reaching out! I will get back to you very soon.
+Thanks for reaching out! I will get back to you very soon.
 
 <?php
 }
