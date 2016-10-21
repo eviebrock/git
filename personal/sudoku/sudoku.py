@@ -3,20 +3,28 @@
 import sys
 
 def initializeBoard():
-	pass
+	board = []
+	
+	for i in range(1, 10):
+		column = []
+		for j in range(1, 10):
+			column.append(j)
+		board.append(column)
+		
+	return board
 
-def drawBoard():
-	pass
+def drawBoard(board):
+	for i in range(9):
+		for j in range(9):
+			if j+1 % 3 == 0:
+				print("|", end="")
+			else:
+				print(board[i][j], end="")
+		print()
 
 def main():
-	w, h = 9, 9
-	Matrix = [[x for x in range(w)] for y in range(h)] 
-	print(Matrix[0][0])
-	print(Matrix[0][1])
-	print(Matrix[0][2])
-	print(Matrix[0][0])
-	print(Matrix[1][0])
-	print(Matrix[2][0])
+	gameBoard = initializeBoard()
+	drawBoard(gameBoard)
 
 if __name__ == "__main__":
 	sys.exit(main())
