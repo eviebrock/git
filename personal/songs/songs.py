@@ -16,27 +16,45 @@ def getSongs(inputDir):
 	
 def createOutputDir(outputDir):
 	outputDir += "/testOutput"
-	
+
 	if not exists(outputDir):
 		makedirs(outputDir)
-		print("created dir")
-	else:
-		print("didnt create dir")
+
+def trimTrackNumber(songs):
+	for i in range(len(songs)):
+		words = songs[i].split(' ')
+		try:
+			float(words[0])
+			del words[0]
+		except ValueError:
+			pass
+
+		songs[i] = ' '.join(words)
+		
+def shortenFeat(songs):
+	for i in range(len(songs)):
+		words = songs[i].split(' ')
+		for j in range(len(words)):
+			if ("Feat" in words[j]):
+				words[j] = words[j].replace("Feat", "Ft")
+		songs[i] = ' '.join(words)
 
 def cleanupOutputDir(outputDir):
 	outputDir += "/testOutput"
 	
 	if exists(outputDir):
-		rmtre(outputDir)
-		print("removed dir")
-	else:
-		print("didnt remove dir")
+		rmtree(outputDir)
 
 def main():
 	workingDirectory = "/home/eviebrock/git/personal/songs"
 	songs = getSongs(workingDirectory)
 	createOutputDir(workingDirectory)
 	printList(songs)
+	print()
+	trimTrackNumber(songs)
+	shortenFeat(songs)
+	printList(songs)
+	print()
 	cleanupOutputDir(workingDirectory)
 	
 
