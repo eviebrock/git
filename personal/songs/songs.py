@@ -55,14 +55,16 @@ def shortenFeat(songs):
 		
 def removeAmpFromFtArtists(songs):
 	for i in range(len(songs)):
-		pass
-
-def buildSongComparisonString(songs):
-	songDiff = ""
-	for i in range(len(songs)):
-		songDiff += (songs[i][0] + "\t" + songs[i][1] + "\n")
-
-	return songDiff
+		ftIndex = songs[i][1].find("Ft.")
+		if ftIndex != -1:
+			closeIndex = songs[i][1].find(")", ftIndex)
+			if closeIndex != -1:
+				ampIndex = songs[i][1].find("&", ftIndex, closeIndex)
+				if ampIndex != -1:
+					songs[i][1][ampIndex-1] = ","
+					del songs[i][1][ampIndex]
+				
+			
 
 def promptUser(songs):
 	myString = buildSongComparisonString(songs)
@@ -72,8 +74,8 @@ def promptUser(songs):
 	window = Frame(top, width=600, height=400)
 	window.grid()
 	for i in range(len(songs)):
-		Message(window, text=songs[i][0]).grid(row=i, column=0, columnspan=10)
-		#Message(window, text=songs[i][1]).grid(row=i, column=11, columnspan=10)
+		Message(window, text=songs[i][0]).grid(row=i, column=0)
+		Message(window, text=songs[i][1]).grid(row=i, column=11, columnspan=10)
 	top.mainloop()
 
 def cleanupOutputDir(outputDir):
@@ -88,11 +90,11 @@ def main():
 	createOutputDir(workingDirectory)
 	trimTrackNumber(songs)
 	shortenFeat(songs)
-	#removeAmpFromFtArtists(songs)
+	removeAmpFromFtArtists(songs)
 	printList(songs)
 	print()
 	
-	promptUser(songs)
+	#promptUser(songs)
 	cleanupOutputDir(workingDirectory)
 	
 
