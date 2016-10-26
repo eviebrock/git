@@ -60,9 +60,9 @@ def removeAmpFromFtArtists(songs):
 			closeIndex = songs[i][1].find(")", ftIndex)
 			if closeIndex != -1:
 				ampIndex = songs[i][1].find("&", ftIndex, closeIndex)
-				if ampIndex != -1:
-					songs[i][1][ampIndex-1] = ","
-					del songs[i][1][ampIndex]
+				if ampIndex != -1 and songs[i][1][ampIndex-1] == ' ' and songs[i][1][ampIndex+1]:
+					songs[i][1] = songs[i][1].replace(" & ", ", ")
+					
 				
 			
 
