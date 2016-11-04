@@ -8,6 +8,7 @@ from shutil import rmtree
 #import tkinter
 import tkinter
 from tkinter import *
+from tkinter import messagebox
 
 def printList(songs):
 	for i in range(len(songs)):
@@ -64,19 +65,54 @@ def removeAmpFromFtArtists(songs):
 					songs[i][1] = songs[i][1].replace(" & ", ", ")
 					
 				
-			
+def editCallBack():
+	tkinter.messagebox.showinfo("Edit", "Put text to edit box here")
+	
+def revertCallBack():
+	tkinter.messagebox.showinfo("Revert", "Put text to revert box here")
+
+def saveCallBack():
+	tkinter.messagebox.showinfo("Save", "Gotta overwrite da files")
 
 def promptUser(songs):
-	myString = buildSongComparisonString(songs)
+	#myString = buildSongComparisonString(songs)
 		
 	top = Tk()
-	top.minsize(width=600, height=400)
-	window = Frame(top, width=600, height=400)
+	#top.minsize(width=600, height=100)
+	window = Frame(top, width=600, height=400, bg="red", bd=50)
 	window.grid()
+	Label(window, text="FIRST", bd=5, relief=RAISED).grid(row=0, column=0)
+	Label(window, text="SECOND", bd=5, relief=RAISED).grid(row=0, column=1)
 	for i in range(len(songs)):
-		Message(window, text=songs[i][0]).grid(row=i, column=0)
-		Message(window, text=songs[i][1]).grid(row=i, column=11, columnspan=10)
+		Label(window, text=songs[i][0], bd=5).grid(row=i+1, column=0, sticky=W)
+		Label(window, text=songs[i][1], bd=5).grid(row=i+1, column=1, sticky=W)
+		Button(window, text="edit", command=editCallBack).grid(row=i+1, column=2)
+		Button(window, text="keep original", command=revertCallBack).grid(row=i+1, column=3)
+	Button(window, text="save changes", command=saveCallBack, bd=5).grid(row=len(songs)+1, columnspan=4)
+		
 	top.mainloop()
+
+def testGui(songs):
+	root = Tk()
+	frame = Frame(root)
+	frame.pack()
+
+	bottomframe = Frame(root)
+	bottomframe.pack( side = BOTTOM )
+
+	redbutton = Message(frame, text="Redasf;akjf;asjkdf;askljfa;lsjkfa;sdjf", fg="red")
+	redbutton.pack( side = LEFT)
+
+	greenbutton = Button(frame, text="Brown", fg="brown")
+	greenbutton.pack( side = LEFT )
+
+	bluebutton = Button(frame, text="Blue", fg="blue")
+	bluebutton.pack( side = LEFT )
+
+	blackbutton = Button(bottomframe, text="Black", fg="black")
+	blackbutton.pack( side = BOTTOM)
+
+	root.mainloop()
 
 def cleanupOutputDir(outputDir):
 	outputDir += "/testOutput"
@@ -94,7 +130,8 @@ def main():
 	printList(songs)
 	print()
 	
-	#promptUser(songs)
+	promptUser(songs)
+	#testGui(songs)
 	cleanupOutputDir(workingDirectory)
 	
 
