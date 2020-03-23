@@ -29,7 +29,7 @@ if(isset($_POST['email']))
  
 	$fullName = $_POST['fullName'];
 	$emailFrom = $_POST['email'];
-	$telephone = $_POST['phone'];
+	$phone = $_POST['phone'];
 	$comments = $_POST['comments'];
 
 	$error_message = "";
@@ -69,8 +69,8 @@ if(isset($_POST['email']))
 	$email_message .= "&emsp;Phone: ".clean_string($phone)."<br/>";
 	$email_message .= "&emsp;Comments: ".clean_string($comments);
 
-$headers = array("From: ".$email_from,
-    "Reply-To: ".$email_from,
+$headers = array("From: ".$emailFrom,
+    "Reply-To: ".$emailFrom,
     "X-Mailer: PHP/" . PHP_VERSION
 );
 $headers = implode("\r\n", $headers);
