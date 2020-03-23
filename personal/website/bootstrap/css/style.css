@@ -1,0 +1,115 @@
+//body { padding-top: 70px; }
+			
+			.sectionPadding {
+				padding-top: 100px;
+				padding-bottom: 100px;
+			}
+			
+			.whiteBackground {
+				background: white;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+			
+			.grayBackground {
+				background: #ecf0f1;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+			
+			/*nav a {
+			  transition: 0.3s ease;
+			  //background: #3fa46a;
+			  //color: white;
+			  //font-size: 20px;
+			  //text-decoration: none;
+			  //border-top: 4px solid transparent;
+			  //border-bottom: 4px solid transparent;
+			  //padding: 20px 0;
+			  //margin: 0 5px;
+			  //font-size: 17px;
+			}
+			nav a:hover {
+			  //border-top: 4px solid white;
+			  //border-bottom: 4px solid white;
+			  font-color: #e67e22;
+			  //padding: 6px 0; 
+			}*/
+			
+			/*a:hover { color:green; }*/
+			
+			/*a
+			{
+				text-decoration: none;
+				-webkit-transition: .5s;
+				-moz-transition: 2s;
+				-ms-transition: .5s;
+				-o-transition: .5s;
+				transition: .5s;
+			}
+			
+			a:hover
+			{
+				color:red;
+			}*/
+			
+			/*.navbar-custom .navbar-text .nav-link{
+				color:red;
+			}*/
+			
+			ul.nav li a, ul.nav li a:visited {
+				 color: red !important;
+			}
+			
+			ul.nav li a:hover, ul.nav li a:active {
+				 color: green !important;
+			}
+
+			ul.nav li.active a {
+				 color: yellow !important;
+			}
+			
+			.navbar {
+				-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,.8);
+				-moz-box-shadow: 0px 0px 25px rgba(0,0,0,.8);
+				box-shadow: 0px 0px 25px rgba(0,0,0,.8);
+			}
+			
+			.nycPic {
+				max-width: 100%;
+			}
+			
+			#container {
+				margin: 0 auto;
+				width: 50%;
+			}
+			
+			/*footer {
+				position: absolute;
+				bottom: 0;
+			}*/
+			
+			ul.square {
+				list-style-type:square;
+			}
+			.list_space {
+				padding-bottom: 5px;
+			}
+			
+			#floatRight {
+				float: right;
+			}
+			
+			.color {
+				-webkit-filter: grayscale(75%);
+			}
+			.color:hover {
+				-webkit-filter: grayscale(0%);
+			}
+			
+			#company_text {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
