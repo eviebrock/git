@@ -5,8 +5,8 @@ ini_set('display_errors', 'On');
 
 if(isset($_POST['email']))
 {
-	$email_to = "erich.viebrock@gmail.com";
-	$email_subject = "Message from erichviebrock.com Portfolio";
+	$emailTo = "erich.viebrock@gmail.com";
+	$emailsubject = "Message from erichviebrock.com Portfolio";
 	
 	function died($error)
 	{
@@ -30,31 +30,31 @@ if(isset($_POST['email']))
 	$phone = $_POST['phone'];
 	$comments = $_POST['comments'];
 
-	$error_message = "";
-	$string_exp = "/^[A-Za-z .'-]+$/";
-	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/'; 
+	$errorMessage = "";
+	$stringExp = "/^[A-Za-z .'-]+$/";
+	$emailExp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/'; 
  
-	if(!preg_match($string_exp,$fullName))
+	if(!preg_match($stringExp,$fullName))
 	{
-		$error_message .= 'The name you entered does not appear to be valid.<br />';
+		$errorMessage .= 'The name you entered does not appear to be valid.<br />';
 	}
  
-	if(!preg_match($email_exp,$emailFrom))
+	if(!preg_match($emailExp,$emailFrom))
 	{
-		$error_message .= 'The email address you entered does not appear to be valid.<br />';
+		$errorMessage .= 'The email address you entered does not appear to be valid.<br />';
 	}
  
 	if(strlen($comments) < 2)
 	{
-		$error_message .= 'The comments you entered do not appear to be valid.<br />';
+		$errorMessage .= 'The comments you entered do not appear to be valid.<br />';
 	}
  
-	if(strlen($error_message) > 0)
+	if(strlen($errorMessage) > 0)
 	{
-		died($error_message);
+		died($errorMessage);
 	}
  
-	$email_message = "Form details below:<br/><br/>";
+	$emailMessage = "Form details below:<br/><br/>";
 	
 	function clean_string($string)
 	{
@@ -62,10 +62,10 @@ if(isset($_POST['email']))
 		return str_replace($bad,"",$string);
 	}
  
-	$email_message .= "&emsp;Full Name: ".clean_string($fullName)."<br/>";
-	$email_message .= "&emsp;Email: ".clean_string($emailFrom)."<br/>";
-	$email_message .= "&emsp;Phone: ".clean_string($phone)."<br/>";
-	$email_message .= "&emsp;Comments: ".clean_string($comments);
+	$emailMessage .= "&emsp;Full Name: ".clean_string($fullName)."<br/>";
+	$emailMessage .= "&emsp;Email: ".clean_string($emailFrom)."<br/>";
+	$emailMessage .= "&emsp;Phone: ".clean_string($phone)."<br/>";
+	$emailMessage .= "&emsp;Comments: ".clean_string($comments);
 
 	$headers = array("From: ".$emailFrom,
     "Reply-To: ".$emailFrom,
@@ -73,7 +73,12 @@ if(isset($_POST['email']))
 	);
 	$headers = implode("\r\n", $headers);
 
-	$output = mail($email_to, $email_subject, $email_message, $headers);
+	$output = mail($emailTo, $emailSubject, $emailMessage, $headers);
+	
+	if (!$output) {
+   	print_r(error_get_last()['message']);
+	}
+	
 	?>
 	 
 	Thanks for reaching out! I will get back to you very soon.
