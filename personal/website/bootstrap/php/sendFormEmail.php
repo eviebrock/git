@@ -6,7 +6,7 @@ ini_set('display_errors', 'On');
 if(isset($_POST['email']))
 {
 	$emailTo = "erich.viebrock@gmail.com";
-	$emailsubject = "Message from erichviebrock.com Portfolio";
+	$emailSubject = "Message from erichviebrock.com Portfolio";
 	
 	function died($error)
 	{
