@@ -5,8 +5,6 @@ ini_set('display_errors', 'On');
 
 if(isset($_POST['email']))
 {
- 
-	// EDIT THE 2 LINES BELOW AS REQUIRED
 	$email_to = "erich.viebrock@gmail.com";
 	$email_subject = "Message from erichviebrock.com Portfolio";
 	
@@ -69,17 +67,17 @@ if(isset($_POST['email']))
 	$email_message .= "&emsp;Phone: ".clean_string($phone)."<br/>";
 	$email_message .= "&emsp;Comments: ".clean_string($comments);
 
-$headers = array("From: ".$emailFrom,
+	$headers = array("From: ".$emailFrom,
     "Reply-To: ".$emailFrom,
     "X-Mailer: PHP/" . PHP_VERSION
-);
-$headers = implode("\r\n", $headers);
+	);
+	$headers = implode("\r\n", $headers);
 
-$output = mail($email_to, $email_subject, $email_message, $headers);
-?>
- 
-Thanks for reaching out! I will get back to you very soon.
+	$output = mail($email_to, $email_subject, $email_message, $headers);
+	?>
+	 
+	Thanks for reaching out! I will get back to you very soon.
 
-<?php
+	<?php
 }
 ?>
