@@ -33,7 +33,7 @@
 				<div class="navbar-nav ml-auto">
 			  		<a class="nav-item nav-link px-4 nav-test" href="#about">About</a>
 					<a class="nav-item nav-link px-4" href="#experience">Experience</a>
-					<a class="nav-item nav-link px-4" href="#personal">Personal</a>
+					<a class="nav-item nav-link px-4" href="#personal">Projects</a>
 					<a class="nav-item nav-link px-4" href="#contact">Contact</a>
 					<a class="nav-item nav-link px-4" href="pdf/Erich%20Viebrock%20-%20R&#233;sum&#233;.pdf">Résumé</a>
 				</div>
@@ -229,10 +229,10 @@
 				</header>
 				<div class="container">
 					<div class="row">
-						<div class="col-8">
-							<h4 id="jobTitle">Rent Management</h4>
+						<div class="col-8 project_space">
+							<h4 class="project_space" id="jobTitle">Rent Management</h4>
 							<p>
-								Developing a website for managing rental commercial and residential properties, using the Django web framework. Website utilizes the Google Maps API for property location and display, as well as the Venmo API for scheduled payments.
+								Developing a website for managing commercial and residential rental properties, using the Django web framework. Website utilizes the Google Maps API for property location and display, as well as the Venmo API for scheduled payments.
 							</p>
 							<p>
 								Source Code in Progress
@@ -244,8 +244,8 @@
 					</div>
 					
 					<div class="row">
-						<div class="col-8">
-							<h4 id="jobTitle">This Website!</h4>
+						<div class="col-8 project_space">
+							<h4 class="project_space" id="jobTitle">This Website!</h4>
 							<p>
 								This portfolio has been, and always will be an ongoing project to currently reflect my capabilities as an engineer. This portfolio was created from scratch with HTML5, CSS3, jQuery 3, and Bootstrap 4.
 							</p>
@@ -266,99 +266,38 @@
 				<header>
 					<img src="img/contact_header.png" draggable="false" />
 				</header>
-				<!--<form name="contactform" method="post" action="php/sendFormEmail.php">
-					<div class="form-group row">
-						<label for="fullName" class="col-2 col-form-label">Full name</label>
-						<div class="col-10">
-							<input class="form-control" type="text" id="example-text-input" name="fullName">
+				<form id="contact-form" method="post" action="php/contact.php" role="form">
+					<div class="messages"></div>
+					<div class="controls">
+						<div class="form-group row">
+							<label for="name" class="col-2 col-form-label">Name</label>
+							<div class="col-10">
+								<input id="name" type="text" name="name" class="form-control" required="required" data-error="Name is required.">
+							</div>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-2 col-form-label">Email</label>
+							<div class="col-10">
+								<input id="email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+							</div>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group row">
+							<label for="message" class="col-2 col-form-label">Message</label>
+							<div class="col-10">
+								<textarea id="message" name="message" class="form-control" rows="4" required="required" data-error="Please, leave a message."></textarea>
+							</div>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group row">
+							<div class="col-2"></div>
+							<div class="col-10">
+								<button type="submit" class="btn btn-send">Submit</button>
+							</div>
 						</div>
 					</div>
-					
-					<div class="form-group row">
-						<label for="email" class="col-2 col-form-label">Email address</label>
-						<div class="col-10">
-							<input class="form-control" type="email" id="example-text-input" name="email">
-						</div>
-					</div>
-					
-					<div class="form-group row">
-						<label for="phone" class="col-2 col-form-label">Phone number</label>
-						<div class="col-10">
-							<input class="form-control" type="tel" id="example-tel-input" name="phone">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="comments" class="col-2 col-form-label">Comments</label>
-						<div class="col-10">
-							<textarea class="form-control" type="text" id="example-text-area" name="comments"></textarea>
-						</div>
-					</div>					
-					<div class="form-group row">
-						<div class="col-2"></div>
-						<div class="col-10">
-							<button type="submit" class="btn">Submit</button>
-						</div>
-					</div>
-				</form>-->
-				
-				
-				
-				
-				
-		<form id="contact-form" method="post" action="php/contact.php" role="form">
-
-			<div class="messages"></div>
-
-			<div class="controls">
-				<div class="form-group row">
-					<label for="form_name" class="col-2 col-form-label">Firstname *</label>
-					<div class="col-10">
-						<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-					</div>
-					<div class="help-block with-errors"></div>
-				</div>
-				<div class="form-group row">
-					<label for="form_lastname" class="col-2 col-form-label">Lastname *</label>
-					<div class="col-10">
-						<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-					</div>
-					<div class="help-block with-errors"></div>
-				</div>
-				<div class="form-group row">
-					<label for="form_email" class="col-2 col-form-label">Email *</label>
-					<div class="col-10">
-						<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-					</div>
-					<div class="help-block with-errors"></div>
-				</div>
-				<div class="form-group row">
-					<label for="form_tel" class="col-2 col-form-label">Phone *</label>
-					<div class="col-10">
-						<input id="form_email" type="tel" name="tel" class="form-control" placeholder="Please enter your phone *" required="required" data-error="Valid phone number is required.">
-					</div>
-					<div class="help-block with-errors"></div>
-				</div>
-				<div class="form-group row">
-					<label for="form_message" class="col-2 col-form-label">Message *</label>
-					<div class="col-10">
-						<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-					</div>
-					<div class="help-block with-errors"></div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2"></div>
-						<div class="col-10">
-							<input type="submit" class="btn btn-success btn-send" value="Submit">
-						</div>
-				</div>
-				
-				
-			</div>
-				
-		</form>	
-				
-				
-				
+				</form>
 			</div>
 		</section>
 		
