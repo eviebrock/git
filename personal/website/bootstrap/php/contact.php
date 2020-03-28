@@ -22,5 +22,6 @@ $headers =
 	'Content-Transfer-Encoding: 8bit' . "\r\n" . 
 	'Content-Type: text/plain; charset=UTF-8' . "\r\n";
 $params = '-f ' . $emailfrom;
-mail($emailto, $subject, $messagebody, $headers, $params);
+$status = mail($emailto, $subject, $messagebody, $headers, $params);
+echo $status
 ?>
