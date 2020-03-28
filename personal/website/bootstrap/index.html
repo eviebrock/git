@@ -93,16 +93,16 @@
 					<div class="row">
 						<ul id="company_text" class="square">
 							<li class="list_space"> 
-								Developed a web-based management system for all accounts and parties used within the firm, using ASP.NET and an Oracle database. Improved latency and reliability in all layers of the stack.
+								Maintained an ASP.NET C# web-application for 100,000+ accounts and parties used within the firm, in conjunction with an Oracle database. Improved latency and reliability in all layers of the stack.
 							</li>
 							<li class="list_space">
-								Constructed a new service to handle order routing to an exchange. Service was capable of reading and writing to multiple tables in a single transaction, while handling several edge case scenarios.
+								Created a new WCF REST service to handle order routing to an exchange. Service was capable of reading and writing to multiple tables in a single transaction, while handling several edge cases.
 							</li>
 							<li class="list_space">
-								Created a separate data interface for abnormal inquiries, using QlikView. Allowed end-users to quickly pull information needed for reporting, with data closely resembling real-time.
+								Constructed a separate data interface for abnormal inquiries, using QlikView. Allowed end-users to quickly pull information needed for reporting, with data closely resembling real-time.
 							</li>
 							<li class="list_space">
-								Added unit tests to a variety of applications, using the NUnit framework. Tested server-side logic, as well as data integrity.
+								Added an automated unit testing system using the NUnit framework. Tested server-side logic, data I/O, as well as data integrity.
 							</li>
 						</ul>
 					</div>
@@ -266,38 +266,59 @@
 				<header>
 					<img src="img/contact_header.png" draggable="false" />
 				</header>
-				<form id="contact-form" method="post" action="php/contact.php" role="form">
-					<div class="messages"></div>
-					<div class="controls">
-						<div class="form-group row">
-							<label for="name" class="col-2 col-form-label">Name</label>
-							<div class="col-10">
-								<input id="name" type="text" name="name" class="form-control" required="required" data-error="Name is required.">
+				<div class="row">
+					<div class="col-9">
+						<h4 class="project_space" id="jobTitle">The Easy Way</h4>
+						<form id="contact-form" method="post" action="php/contact.php" role="form">
+							<div class="messages"></div>
+							<div class="controls">
+								<div class="form-group row">
+									<label for="name" class="col-2 col-form-label">Name</label>
+									<div class="col-8">
+										<input id="name" type="text" name="name" class="form-control" required="required" data-error="Name is required.">
+									</div>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group row">
+									<label for="email" class="col-2 col-form-label">Email</label>
+									<div class="col-8">
+										<input id="email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+									</div>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group row">
+									<label for="message" class="col-2 col-form-label">Message</label>
+									<div class="col-8">
+										<textarea id="message" name="message" class="form-control" rows="6" required="required" data-error="Please, leave a message."></textarea>
+									</div>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group row">
+									<div class="col-2"></div>
+									<div class="col-10">
+										<button type="submit" class="btn btn-send">Submit</button>
+									</div>
+								</div>
 							</div>
-							<div class="help-block with-errors"></div>
-						</div>
-						<div class="form-group row">
-							<label for="email" class="col-2 col-form-label">Email</label>
-							<div class="col-10">
-								<input id="email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
-							</div>
-							<div class="help-block with-errors"></div>
-						</div>
-						<div class="form-group row">
-							<label for="message" class="col-2 col-form-label">Message</label>
-							<div class="col-10">
-								<textarea id="message" name="message" class="form-control" rows="4" required="required" data-error="Please, leave a message."></textarea>
-							</div>
-							<div class="help-block with-errors"></div>
-						</div>
-						<div class="form-group row">
-							<div class="col-2"></div>
-							<div class="col-10">
-								<button type="submit" class="btn btn-send">Submit</button>
-							</div>
-						</div>
+						</form>
 					</div>
-				</form>
+					<div class="col-3">
+						<h4 class="project_space" id="jobTitle">The Other Way</h4>
+						<p class="project_space">
+							Erich Viebrock <br />
+							New York, NY <br />
+							(916) 247-2265 <br />
+							<a href="mailto:erich.viebrock@gmail.com" id="link""> erich.viebrock@gmail.com </a>
+						</p>
+						<h4 class="project_space" id="jobTitle">Conversation Topics</h4>
+						<p class="project_space">
+							Keyboard shortcuts </br>
+							Skiing </br>
+							Tic-tac-toe </br>
+							Arrested Development
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 		
