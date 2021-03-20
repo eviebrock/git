@@ -1,171 +1,192 @@
 body {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
 }
 
 nav {
-	background-color: #2c3e50;
+  background-color: #2c3e50;
 }
 
 #erich {
-	font-size: 25px;
-	font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 button {
-	color: white !important;
-	background-color: #2c3e50 !important;
+  color: white !important;
+  background-color: #2c3e50 !important;
 }
 
 button:hover {
-	background-color: #e67e22 !important;
+  background-color: #e67e22 !important;
 }
 
 h4 {
-	font-weight: bold;
+  font-weight: bold;
 }
 
-
-.nav-item
-{
-	color: white !important;
+.nav-item {
+  color: white !important;
 }
-.nav-item:hover
-{
-	color: #e67e22 !important;
+.nav-item:hover {
+  color: #e67e22 !important;
 }
-.nav-item:active
-{
-	color: #e67e22 !important;
+.nav-item:active {
+  color: #e67e22 !important;
 }
 
-a
-{
-	text-decoration: none !important;
-	-webkit-transition: .5s;
-	-moz-transition: 2s;
-	-ms-transition: .5s;
-	-o-transition: .5s;
-	transition: .5s;
+a {
+  text-decoration: none !important;
+  -webkit-transition: 0.5s;
+  -moz-transition: 2s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
-header
-{
-	text-align: center;
-	padding-bottom: 50px;
+header {
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-#link
-{
-	color: #00a0fc;
-	-webkit-transition: .5s;
-	-moz-transition: 2s;
-	-ms-transition: .5s;
-	-o-transition: .5s;
-	transition: .5s;
+#link {
+  color: #00a0fc;
+  -webkit-transition: 0.5s;
+  -moz-transition: 2s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
-#link:hover
-{
-	color: #e67e22;
+#link:hover {
+  color: #e67e22;
 }
 
-a.glow, a.glow:hover {
-	text-decoration: none;
-	text-shadow: none;
-	-webkit-transition: 500ms linear 0s;
-	-moz-transition: 500ms linear 0s;
-	-o-transition: 500ms linear 0s;
-	transition: 250ms linear 0s;
-	outline: 0 none;
+a.glow,
+a.glow:hover {
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 250ms linear 0s;
+  outline: 0 none;
 }
 a.glow:hover {
-	text-shadow: -1px 1px 8px white, 1px -1px 8px #ffc;
+  text-shadow: -1px 1px 8px white, 1px -1px 8px #ffc;
 }
 
 .sectionPadding {
-	padding-top: 100px;
-	padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .whiteBackground {
-	background: white;
-	width: 100%;
-	left: 0;
-	top: 0;
+  background: white;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .grayBackground {
-	background: #ecf0f1;
-	width: 100%;
-	left: 0;
-	top: 0;
+  background: #ecf0f1;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
-.nav-test:hover
-{
-	color: #e67e22;
+.nav-test:hover {
+  color: #e67e22;
 }
-.nav-test:active
-{
-	color: #e67e22;
+.nav-test:active {
+  color: #e67e22;
 }
 
-#jobTitle
-{
-	color: #e67e22;
+#jobTitle {
+  color: #e67e22;
 }
 
-ul.nav li a, ul.nav li a:visited {
-	 color: red !important;
+ul.nav li a,
+ul.nav li a:visited {
+  color: red !important;
 }
 
-ul.nav li a:hover, ul.nav li a:active {
-	 color: green !important;
+ul.nav li a:hover,
+ul.nav li a:active {
+  color: green !important;
 }
 
 ul.nav li.active a {
-	 color: yellow !important;
+  color: yellow !important;
 }
 
 .navbar {
-	-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,.8);
-	-moz-box-shadow: 0px 0px 25px rgba(0,0,0,.8);
-	box-shadow: 0px 0px 25px rgba(0,0,0,.8);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
 }
 
 .nycPic {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 #container {
-	margin: 0 auto;
-	width: 50%;
+  margin: 0 auto;
+  width: 50%;
 }
 
 ul.square {
-	list-style-type:square;
+  list-style-type: square;
 }
 
 .list_space {
-	padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .project_space {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #floatRight {
-	float: right;
+  float: right;
 }
 
 .color {
-	-webkit-filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
 }
 .color:hover {
-	-webkit-filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
 }
 
 #company_text {
-	padding-top: 20px;
-	padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+.vertical_center {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 10px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.debug_color_1 {
+  background-color: red;
+}
+
+.debug_color_2 {
+  background-color: orange;
+}
+
+.debug_color_3 {
+  background-color: yellow;

@@ -21,7 +21,7 @@
 		<title>Erich Viebrock</title>
 		<link rel="shortcut icon" href="img/favicon.ico" />
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" type"text/css" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
 	</head>
 	<body id="top">
 		<nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark py-4" id="header">
@@ -41,7 +41,7 @@
 		</nav>
 		
 		<section id="intro">
-			<img class="nycPic" src="img/nyc_tmp_4.jpg" draggable="false">
+			<img class="nycPic" src="img/nyc.jpg" draggable="false">
 		</section>
 		
 		<section class="sectionPadding whiteBackground" id="about">
@@ -49,12 +49,19 @@
 				<header>
 					<img src="img/about_header.png" draggable="false" />
 				</header>
-				<p>
-					I'm a software engineer with 6 years of professional experience. I'm interested in all kinds of coding, but my major strength is in back-end development. I have a knack for efficient, bulletproof code while maintaining a focus on shipping solutions quickly.
-				</p>
-				<p>
-					I'm currently a full stack software developer in the finance industry, however, I have also worked in the medical robotics field. I don't have a preference for particular industries, just a strong desire for interesting projects!
-				</p>
+				<div class="row align-items-center">
+					<div class="col">
+						<img src="img/portrait_circle.png" class="center" draggable="false" height="300" />
+					</div>
+					<div class="col-7 center">
+						<p>
+							I'm a full-stack software engineer with over <script>document.write(new Date().getFullYear()-2014)</script> years of professional experience. I have designed, developed, and deployed multiple projects from scratch, leading the development in all layers of the stack.  
+						</p>
+						<p>
+							When I'm not pushing code, you can find me scouting the best pizza slice in NYC, powerlifting, or telling myself this is the year the Sacramento Kings make the playoffs.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 		
@@ -86,22 +93,26 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						September 2016 - Present
+						September 2016 - December 2020
 					</div>
 				</div>
 				<div class="row">
 					<ul id="company_text" class="square">
 						<li class="list_space"> 
-							Maintained an ASP.NET web-application in conjunction with distributed WCF C# microservices and an Oracle database for 600,000+ records. Improved latency and reliability in all layers of the stack.
+							Maintained an ASP.NET web-application in conjunction with distributed WCF C# microservices and an
+Oracle database for 600,000+ records. Improved latency and reliability in all layers of the stack.
 						</li>
 						<li class="list_space">
-							Created a new WCF C# microservice to map order routing to an exchange. Implemented the service APIs to read and write to multiple tables in a single transaction, while handling several edge cases.
+							Created a new WCF C# microservice to map order routing to an exchange. Implemented the service
+APIs to read and write to multiple tables in a single transaction, while handling several edge cases.
 						</li>
 						<li class="list_space">
-							Constructed a separate C# application to handle data changes in bulk. Significantly reduced load on developers for ad-hoc requests; increased accuracy of data updates to a complicated data model.
+							Constructed a separate C# application to handle data changes in bulk. Significantly reduced load on
+developers for ad-hoc requests; increased accuracy of data updates to a complicated data model.
 						</li>
 						<li class="list_space">
-							Added an automated unit testing system using the NUnit framework. Tested server-side logic, data I/O, as well as data integrity.
+							Added an automated unit testing system using the NUnit framework. Tested server-side logic, data I/O,
+as well as data integrity.
 						</li>
 					</ul>
 				</div>
@@ -133,17 +144,21 @@
 				</div>
 				<div class="row">
 					<ul id="company_text" class="square">
-						<li class="list_space"> 
-							Designed, developed, tested, and released production software for a robotic surgical device utilizing C++ and XML on a QNX platform. Created new functionality; improved pre-existing modules.
+						<li class="list_space">
+							Designed, developed, tested, and released production software for a robotic surgical device utilizing
+C++ and XML on a Unix platform. Created new functionality; improved pre-existing modules.
 						</li>
 						<li class="list_space">
-							Incorporated a SQLite database and a wrapper server process for interfacing with database APIs. Created a modularized client singleton class for inter-process communication to the database server.
+							Incorporated an SQLite database and a wrapper server process for interfacing with database APIs.
+Created a modularized client singleton class for inter-process communication to the database server.
 						</li>
 						<li class="list_space">
-							Introduced and incorporated the C++ unit test framework GoogleTest on a QNX platform. Added heavy unit testing in several areas, including XML parsing, database I/O, and inter-process communication.
+							Introduced and incorporated the C++ unit test framework GoogleTest on a QNX platform. Added heavy
+unit testing in several areas, including XML parsing, database I/O, and inter-process communication.
 						</li>
 						<li class="list_space">
-							Created custom tailored software for the clinical and marketing teams to perform quick and easy demonstrations at several major conferences.
+							Created custom tailored software for the clinical and marketing teams to perform quick and easy
+demonstrations at several major conferences.
 						</li>
 					</ul>
 				</div>
@@ -175,10 +190,12 @@
 				<div class="row">
 					<ul id="company_text" class="square">
 						<li class="list_space"> 
-							Designed and executed risk-based software integration level tests covering Diagnostics and Calibration functionality of a robotic surgical assistant.
+							Designed and executed risk-based software integration level tests covering Diagnostics and Calibration
+functionality of a robotic surgical assistant.
 						</li>
 						<li class="list_space">
-							Trained company personnel on proper use for new software features of a robotic surgical assistant, including developers, electrical engineers, and clinical trainers.
+							Trained company personnel on proper use for new software features of a robotic surgical assistant,
+including developers, electrical engineers, and clinical trainers.
 						</li>
 					</ul>
 				</div>
@@ -210,7 +227,8 @@
 				<div class="row">
 					<ul id="company_text" class="square">
 						<li class="list_space"> 
-							Implemented and managed an email notification system for an automated testing system integrated with commercial static analysis tools, and made front-end changes for usability.
+							Implemented and managed an email notification system for an automated testing system integrated
+with commercial static analysis tools, and made front-end changes for usability.
 						</li>
 						<li class="list_space">
 							Established specifications and validation procedures for off-the-shelf software.
@@ -226,22 +244,22 @@
 					<img src="img/personal_header.png" draggable="false" />
 				</header>
 				<div class="row">
-					<div class="col-8 project_space">
+					<div class="col-9 project_space">
 						<h4 class="project_space" id="jobTitle">Rent Management</h4>
 						<p>
-							Developing a website for managing commercial and residential rental properties, using the Django web framework. Website utilizes the Google Maps API for property location and display, as well as the Venmo API for scheduled payments.
+							Developing a website for managing commercial and residential rental properties, using a React frontend with a Flask backend. Website utilizes the Google Maps API for property location and display, as well as the Stripe API for scheduled payments.
 						</p>
 						<p>
 							Source Code in Progress
 						</p>
 					</div>
 					<div class="col">
-						<img src="img/django_logo.png" id="floatRight" draggable="false"/>
+						<img src="img/react_flask.png" id="floatRight" draggable="false" height="59" />
 					</div>
 				</div>
 				
 				<div class="row">
-					<div class="col-8 project_space">
+					<div class="col-9 project_space">
 						<h4 class="project_space" id="jobTitle">This Website!</h4>
 						<p>
 							This portfolio has been, and always will be an ongoing project to currently reflect my capabilities as an engineer. This portfolio was created from scratch with HTML5, CSS3, jQuery 3, and Bootstrap 4.
@@ -319,8 +337,8 @@
 		</section>
 		
 		<section id="footer" class="py-4 px-4 text-white" style="background-color: #2c3e50;">
-			<div id="container">
-				<center>Erich Viebrock &#169; 2020</center>
+			<div id="container" class="text_center">
+				Erich Viebrock &#169; <script>document.write(new Date().getFullYear())</script>
 			</div>
 		</section>
     
